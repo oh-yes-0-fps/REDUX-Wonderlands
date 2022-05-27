@@ -1,0 +1,315 @@
+.oak-markup.red {
+    color:#FF0000;
+}
+
+.oak-markup.boldtext {
+    font-weight: bold;
+}
+
+.oak-markup.italictext {
+    font-style: italic;
+}
+
+.loc-ja .oak-markup.italic,
+.loc-zh-hans .oak-markup.italic,
+.loc-zh-hant .oak-markup.italic,
+.loc-ko .oak-markup.italic,
+.loc-th .oak-markup.italic,
+.loc-ru .oak-markup.italic { 
+    font-style: normal;
+}
+
+.loc-ru b,
+.loc-ru strong,
+.loc-ru .oak-markup.boldtext { 
+    font-style: normal !important;
+}
+
+.oak-markup.rarity_common {
+    color:#C5C5C5;
+}
+
+.oak-markup.rarity_uncommon {
+    color:#00E609;
+}
+
+.oak-markup.rarity_rare {
+    color:#00BDF0;
+}
+
+.oak-markup.rarity_epic {
+    color:#D200FF;
+}
+
+.oak-markup.rarity_legendary {
+    color:#FFA200;
+}
+
+.oak-markup.Flavor {
+    color:#cd5552;
+}
+
+.oak-markup.skill {
+    color:#F9F3DE;
+}
+
+.oak-markup.Fire {
+    color:#ffa900;
+}
+
+.oak-markup.Shock {
+    color:#0078ff;
+}
+
+.oak-markup.Corrosive {
+    color:#18c616;
+}
+
+.oak-markup.Poison {
+    color:#18c616;  /* Same as Corrosive */
+}
+
+.oak-markup.Cryo {
+    color:#00eefe;
+}
+
+.oak-markup.Radiation {
+    color:#d6e718;
+}
+
+.oak-markup.DarkMagic {
+    color:#D75C96;
+}
+
+.oak-markup.Void {
+    color: #19001BFF;
+}
+
+.oak-markup.killskill {
+    color:#FFCC00;
+}
+
+.oak-markup.skillbold {
+    color:#fcc84f;
+}
+
+.oak-markup.actionskill {
+    color:#fc6b03;
+}
+
+.oak-markup.white {
+    color:#FFFFFF;
+}
+
+.oak-markup.bold {
+	color:#D7D7EB;  /* Placeholder styling since "bold" doesn't work without a bold font */
+}
+
+.loc-ru b,
+.loc-ru strong,
+.loc-ru .oak-markup.bold {
+	font-weight: normal !important;
+}
+
+.oak-markup.MissionBlue {
+    color:#42C5F4;
+}
+
+.oak-markup.option {
+    color:#f3f3f3;
+}
+
+.oak-markup.skillflavor{
+    font-style: italic;
+}
+
+.oak-markup.italic{
+    font-style: italic;
+}
+
+.oak-markup.bodyEmphasis {
+    color: #fdd402";
+}
+
+.oak-markup.Nameplate_Friendly_Slight {
+    color:#ACFFAC";
+}
+
+.oak-markup.Nameplate_Neutral{
+    color:#FFFFFF";
+}
+
+.oak-markup.Nameplate_Enemy_Slight {
+    color:#FFACAC";
+}
+
+.oak-markup.slot {
+    color:#ff0000;
+}
+
+.oak-markup.skillScreenRed {
+    color:#DD4415";
+}
+
+.oak-markup.skillScreenGreen {
+    color:#26F60B";
+}
+
+.oak-markup.endgame {
+    color:#ca6c19;
+}
+
+.oak-markup.endgamebold {
+    color:#ffcc00;
+}
+
+.oak-markup.mayhembold {
+    color:#ffcc00;
+}
+
+.oak-markup.SDUColor {
+    color:#bbab61;
+}
+
+.oak-markup.pink {
+    color:#f534bb;
+}
+
+.oak-markup.img_icon {
+	height: 3vh;
+	width: 3vh;
+	padding-right: 2.100000vh;
+	background-repeat: no-repeat;
+	background-position: 0vh 0vh;
+	background-size: contain;
+}
+
+.oak-markup.img_icon.cashicon {
+	background-image: url("../_shared/assets/currency_icons/Currency_Gold.png");
+}
+
+.oak-markup.img_icon.crystalicon {
+	background-image: url("../_shared/assets/currency_icons/Currency_Crystal.png");
+}
+
+.oak-markup.img_icon.goldenkeyicon {
+	background-image: url("../_shared/assets/currency_icons/Currency_SkeletonKey.png");
+}
+
+.oak-markup.img_icon.diamondkeyicon {
+    background-image: url("../../_shared/assets/icons/GeneralIcons_Sprites.png");   /* TODO: Need this asset updated */
+    background-size: 54.6vh 54.6vh;
+    background-position: -11.5vh -6.8vh;
+}
+
+.oak-markup.vaultcoinicon {
+    background-image: url("../../_shared/assets/icons/GeneralIcons_Sprites.png");   /* No actual asset seems to exist for a "Vault Coin," leaving this here as a placeholder*/
+    background-size: 54.6vh 54.6vh;
+    background-position: -11.5vh -6.8vh;
+}
+
+.oak-markup.CorrosiveIcon {
+    background-image: url("../../_shared/assets/icons/DamageTypesIcons_Sprites.png");
+	background-size: 8vh 4vh;
+	background-repeat: no-repeat;
+    background-position: -2vh -2vh;
+}
+
+.oak-markup.CryoIcon {
+    background-image: url("../../_shared/assets/icons/DamageTypesIcons_Sprites.png");
+	background-size: 8vh 4vh;
+	background-repeat: no-repeat;
+    background-position: 0vh -2vh;
+}
+
+.oak-markup.ShockIcon {
+    background-image: url("../../_shared/assets/icons/DamageTypesIcons_Sprites.png");
+	background-size: 8vh 4vh;
+	background-repeat: no-repeat;
+    background-position: -4vh 0vh;
+}
+
+.oak-markup.FireIcon {
+    background-image: url("../../_shared/assets/icons/DamageTypesIcons_Sprites.png");
+	background-size: 8vh 4vh;
+	background-repeat: no-repeat;
+    background-position: -2vh 0vh;
+}
+
+.oak-markup.RadiationIcon {
+    background-image: url("../../_shared/assets/icons/DamageTypesIcons_Sprites.png");
+	background-size: 8vh 4vh;
+	background-repeat: no-repeat;
+    background-position: 0vh 0vh;
+}
+
+.oak-markup.ImpactIcon {
+    background-image: url("../../_shared/assets/icons/DamageTypesIcons_Sprites.png");   /* TODO: This is currently pointing to an empty section of the asset */
+	background-size: 8vh 4vh;
+	background-repeat: no-repeat;
+    background-position: -4vh -2vh;
+}
+
+.oak-markup.img_icon.steam,
+.oak-markup.img_icon.switch,
+.oak-markup.img_icon.epic,
+.oak-markup.img_icon.playstation,
+.oak-markup.img_icon.xbox,
+.oak-markup.img_icon.shift {
+    height: 3vh;
+    width: 3vh;
+    min-height: 22px;
+    min-width: 22px;
+    padding-right: 3vh;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+}
+.oak-markup.img_icon.steam {
+	background-image: url("../../_shared/assets/icons/Crossplay/Icon-Steam.png");
+}
+.oak-markup.img_icon.switch {
+	background-image: url("../../_shared/assets/icons/Crossplay/Icon-Switch.png");
+}
+.oak-markup.img_icon.epic {
+	background-image: url("../../_shared/assets/icons/Crossplay/Icon-Epic.png");
+}
+.oak-markup.img_icon.playstation {
+	background-image: url("../../_shared/assets/icons/Crossplay/Icon-PS.png");
+}
+.oak-markup.img_icon.xbox {
+	background-image: url("../../_shared/assets/icons/Crossplay/Icon-Xbox.png");
+}
+.oak-markup.img_icon.shift {
+	background-image: url("../../_shared/assets/icons/Crossplay/Icon-Shift.png");
+}
+
+.split-horizontal .oak-markup.img_icon,
+.split-4p .oak-markup.img_icon {
+	height: 4.80vh;
+	width: 4.80vh;
+	padding-right: 4.96vh;
+}
+.split-horizontal .oak-markup.img_icon.shift,
+.split-4p .oak-markup.img_icon.shift {
+    height: 3.2vh;
+    width: 3.2vh;
+}
+
+.split-horizontal .oak-markup.img_icon.steam,
+.split-horizontal .oak-markup.img_icon.switch,
+.split-horizontal .oak-markup.img_icon.epic,
+.split-horizontal .oak-markup.img_icon.playstation,
+.split-horizontal .oak-markup.img_icon.xbox,
+.split-horizontal .oak-markup.img_icon.shift,
+.split-4p .oak-markup.img_icon.steam,
+.split-4p .oak-markup.img_icon.switch,
+.split-4p .oak-markup.img_icon.epic,
+.split-4p .oak-markup.img_icon.playstation,
+.split-4p .oak-markup.img_icon.xbox,
+.split-4p .oak-markup.img_icon.shift {
+    height: 4.8vh;
+    width: 4.8vh;
+    padding-right: 5.5vh;
+    padding-bottom: 1.6vh;
+    padding-top: 1.5vh;
+}

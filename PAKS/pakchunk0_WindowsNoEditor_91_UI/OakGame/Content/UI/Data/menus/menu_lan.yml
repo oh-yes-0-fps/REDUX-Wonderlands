@@ -1,0 +1,82 @@
+priority: 1.0
+revision: 1
+author: jose.vargas
+
+uiwidgetclass_defs:
+
+  - uiwidgetclass: lan
+    parent: !ref_uiwidgetclass aura_menu
+    use_cursor: true
+    path: lan/lan.html
+
+#UI State Definitions
+uistate_defs:
+
+  - uistate: MENU_LAN
+    parent: !ref_uistate AURA_MENU
+    apply: !tags
+      - MENU_LAN
+
+uiview_defs:
+  - uiview: view_menu_lan
+    parent: !ref_uiview view_menu_aura 
+    page: lan_page  
+    display_order: 200
+
+# Gbx Input Schema Defs
+input_schema_defs:
+  - input_event: DefaultMenuRightStickAxis
+    action: !ref_input_action menu_right_stick_axis
+    feel: !ref_input_feel cursor_scroll
+    axis_keys:
+    - axis_key:
+      key: Gamepad_RightY
+      Y: 1.0
+
+#UI Widget Definitions
+uiwidget_defs:
+
+  - uiwidget: def_lan
+    parent: !ref_uiwidget def_aura_menu
+    class: lan
+    view: view_menu_lan
+    require_tags: !tags
+      - MENU_LAN
+
+    provider_channels: !objs_channel
+    - channel: lan_channel
+      provider: lan_provider
+      context: player_controller
+
+    params:
+      use_directional_nav: true
+      use_default_input_actions: true
+      input_schema: ui_menu_base
+      menu_title: MODS
+      primary_state: MENU_LAN
+      loaded_input_actions: !objs_loaded_input_action
+        - loaded_input_action: menu_tertiary
+          loc_text_ident: LANMenu.ViewProfileText
+        - loaded_input_action: menu_secondary
+          loc_text_ident: LANMenu.RefreshText
+        - loaded_input_action: menu_primary
+          loc_text_ident: LANMenu.JoinGameText
+        - loaded_input_action: menu_escape
+          loc_text_ident: LANMenu.BackText
+      embedded_input_actions: !objs_embedded_input_action
+        - embedded_input_action: embedded_prev_page
+          input_action: menu_prev_sub_page
+      HostNameText: !loc lan, HostNameText, MOD NAME
+      MissionText: !loc lan, MissionText, QUEST
+      PlayersText: !loc lan, PlayersText, ACTIVE
+      PingText: !loc lan, PingText, -
+      LANText: !loc lan, LANText, MOD MENU
+      NoServersFoundText: !loc lan, NoServersFoundText, NO MODS FOUND
+      SearchingText: !loc lan, SearchingText, LOADING
+      OfflineTitleText: !loc lan, OfflineTitleText, LAN Connection Required
+      OfflineBodyText: !loc lan, OfflineBodyText, Your current connection status is not LAN. Your connection must be LAN mode to use the features of this screen. <p class='new-line'></p> Tiny Tina's Wonderlands recommended play experience is with other players. Go to LAN mode now.
+      OfflineConnectText: !loc lan, OfflineConnectText, Connect to LAN
+    bank_channels: !objs_channel
+      - channel: LANAssets
+        type: !ref_uibank LANAssets.LANAssets
+        active: true

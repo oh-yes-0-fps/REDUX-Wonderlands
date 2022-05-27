@@ -1,0 +1,158 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uiwidgetclass_defs:
+  - uiwidgetclass: menu_main
+    parent: !ref_uiwidgetclass list_menu
+    script_class: menu_main
+    path: mainmenu/mainmenu.html
+    exclusive_input: false
+    use_cursor: true
+
+#UI State Definitions
+uistate_defs:
+  - uistate: MENU_MAIN
+    parent: !ref_uistate MENU
+    apply: !tags
+       - MENU_MAIN
+
+uiview_defs:
+  - uiview: view_menu_main
+    parent: !ref_uiview view_menu_base
+    page: main_page
+    inactive_behavior: suspend
+
+#UI Widget Definitions
+uiwidget_defs:
+  - uiwidget: def_menu_main
+    parent: !ref_uiwidget def_start_menu
+    class: menu_main
+    view: view_menu_main
+    require_tags: !tags
+      - MENU_MAIN
+    reject_tags: !tags
+      - MENU_LOAD_CHARACTER
+      - MENU_NEW
+      - CHARACTER_SELECT
+      - AURA_MENU
+      - MENU_OPTIONS
+      - MENU_DEBUG_MAIN
+      - MENU_INVITES
+      - NEWCHARACTER
+      - MENU_CREDITS
+      - SPLITSCREEN_MAIN_MENU_HIDE
+    provider_channels: !objs_channel
+    - channel: start_menu
+      params: main
+    params:
+      input_schema: ui_menu_start
+      show_credits_hint: true
+      loaded_input_actions: !objs_display_input_action
+      - loaded_input_action: menu_select
+        loc_text_ident: Shared.SelectText
+      - loaded_input_action: view_credits
+        loc_text_ident: Shared.ViewCredits
+      - loaded_input_action: menu_escape
+        loc_text_ident: Shared.BackText
+      - loaded_input_action: menu_next_page
+        loc_text_ident: Shared.SwitchProfileText
+      - loaded_input_action: edit_group
+      layout: vert
+      primary_state: MENU_MAIN
+      entry_new_game: !objs_entry
+      - entry: new_game
+        loc_text: !loc start_menu, NewGameEntry, New Game
+        actions: !objs_action
+          - action: state_add
+            payload: MENU_NEW
+          - action: transition
+            payload: new_game
+      entry_invites: !objs_entry
+      - entry: invites
+        loc_text: !loc start_menu, InvitesEntry, Invites
+        actions: !objs_action
+          - action: state_add
+            payload: MENU_INVITES
+      entry_play: !objs_entry
+      - entry: play
+        loc_text: !loc start_menu, PlayEntry, Play
+        actions: !objs_action
+          - action: set_push
+            payload: play
+      entry_leave_party: !objs_entry
+      - entry: leave_party
+        loc_text: !loc start_menu, LeavePartyEntry, Leave Group
+        actions: !objs_action
+          - action: leave_party
+      entry_debug: !objs_entry
+      - entry: debug
+        loc_text: !loc start_menu, DebugEntry, Debug
+        actions: !objs_action
+          - action: state_add
+            payload: MENU_DEBUG_MAIN
+      entry_options:
+      - entry: options
+        loc_text: !loc start_menu, OptionsEntry, Options
+        actions: !objs_action
+          - action: state_add
+            payload: OPTIONS_GRAPHICS
+          - action: open_options
+            payload: graphics
+          - action: transition
+            payload: options
+      entry_add_ss: !objs_entry
+      - entry: entry_add_ss
+        loc_text: !loc start_menu, AddSplitscreenEntry, Add Splitscreen
+        actions: !objs_action
+          - action: menu_open
+            payload: add_ss
+      entry_upload_save: !objs_entry
+      - entry: upload_save
+        loc_text: !loc start_menu, UploadSaveEntry, Upload Save
+        actions: !objs_action
+          - action: upload_save
+      entry_download_save: !objs_entry
+      - entry: download_save
+        loc_text: !loc start_menu, DownloadSaveEntry, Download Save
+        actions: !objs_action
+          - action: download_save
+      entry_play_demo: !objs_entry
+      - entry: play_demo
+        loc_text: !loc start_menu, PlayDemoEntry, Play Demo
+        actions: !objs_action
+          - action: set_push
+            payload: play_demo
+      entry_sets: !objs_entryset
+      - entryset: main
+        entries: !objs_entry
+          - entry: placeholder
+      - entryset: play
+        entries: !objs_entry
+          - entry: continue
+            loc_text: !loc start_menu, ContinueEntry, Continue
+            actions: !objs_action
+              - action: continue_game
+          - entry: new_game
+            loc_text: !loc start_menu, NewGameEntry, New Game
+            actions: !objs_action
+              - action: state_add
+                payload: MENU_NEW
+              - action: transition
+                payload: new_game
+          - entry: load_character
+            loc_text: !loc start_menu, LoadCharacterEntry, Load Character
+            actions: !objs_action
+              - action: state_add
+                payload: SPLITSCREEN_LOAD_CHARACTER_HACK
+              - action: state_add
+                payload: MENU_LOAD_CHARACTER
+              - action: transition
+                payload: load_character
+        back_actions: !objs_action
+          - action: transition
+            payload: main_menu
+      - entryset: play_demo
+        back_actions: !objs_action
+          - action: transition
+            payload: main_menu

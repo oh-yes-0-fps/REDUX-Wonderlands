@@ -1,0 +1,780 @@
+.mail_menu_wrapper {
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	max-width: 184.0843720038vh;
+	top: 0vh;
+	transform: translateX(-50%);
+	width: 100%;
+	isolation: isolate;
+}
+.mail_menu_wrapper .top_nav {
+	left: 6vh;
+	transform: translateX(0%);
+}
+.mail_menu_wrapper .mail_menu_panel {
+	left: 6.8vh;
+	position: absolute;
+	top: 10.5vh;
+	width: 77.9vh;
+	min-height: 77vh;
+}
+.mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel {
+	left: 50%;
+	position: absolute;
+	top: 0vh;
+	transform: translateX(-50%);
+	width: 49.8vh;
+	z-index: 0;
+	isolation: isolate;
+}
+.mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .header {
+	isolation: isolate;
+	width: 100%;
+}
+.mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title,
+.mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail {
+	color: #94795b;
+	font-size: 3.00rem;
+	font-family: var(--header-font);
+	letter-spacing: 0.1rem;
+	line-height: 3.00rem;
+	position: absolute;
+	left: 50%;
+	top: 2.6vh;
+	transform: translateX(-50%);
+	text-align: center;
+	text-stroke: 0.3rem black;
+	z-index: 1;
+}
+.mail_menu_wrapper .player_widget .player_widget_glyph,
+.mail_menu_wrapper .player_widget .player_widget_loot_amount_max {
+	opacity: 0;
+}
+.mail_menu_wrapper .player_widget_loot_icon{
+	top: 5.5vh;
+    right: 11.5vh;
+} 
+.mail_menu_wrapper .player_widget_loot_amount{
+    right: initial;
+    left: 22vh;
+	top: 6.3vh;
+} 
+.mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail {
+	font-size: 2.60rem;
+	right: 7.5vh;
+	transform: none;
+	left: initial;
+	color: #c9c9c9;
+}
+.mail_menu_wrapper .player_widget_cntr {
+	bottom: 5.5vh;
+	right: 39.9vh;
+	height: 16.85vh;
+	position: absolute;
+	width: 40.18vh;
+}
+.mail_menu_wrapper .player_widget_backpack_money{
+	display: none;
+}
+.mail_menu_wrapper .mail_menu_header_panel .item_new {
+	right: 3vh;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.mail_menu_wrapper .mail_menu_panel .divider {
+	padding-left: 9.3vh;
+	padding-right: 9.3vh;
+	position: static;
+	width: 100%;
+	margin-bottom: 1vh;
+}
+.mail_menu_wrapper .mail_menu_panel .tab_panel {
+	height: 2.7vh;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+	width: 41vh;
+}
+.mail_menu_wrapper .mail_menu_panel .tab_panel .backing_top_bg_left,
+.mail_menu_wrapper .mail_menu_panel .tab_panel .backing_top_bg_center,
+.mail_menu_wrapper .mail_menu_panel .tab_panel .backing_top_bg_right {
+	opacity: 0;
+}
+.mail_menu_wrapper .mail_menu_panel .tab_panel .tab_panel_content {
+	height: 3.5vh;
+}
+.mail_menu_wrapper .mail_menu_panel .tab_panel .tab_panel_nav .tab_panel_nav_item_text {
+	color: #94795b;
+	font-family: var(--body-font);
+	font-size: 1.70rem;
+	line-height: 1.70rem;
+}
+.mail_menu_wrapper .mail_menu_panel .mail_menu_list_button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	padding-left: 8.7vh;
+	padding-right: 8.7vh;
+	height: 100%;
+	max-height: 60vh;
+    overflow-y: hidden;
+}
+.mail_menu_wrapper .mail_menu_panel .mail_menu_list_button .mail_menu_no_items_title {
+	align-self: flex-start;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	color: rgba(148, 121, 91, 1.000000);
+	font-size: 2.00rem;
+	font-family: var(--header-font) ;
+	letter-spacing: 0.1rem;	
+	text-stroke: 0.3rem black;
+}
+.mail_menu_wrapper .mail_menu_panel .big_panel {
+	margin-top: 4vh;
+	padding-bottom: 0vh;
+	z-index: 1;
+}
+.mail_menu_wrapper .mail_menu_panel .big_panel .bigpanel_content_container {
+	margin-bottom: 0vh;
+	margin-left: -5vh;
+	margin-top: 5vh;
+	margin-right: -5vh;
+}
+.mail_menu_wrapper .mail_menu_panel .scrollbar {
+	height: 58.3vh;
+	left: -0.8vh;
+	top: 14.1vh;
+}
+.mail_menu_wrapper .mail_menu_details .scrollbar {
+	height: 48vh;
+    left: 1vh;
+    bottom: 8vh;
+    display: block !important;
+}
+.mail_menu_wrapper .description_panel .transparency_panel_backing {
+	pointer-events: auto;	
+}
+.mail_menu_wrapper .mail_menu_panel .bottom_shadow {
+	background-image: linear-gradient(0deg, #25252c 25%, rgba(37, 37, 44, 0) 100%);
+	background-repeat: no-repeat;
+	bottom: 5.1vh;
+	height: 4vh;
+	left: 50%;
+	opacity: 0.98;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 66.3vh;
+	z-index: 3;
+}
+.mail_menu_wrapper .mail_menu_details_cntr {
+	height: 60vh;
+	position: absolute;
+	width: 68.4vh;
+}
+.mail_menu_wrapper .mail_menu_details_cntr {
+	height: 60vh;
+	left: 86vh;
+	position: absolute;
+	top: 16vh;
+	width: 68.4vh;
+}
+.mail_menu_wrapper .mail_menu_details .no_mail_text {
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+.mail_menu_wrapper .no_mails.mail_menu_details .no_mail_text {
+	visibility: visible;
+}
+.mail_menu_wrapper .no_mails.mail_menu_details .transparency_panel_content_container {
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_container {
+	margin-bottom: 5vh;
+	margin-left: 6.5vh;
+	margin-top: 5.6vh;
+}
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_container .dp_cntr {
+	flex: 1 1 auto;
+}
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_container .dp_inner_cntr {
+	padding-left: 1vh;
+	padding-right: 0.5vh;
+	overflow-y: hidden;
+	flex: 1 1 auto;
+}
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_container .dp_title {
+	margin-bottom: 1.3vh;
+}
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_container .dp_description_tagline {
+	margin-bottom: 0.9vh;
+}
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_container .text_divider {
+	height: 2.1vh;
+	margin-bottom: 2.4vh;
+}
+.mail_menu_wrapper .mail_menu_details .mail_menu_image {
+	margin-top: 3.8vh;
+}
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_top_center,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_top_right,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_top_left,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_center_right,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_center_center,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_center_left,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_bottom_left,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_bottom_center,
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing_bottom_right {
+	opacity: 0.5;
+}
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing {
+	height: 18.7vh;
+}
+.mail_menu_wrapper .mail_menu_details .mail_menu_image .mail_menu_image_bg {
+	background-image: url("_shared/assets/icons/MailGiftIcon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 15vh;
+	position: relative;
+	top: 1vh;
+	width: 100%;
+	background-position: 50%;
+}
+.mail_menu_wrapper .mail_menu_details .paragraph {
+	color: #9c9dc8;
+	margin-bottom: 2.6vh;
+	white-space: pre-wrap;
+}
+.mail_menu_wrapper .item_recieved {
+	left: 50%;
+	position: absolute;
+	top: 15.4vh;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.mail_menu_wrapper .item_recieved .celebration_message_title,
+.mail_menu_wrapper .item_recieved .celebration_message_subtitle {
+	z-index: 2;
+}
+.mail_menu_wrapper .item_recieved .celebration_message_subtitle {
+}
+.mail_menu_wrapper .item_recieved .celebration_message_glyph {
+	z-index: 1;
+}
+.mail_menu_wrapper .item_recieved .celebration_message_smoke {
+	background-image: url("../../_shared/assets/huds/eccho_communicator/smoke_background.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 25.92vh;
+	width: 28.7vh;
+	position: absolute;
+	z-index: 0;
+}
+.mail_menu_wrapper .mail_menu_details .transparency_panel_content_parent {
+	overflow-y: hidden;
+}
+.mail_menu_wrapper .big_button_item_list {
+	margin-bottom: 1vh;
+}
+.mail_menu_wrapper .big_button_item_list .item_new {
+	right: 1vh;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.mail_menu_wrapper .item_new_bg {
+	transform: scale(1.5);
+}
+.mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_text,
+.mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_rank {
+	text-stroke: 0.3rem black;
+	font-size: 1.80rem;
+	letter-spacing: 0.18rem;
+	line-height: 1.80rem;
+	margin-top: 0.2vh;
+	max-height: 1.80rem;
+}
+.mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_rank {
+	margin-right: 2.2vh;
+}
+.mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_comp .bil_text {
+	padding-top: 0.4vh;
+	padding-left: 1vh;
+	color: #9c9dc8;
+	text-stroke: 0.3rem black;
+	opacity: 1;
+	position: relative;
+	text-align: left;
+	letter-spacing: 0.12rem;
+	font-family: var(--body-font);
+	font-size: 1.80rem;
+}
+.mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_top,
+.mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_comp {
+	left: 55.6%;
+}
+.mail_menu_wrapper .big_button_item_list .item_gliphy_cntr {
+	width: 115%;
+}
+.mail_menu_wrapper .big_button_item_list[data-input-focused=true] .item_gliphy_cntr {
+	opacity: 1;
+	z-index: -1;
+}
+.mail_menu_wrapper .big_button_item_list .item_gliphy_cntr .item_gliphy_left,
+.mail_menu_wrapper .big_button_item_list .item_gliphy_cntr .item_gliphy_right {
+	transition-duration: 0.3s;
+}
+.mail_menu_wrapper .big_button_item_list .gradient_glow {
+	transform: rotateX(0deg) scaleY(0.94) scaleX(1);
+}
+.mail_menu_wrapper .big_button_item_list[data-input-focused=true] {
+	transform: scale(1.1, 1.1);
+}
+.mail_menu_wrapper .big_button_item_list[data-input-focused=true] .gradient_glow {
+	animation-name: gliphyGradientHorizontalLargeBigBtnList;
+	opacity: 1;
+}
+.mail_menu_wrapper .lobby_widget {
+	top: 1.4vh;
+	right: 8.5vh;
+	transform: scale(0.7, 0.7);
+	transform-origin: right;
+}
+.mail_menu_wrapper .lobby_widget .lobby_widget_header {
+	color: #94795b;
+	font-size: 2.6rem;
+	letter-spacing: 0.22rem;
+	line-height: 2.6rem;
+	position: relative;
+	right: -18vh;
+	top: 2.4vh;
+}
+.mail_menu_wrapper .lobby_widget .lobby_widget_bottom .action_btn {
+	left: 2.6vh;
+	position: relative;
+	transform: scale(1.3, 1.3);
+	top: 2vh;
+}
+.mail_menu_wrapper .lobby_widget .lobby_widget_bottom .group_icon {
+	top: 2.4vh;
+	right: 6.2vh;
+}
+.mail_menu_wrapper .lobby_widget .lobby_widget_bottom .send_invitation_icon {
+	top: 2.4vh;
+	right: 0.4vh;
+}
+.mail_menu_popup {
+	background-color: rgba(0, 0, 0, 0.45);
+	display: flex;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.mail_menu_popup .mm_panel {
+	left: 50%;
+	position: absolute;
+	top: 47%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 91vh;
+	z-index: 1;
+	isolation: isolate;
+}
+.mail_menu_popup .mm_panel .big_panel {
+	margin-top: 4vh;
+	min-height: 30.2vh;
+	pointer-events: auto;
+	isolation: isolate;
+}
+.mail_menu_popup .mm_panel .big_panel .bigpanel_content_container {
+	margin-top: 8.8vh;
+}
+.mail_menu_popup .mm_panel .big_panel .big_panel_content {
+	position: relative;
+}
+.mail_menu_popup .mm_panel .primary_btn {
+	margin-top: 3vh;
+}
+.mail_menu_popup .mm_panel .paragraph {
+	color: #9c9ccc;
+	text-align: center;
+	font-size: 2.1vh;
+	line-height: 2.1vh;
+}
+.mail_menu_popup .mm_header_panel {
+	position: absolute;
+	top: 0vh;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+.mail_menu_popup .mm_header_panel .header {
+	width: 52.1vh;
+}
+.mail_menu_popup .mm_header_panel .mm_header_title {
+	color: #94795b;
+	font-size: 3.00rem;
+	font-family: var(--header-font);
+	letter-spacing: 0.1rem;
+	line-height: 3.00rem;
+	position: absolute;
+	left: 50%;
+	top: 2.6vh;
+	transform: translateX(-50%);
+	text-align: center;
+	text-stroke: 0.3rem black;
+	z-index: 1;
+}
+
+@media (min-width: 177.7777777778vh) and (orientation:landscape) {
+	.split-horizontal .mail_menu_wrapper {
+		max-width: 248.89vh;
+	}
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel {
+	left: 0.00vh;
+	top: 14.40vh;
+	width: 89.60vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel {
+	width: 76.80vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title {
+	font-size: 4.80rem;
+	letter-spacing: 0.16rem;
+	line-height: 4.80rem;
+	top: 3vh;
+}
+.split-horizontal .mail_menu_wrapper .big_button_item_list .gradient_glow {
+	min-width: 75.20vh;
+}
+.split-horizontal .big_button_item_list[data-input-focused=true] .item_gliphy_cntr .item_gliphy_left {
+	left: 3.20vh;
+}
+.split-horizontal .big_button_item_list[data-input-focused=true] .item_gliphy_cntr .item_gliphy_right {
+	right: 3.20vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .divider {
+	padding-left: 6.72vh;
+	padding-right: 6.88vh;
+	margin-bottom: 3.20vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .mail_menu_list_button,
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .mail_menu_list_button {
+	max-height: 40vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .big_panel,
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .big_panel {
+	margin-top: 3.84vh;
+	max-height: 70.40vh;
+	min-height: 70.4vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .big_panel .bigpanel_content_container {
+	margin-bottom: 9.60vh;
+	margin-left: 0vh;
+	margin-top: 7.52vh;
+	margin-right: 0vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .tab_panel {
+	left: 50%;
+	width: 60vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .scrollbar {
+	height: 40.5vh;
+	top: 18vh;
+	left: -2.08vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .bottom_shadow {
+	bottom: 7.20vh;
+	height: 11.20vh;
+	width: 66.72vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_details_cntr {
+	height: 77vh;
+	width: 108.80vh;
+	left: 88vh;
+	bottom: 10vh;
+    top: initial;
+}
+.split-horizontal .mail_menu_wrapper .player_widget_cntr {
+    bottom: 16.5vh;
+    right: 21vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_details .transparency_panel_content_container,
+.split-horizontal .mail_menu_wrapper .mail_menu_details .transparency_panel_content_container {
+	margin-bottom: 8.00vh;
+	margin-top: 11vh;
+	margin-left: 12vh;
+	margin-right: 10.7vh;
+}
+.split-horizontal .mail_menu_wrapper .item_recieved {
+	top: 21.60vh;
+}
+.split-horizontal .mail_menu_wrapper .big_button_item_list {
+	margin-bottom: 2.56vh;
+}
+.split-horizontal .mail_menu_wrapper .big_button_item_list .item_new {
+	right: 1.12vh;
+}
+.split-horizontal .mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_text,
+.split-horizontal .mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_rank {
+	font-size: 3.36rem;
+	line-height: 3.36rem;
+	max-height: 3.36rem;
+}
+.split-horizontal .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_comp .bil_text {
+	padding-top: 0;
+	font-size: 3.20rem;
+}
+.split-horizontal .mail_menu_wrapper .lobby_widget {
+	top: 6.40vh;
+}
+.split-horizontal .mail_menu_wrapper .currency_widget_hud {
+	bottom: 12.80vh;
+	right: 0vh;
+}
+
+@media (min-width: 177.7777777778vh) and (orientation:landscape) {
+	.split-4p .mail_menu_wrapper {
+		max-width: 248.89vh;
+	}
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel {
+	left: 3.20vh;
+	top: 14.40vh;
+	width: 89.60vh;
+}
+.split-4p .mail_menu_wrapper .player_widget_cntr {
+	bottom: 2vh;
+	right: 20vh;
+	height: 26.96vh;
+	position: absolute;
+	width: 64.29vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing,
+.split-vertical .mail_menu_wrapper .mail_menu_details .mail_menu_image .text_backing {
+	min-width: initial;
+}
+.split-4p .mail_menu_wrapper .mail_menu_details .paragraph {
+	margin-bottom: 1.6vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_details .mail_menu_image {
+	margin-top: 0vh;
+	height: 17vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_details .mail_menu_image .mail_menu_image_bg {
+	top: 0vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel {
+	width: 76.80vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title {
+	font-size: 4.80rem;
+	letter-spacing: 0.16rem;
+	line-height: 4.80rem;
+	top: 3vh;
+}
+.split-4p .mail_menu_wrapper .big_button_item_list[data-input-focused=true] .item_gliphy_cntr .item_gliphy_left {
+    left: 5.36vh;
+}
+.split-4p .mail_menu_wrapper .big_button_item_list[data-input-focused=true] .item_gliphy_cntr .item_gliphy_right {
+    right: 5vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .divider {
+	padding-left: 6.72vh;
+	padding-right: 6.88vh;
+	margin-bottom: 3.20vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .tab_panel {
+	height: 6.40vh;
+	margin-left: 4.16vh;
+	margin-right: 4.16vh;
+	left: 42%;
+	top: 2vh;
+}
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .tab_panel .action_btn .action_btn_icon_cntr,
+.split-4p .mail_menu_wrapper .mail_menu_panel .tab_panel .action_btn .action_btn_icon_cntr {
+	margin-right: 0;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .big_panel .bigpanel_content_container {
+	margin-bottom: 9.60vh;
+	margin-left: 0vh;
+	margin-top: 7.52vh;
+	margin-right: 0vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .scrollbar {
+	height: 40.00vh;
+	top: 20vh;
+	left: -2.08vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .bottom_shadow {
+	bottom: 7.20vh;
+	height: 11.20vh;
+	width: 66.72vh;
+}
+.split-4p .mail_menu_wrapper .mail_menu_details_cntr {
+	height: 65vh;
+	right: 0vh;
+	top: 14vh;
+	width: 88vh;
+}
+.split-4p .mail_menu_wrapper .item_recieved {
+	top: 23.60vh;
+	transform: translateX(-50.000000%) scale(0.7, 0.7);
+}
+.split-4p .mail_menu_wrapper .big_button_item_list {
+	margin-bottom: 2.56vh;
+}
+.split-4p .mail_menu_wrapper .big_button_item_list .item_new {
+	top: -0.96vh;
+	right: -1.92vh;
+}
+.split-4p .mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_text,
+.split-4p .mail_menu_wrapper .big_button_item_list .big_button_item_list_top .big_button_item_list_rank {
+	font-size: 3.36rem;
+	line-height: 3.36rem;
+	max-height: 3.36rem;
+}
+.split-4p .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_comp .bil_text {
+	padding-top: 1.60vh;
+	font-size: 3.20rem;
+}
+.split-4p .mail_menu_wrapper .lobby_widget {
+	right: 0.64vh;
+	top: 4.80vh;
+	transform-origin: right;
+	transform: scale(0.74, 0.74);
+	z-index: 1;
+}
+.split-4p .mail_menu_wrapper .currency_widget_hud {
+	bottom: 6.72vh;
+	right: 20vh;
+	transform-origin: center;
+	transform: scale(0.76, 0.76);
+}
+
+.split-4p .mail_menu_wrapper .mail_menu_panel .tab_panel .tab_panel_nav .tab_panel_nav_item_text,
+.split-vertical .mail_menu_wrapper .mail_menu_panel .tab_panel .tab_panel_nav .tab_panel_nav_item_text,
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .tab_panel .tab_panel_nav .tab_panel_nav_item_text {
+	font-size: 3.20rem;
+	line-height: 3.20rem;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title,
+.split-vertical .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title,
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title {
+	font-size: 4.80rem;
+    letter-spacing: 0.16rem;
+    line-height: 4.80rem;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail,
+.split-vertical .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail,
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail {
+	font-size: 4.16rem;
+	letter-spacing: 0.100000rem;
+    line-height: 4.80rem;
+}
+.split-4p .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail,
+.split-horizontal .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail {
+	right: 12.00vh;
+}
+
+.split-vertical .mail_menu_wrapper .player_widget_cntr {
+    right: 4vh;
+	bottom: 2.8vh;
+}
+.split-vertical .mail_menu_wrapper .mail_menu_panel {
+	left: 1vh;
+	top: 13.5vh;
+	transform-origin: left;
+	transform: scale(0.9, 0.9);
+	width: 53vh;
+	isolation: isolate;
+	min-height: 80vh;
+}
+.split-vertical .second_title {
+	font-size: 6.40rem;    
+}
+.split-vertical .mail_menu_wrapper .mail_menu_details_cntr {
+	width: 46vh;
+	left: initial;
+	right: -2.2vh;
+	transform-origin: center;
+	transform: scale(0.9, 0.9);
+	isolation: isolate;
+	z-index: 1;
+}
+.split-vertical .mail_menu_wrapper .description_panel .transparency_panel_backing {
+	min-width: 46vh;
+}
+.split-vertical .mail_menu_wrapper .big_button_item_list .gradient_glow {
+	min-width: 47vh;
+}
+.split-vertical .mail_menu_wrapper .mail_menu_details .transparency_panel_content_container {
+	margin-right: 5vh;
+	margin-left: 5vh;
+}
+.split-vertical .mail_menu_wrapper .mail_menu_details .transparency_panel_content_container .text_divider {
+	width: 34vh;
+}
+.split-vertical .mail_menu_wrapper .big_button_item_list[data-input-focused=true] .item_gliphy_cntr .item_gliphy_left {
+	left: 1.6vh;
+}
+.split-vertical .mail_menu_wrapper .big_button_item_list[data-input-focused=true] .item_gliphy_cntr .item_gliphy_right {
+	right: 1.6vh;
+}
+.split-horizontal .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_top,
+.split-horizontal .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_btm,
+.split-vertical .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_top,
+.split-vertical .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_btm {
+	left: 57%;
+}
+.split-vertical .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_top {
+	top: 1.8vh;
+}
+.split-vertical .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_mail {
+	top: 3vh;
+	right: 6.5vh;
+}
+.split-vertical .mail_menu_wrapper .mail_menu_panel .mail_menu_header_panel .mail_menu_header_title {
+	top: 2.4vh;	
+}
+.split-vertical .mail_menu_wrapper .big_button_item_list .big_button_item_list_content .big_button_item_list_comp .bil_text {
+	font-size: 3.20rem;
+}
+.split-vertical .mail_menu_wrapper .currency_widget_hud {
+	bottom: 7vh;
+	right: 6vh;
+	transform-origin: center;
+	transform: scale(0.8, 0.8);
+}
+.split-vertical .mail_menu_wrapper .lobby_widget {
+	top: 6.4vh;
+	right: 1vh;
+	transform: scale(0.86, 0.86);
+}
+.split-vertical .mail_menu_wrapper .player_widget_loot_amount{
+    left: 22vh;
+}
+.offline_screen_wrapper .offline_screen_image_panel {
+	left: 14vh;
+	position: absolute;
+	top: 20.6vh;
+    width: 87.2vh;
+    height: 58.9vh;
+    background-image: url("../../aura_menu_offline/assets/SocialMail.png");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+} 

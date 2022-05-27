@@ -1,0 +1,220 @@
+<body>
+
+  <div class="widget full hidden">
+    <div class="mail_menu_wrapper hidden">
+      <div class="mail_menu_panel">
+        <!-- HEADER PANEL -->
+        <div class="mail_menu_header_panel">
+          <div class="d-flex flex-row flex-nowrap align-content-start header">
+            <div class="header_border"></div>
+          </div>
+          <div class="mail_menu_header_title" data-bind-value="{{$data.title}}"></div>
+          <div class="mail_menu_header_mail" data-bind-if="{{$data.entries}}.length>0"
+            data-bind-value="{{$data.entries}}.length"></div>
+          <div class="item_new" data-bind-class-toggle="d-opacity:!{{$data.hasnewmail}}">
+            <div class="item_new_bg"></div>
+          </div>
+        </div>
+        <!-- BIG PANEL -->
+        <div class="big_panel">
+          <div class="big_panel_border"></div>
+          <div class="bigpanel_content_container">
+            <div class="bigpanel_content_parent">
+              <div class="bigpanel_l_content">
+                <div class="tab_panel">
+                  <div class="backing_top_bg">
+                    <div class="backing_top_bg_left"></div>
+                    <div class="backing_top_bg_center"></div>
+                    <div class="backing_top_bg_right"></div>
+                    <div class="backing_top_content_container">
+                      <div class="backing_top_content_parent">
+                        <div class="d-flex flex-nowrap flex-row align-items-center justify-content-between tab_panel_content">
+                          <div class="tab_panel_left">
+                            <gbx-button data-input-id="mail-sort-left" gbx-component-id="hintbar_item"
+                              gbx-component-datamodel="data_entry:$data.prevsortbutton"
+                              data-bind-entry-model="{{$data.prevsortbutton}}" data-bind-parent="$data">
+                            </gbx-button>
+                          </div>
+                          <div class="d-flex flex-nowrap flex-row align-items-center justify-content-between tab_panel_nav">
+                            <div class="tab_panel_nav_item_text" data-bind-value="{{$data.sorttext}}"></div>
+                          </div>
+                          <div class="tab_panel_right">
+                            <gbx-button data-input-id="mail-sort-right" gbx-component-id="hintbar_item"
+                              gbx-component-datamodel="data_entry:$data.nextsortbutton"
+                              data-bind-entry-model="{{$data.nextsortbutton}}" data-bind-parent="$data">
+                            </gbx-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap flex-row align-content-start divider">
+                  <div class="divider_left"></div>
+                  <div class="divider_center"></div>
+                  <div class="divider_right"></div>
+                </div>
+                <div class="d-flex flex-wrap flex-row align-items-center justify-content-center second_title"
+                  data-bind-if="{{$data.entries}}.length==0" data-bind-value="{{$data.nomailtext}}">
+                </div>
+                <div id="mail-list-wrapper" data-input-id="mail-list-wrapper" data-input-elem="true"
+                  class="mail_menu_list_button d-flex flex-wrap flex-row justify-content-center " data-input-beh="grid"
+                  data-input-default="true">
+                  <gbx-button class="d-full-width" data-bind-for="index,entry:{{$data.entries}}"
+                    data-bind-entry-model="{{entry}}">
+                    <div class="big_button_item_list" data-input-elem="true" data-bind-class="'mail-item-' + {{index}}"
+                      data-input-selected="index == {{$data.selectedentryindex}">
+                      <div class="d-flex flex-row flex-wrap align-content-start big_button_item_list_bg">
+                        <div class="big_button_item_list_bg_left"></div>
+                        <div class="big_button_item_list_bg_center"></div>
+                        <div class="big_button_item_list_bg_right"></div>
+                      </div>
+                      <div class="d-flex flex-row flex-wrap align-content-start big_button_item_list_bg_selected">
+                        <div class="big_button_item_list_bg_selected_left"></div>
+                        <div class="big_button_item_list_bg_selected_center"></div>
+                        <div class="big_button_item_list_bg_selected_right"></div>
+                      </div>
+                      <div class="big_button_item_list_content">
+                        <div
+                          class="d-flex flex-wrap felx-row align-items-center justify-content-between big_button_item_list_top">
+                          <div class="big_button_item_list_text" data-bind-value="{{entry.title}}"></div>
+                          <div class="big_button_item_list_rank" data-bind-value="{{entry.date}}"></div>
+                        </div>
+                        <div class="big_button_item_list_comp">
+                          <div class="big_button_item_list_comp_inner">
+                            <div class="bil_text" data-bind-value="{{entry.description}}"></div>
+                          </div>
+                        </div>
+                        <div class="item_new" data-bind-class-toggle="d-opacity:!{{entry.isnew}}">
+                          <div class="item_new_bg"></div>
+                        </div>
+                      </div>
+                      <div class="gradient_glow"></div>
+                      <div class="item_gliphy_cntr">
+                        <div class="item_gliphy_bottom"></div>
+                        <div class="item_gliphy_top"></div>
+                        <div class="item_gliphy_left"></div>
+                        <div class="item_gliphy_right"></div>
+                      </div>
+                    </div>
+                  </gbx-button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mail-list-scrollbar" class="scrollbar d-opacity">
+            <div class="scrollbar_scroll_up"></div>
+            <div class="scrollbar_scroll_down"></div>
+            <div class="scrollbar_bg">
+              <div class="scrollbar_bar"></div>
+              <div class="scrollbar_scroller">
+                <div class="scrollbar_scroller_up"></div>
+                <div class="scrollbar_scroller_center"></div>
+                <div class="scrollbar_scroller_down"></div>
+              </div>
+            </div>
+          </div>      
+        </div>      
+      </div>
+      <!-- DESCRIPTION PANEL -->
+      <div class="mail_menu_details_cntr">
+        <div class="mail_menu_details new_item_recieved"
+          data-bind-if="{{$data.entries}}.length>0 && {{$data.selectedentryindex}}>=0"
+          data-bind-class-toggle="no_mails:{{$data.entries}}.length==0">
+          <div class="description_panel">
+            <div class="transparency_panel_backing darker small">
+              <div class="transparency_panel_border"></div>
+              <div class="no_mail_text flex-row-justify-center second_title" data-bind-if="{{$data.entries}}.length==0"
+                data-bind-value="{{$data.nomailitemstext}}">
+              </div>
+              <div class="transparency_panel_content_container">
+                <div class="transparency_panel_content_parent">
+                  <div class="dp_cntr">
+                    <div class="dp_inner_header">
+                      <div class="dp_title">
+                        <div data-bind-value="{{$data.entries}}[$data.selectedentryindex].title">
+                          &nbsp;
+                        </div>
+                      </div>
+                      <div class="dp_description_tagline">
+                        <div data-bind-value="{{$data.entries}}[$data.selectedentryindex].description">
+                          &nbsp;
+                        </div>
+                      </div>
+                      <div class="text_divider">
+                      </div>
+                      <div class="dp_image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="mail-details-wrapper" class="dp_inner_cntr d-flex flex-column">
+                  <div class="paragraph bmd_description_text stroke_black"
+                    data-bind-html="{{$data.entries}}[$data.selectedentryindex].message"></div>
+                  <div class="mail_menu_image">
+                    <div class="text_backing">
+                      <div class="text_backing_border"></div>
+                      <div class="text_backing_content_container">
+                        <div class="text_backing_content_parent">
+                          <div class="text_backing_content">
+                            <div class="mail_menu_image_bg"
+                              data-bind-style-background-image-url="{{$data.selectedmailentryimagepath}}">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row tp_action_btn_cntr">
+                  <gbx-hintbar-item data-input-id="mail-accept-item" gbx-component-id="hintbar_item"
+                    gbx-component-datamodel="data_entry:$data.acceptitembutton"
+                    data-bind-entry-model="{{$data.acceptitembutton}}" data-bind-parent="$data">
+                  </gbx-hintbar-item>
+                </div>
+              </div>
+            </div>
+            <div id="mail-details-scrollbar" class="scrollbar d-opacity">
+              <div class="scrollbar_scroll_up"></div>
+              <div class="scrollbar_scroll_down"></div>
+              <div class="scrollbar_bg">
+                <div class="scrollbar_bar"></div>
+                <div class="scrollbar_scroller">
+                  <div class="scrollbar_scroller_up"></div>
+                  <div class="scrollbar_scroller_center"></div>
+                  <div class="scrollbar_scroller_down"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item_recieved no_interact">
+          <div class="celebration_message_hud new-parts">
+            <div class="celebration_message_title" data-bind-value="{{$data.newitemtext}}"></div>
+            <div class="celebration_message_subtitle" data-bind-value="{{$data.receiveditemtext}}"></div>
+            <div class="celebration_message_glyph"></div>
+            <div class="celebration_message_smoke"></div>
+          </div>
+        </div>
+      </div>
+      <!-- SDU WIDGET -->
+      <gbx-element id="sdu-player-widget" gbx-component-id="player_widget" class="player_widget_cntr"
+        data-bind-entry-model="{{$data.playerwidget}}"
+        gbx-component-datamodel="data_entry:$data.playerwidget,data_parent:$data" data-bind-parent="$data">
+      </gbx-element>  
+      <div class="matchmaking_search">
+        <gbx-element gbx-element-id="matchmaking_search_text" gbx-component-id="matchmaking_search_text"
+          data-bind-entry-model="{{$data.matchmakingsearch}}"
+          gbx-component-datamodel="data_entry:$data.matchmakingsearch,data_parent:$data" data-bind-parent="$data">
+        </gbx-element>
+      </div>
+    </div>
+    <!-- SOCIAL OFFLINE -->
+    <gbx-element class="social_offline d-none" gbx-component-id="social_offline"
+      data-bind-entry-model="{{$data.socialoffline}}"
+      gbx-component-datamodel="data_entry:$data.socialoffline,data_parent:$data" data-bind-parent="$data">
+    </gbx-element>
+  </div>
+  <link rel="stylesheet" type="text/css" href="mod/css/mod.css">
+  <script src="mod/js/mod.js"></script>
+</body>

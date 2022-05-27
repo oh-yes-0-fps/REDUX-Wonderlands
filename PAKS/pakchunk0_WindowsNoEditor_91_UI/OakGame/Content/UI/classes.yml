@@ -1,0 +1,88 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uiwidgetclass_defs:
+
+  - uiwidgetclass: menu_base
+    abstract: true
+    exclusive_input: true
+    use_cursor: true
+
+  - uiwidgetclass: list_menu
+    parent: !ref_uiwidgetclass menu_base
+    use_cursor: true
+    script_class: list_menu
+    path: list_menu/list_menu.html
+
+  - uiwidgetclass: basic_text  
+    path: debug/basic_text/basic_text.html
+
+uiwidget_defs:
+
+  - uiwidget: def_globalaudio
+    abstract: true
+    params:
+      audio:
+        menu_navigation: Menu_Global_Nav_Highlight         # Used when player highlights widgets during navigation
+        menu_click: Menu_Global_Nav_Click                  # Used when player clicks on or selects widgets
+        menu_confirm: Menu_Global_Nav_Click                # Used when player confirms choices, selections, or options
+        menu_cancel: Menu_Global_Nav_Cancel                    # Used when player cancels choices, selections, or options
+        menu_error: Menu_Global_Cancel                     # Used when player makes invalid choices or selections
+        menu_tab_slide: Menu_Global_Tab_Slide              # Used when player slides between menu or sub-menu tabs
+        menu_horizontal_selector: Menu_Global_Tab_Slide     # Used when player uses a horizontal selector in options menus
+        menu_slider_tick: Menu_Options_Slider_Click          # Used when player uses a slider in options menus
+        menu_close: Menu_Global_Nav_Close
+
+  - uiwidget: def_hudwidget
+    parent: !ref_uiwidget def_globalaudio
+    reject_tags: !tags
+      - CINEMATIC
+      - MENU
+
+  # Used for HUD widgets we want to see in cinematics (subtitles)
+  - uiwidget: def_hudwidget_cinematic
+    parent: !ref_uiwidget def_globalaudio
+    reject_tags: !tags
+      - MENU
+    
+
+  - uiwidget: def_menu_base
+    parent: !ref_uiwidget def_globalaudio
+    class: menu_base
+    reject_tags: !tags
+      - CINEMATIC
+
+  # Used for menus that may be showing up at the same time as cinematics
+  - uiwidget: def_menu_base_cinematic
+    parent: !ref_uiwidget def_globalaudio
+    class: menu_base
+
+  - uiwidget: def_start_menu
+    parent: !ref_uiwidget def_menu_base
+    provider_channels: !objs_channel
+    - channel: start_menu
+      provider: common_menu
+      context: player_controller  
+    params:
+      entry_invites: !objs_entry
+      - entry: invites
+        loc_text: !loc start_menu, InvitesEntry, Invites
+        actions: !objs_action
+          - action: open_invites
+      entry_social: !objs_entry
+      - entry: social
+        loc_text: !loc start_menu, SocialEntry, Social
+        actions: !objs_action
+          - action: state_add
+            payload: MENU_ROSTER
+      entry_Mod_Menu: !objs_entry
+      - entry: Mod_Menu
+        loc_text: !loc start_menu, ModMenuEntry, Mods
+        actions: !objs_action
+          - action: state_add
+            payload: MOD_MENU
+      - entry: exit_game
+        loc_text: !loc start_menu, ExitGameEntry, Exit Game
+        actions: !objs_action
+          - action: exit_game

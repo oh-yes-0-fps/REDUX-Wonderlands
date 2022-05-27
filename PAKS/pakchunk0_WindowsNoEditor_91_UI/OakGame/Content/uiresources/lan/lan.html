@@ -1,0 +1,144 @@
+<body>
+
+  <div class="widget full hidden">
+    <div class="lan_connection">
+
+      <div class="lc_panel_header">
+        <div class="d-flex flex-row flex-wrap align-content-start header">
+          <div class="header_border"></div>
+        </div>
+        <div class="lc_panel_title" data-bind-value="{{$data.title}}"></div>
+      </div>
+      <div class="big_panel">
+        <div class="big_panel_border"></div>
+        <div class="bigpanel_content_container">
+          <div class="bigpanel_content_parent">
+            <gbx-button data-input-id="lan-sort" gbx-component-id="hintbar_item"
+              gbx-component-datamodel="data_entry:$data.sortbutton" data-bind-entry-model="{{$data.sortbutton}}"
+              data-bind-parent="$data">
+            </gbx-button>
+            <div class="lc_column_tab">
+              <div class="text_backing darker">
+                <div class="text_backing_border"></div>
+                <div class="text_backing_content_container">
+                  <div class="text_backing_content_parent">
+                    <div class="paragraph text_backing_content">
+                      <div
+                        class="d-flex flex-row align-content-start align-items-center justify-content-between lc_column_titles">
+                        <div class="d-flex flex-row align-content-start lc_column_group_1">
+                          <div class="lc_column_host_name" data-bind-value="{{$data.hostnametext}}">
+                          </div>
+                          <div class="lc_column_mission" data-bind-value="{{$data.missiontext}}">
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-content-start lc_column_group_2">
+                          <div class="lc_column_players" data-bind-value="{{$data.playerstext}}">
+                          </div>
+                          <div class="lc_column_ping" contents="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="lan-entries-list" class="lc_button_list d-none" data-input-elem="true"
+              data-input-id="lan-entries-list" data-input-beh="grid" data-input-default="true"
+              data-bind-class-toggle="d-show:!{{$data.displaysearching}}&&!{{$data.displaynoserversfound}}">
+              <gbx-button class="lan_button_item" data-bind-for="index,entry:{{$data.entries}}"
+                data-bind-entry-model="{{entry}}">
+                <div class="button_item_list" data-input-elem="true" data-bind-class="{{entry.pingquality}}">
+                  <div class="d-flex flex-row flex-wrap align-content-start button_item_list_bg">
+                    <div class="button_item_list_bg_left">
+                    </div>
+                    <div class="button_item_list_bg_center">
+                    </div>
+                    <div class="button_item_list_bg_right">
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row flex-wrap align-content-start button_item_list_bg_selected">
+                    <div class="button_item_list_bg_selected_left">
+                    </div>
+                    <div class="button_item_list_bg_selected_center">
+                    </div>
+                    <div class="button_item_list_bg_selected_right">
+                    </div>
+                  </div>
+                  <div class="item_gliphy_cntr">
+                    <div class="item_gliphy_bottom">
+                    </div>
+                    <div class="item_gliphy_top">
+                    </div>
+                    <div class="item_gliphy_left">
+                    </div>
+                    <div class="item_gliphy_right">
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex flex-row align-content-start align-items-center justify-content-between button_item_list_content">
+                    <div
+                      class="d-flex flex-row align-content-start align-items-center button_item_list_content_group_1">
+                      <div class="button_item_list_text host_name" data-bind-value="{{entry.hostname}}"></div>
+                      <div class="button_item_list_text mission" data-bind-value="{{entry.mission}}"></div>
+                    </div>
+                    <div
+                      class="d-flex flex-row align-content-start align-items-center button_item_list_content_group_2">
+                      <div class="button_item_list_text players" data-bind-value="{{entry.players}}"></div>
+                      <div class="d-flex flex-row align-content-start align-items-end button_item_list_ping">
+                        <div class="button_item_list_ping_icon"></div>
+                        <div class="button_item_list_text ping" data-bind-value="{{entry.ping}}"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gradient_glow">
+                  </div>
+                </div>
+              </gbx-button>
+            </div>
+            <div class="d-none search_server"
+              data-bind-class-toggle="d-show:{{$data.displaynoserversfound}}||{{$data.displaysearching}}">
+              <div class="search_server_title d-none" data-bind-class-toggle="d-show:{{$data.displaynoserversfound}}"
+                data-bind-value="{{$data.noserversfoundtext}}"></div>
+              <div class="search_server_title d-none" data-bind-class-toggle="d-show:{{$data.displaysearching}}"
+                data-bind-value="{{$data.searchingtext}}+'...'"></div>
+              <div class="search_server_glyph" data-bind-class-toggle="searching:{{$data.displaysearching}}">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lan-scrollbar" class="scrollbar d-opacity">
+          <div class="scrollbar_scroll_up">
+          </div>
+          <div class="scrollbar_scroll_down">
+          </div>
+          <div class="scrollbar_bg">
+            <div class="scrollbar_bar">
+            </div>
+            <div class="scrollbar_scroller">
+              <div class="scrollbar_scroller_up">
+              </div>
+              <div class="scrollbar_scroller_center">
+              </div>
+              <div class="scrollbar_scroller_down">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lc_customization_glyph"></div>
+      </div>
+    </div>
+    <div class="matchmaking_search">
+      <gbx-element gbx-element-id="matchmaking_search_text" gbx-component-id="matchmaking_search_text"
+        data-bind-entry-model="{{$data.matchmakingsearch}}"
+        gbx-component-datamodel="data_entry:$data.matchmakingsearch,data_parent:$data" data-bind-parent="$data">
+      </gbx-element>
+    </div>
+    <gbx-element id="social_offline" class="social_offline d-none" gbx-component-id="social_offline"
+      data-bind-entry-model="{{$data.socialoffline}}"
+      gbx-component-datamodel="data_entry:$data.socialoffline,data_parent:$data" data-bind-parent="$data">
+    </gbx-element>
+  </div>
+  <link rel="stylesheet" type="text/css" href="lan/css/lan.css">
+  <script src="lan/js/lan.js"></script>
+</body>

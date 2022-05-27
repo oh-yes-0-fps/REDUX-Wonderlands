@@ -1,0 +1,20 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uistate_defs:
+  - uistate: TESTING_WIDGET
+    apply: !tags
+      - TESTING_WIDGET
+
+#UI Widget Definitions
+uiwidget_defs:
+
+  - uiwidget: def_testing_widget
+    class: testing_widget
+    require_tags: !tags
+      - DISABLED  # This widget seems to be no longer used.
+    params:
+      path:
+      data_model:
+        test_text: IM YAML TEST DATA

@@ -1,0 +1,104 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uistate_prefs:
+  layers: !objs_entry
+    - name: HUD
+      behavior: Show
+    - name: MENUS
+      behavior: Show
+    - name: POPUPS
+      behavior: Show
+    - name: CRITICAL
+      behavior: Show
+
+#UI State Definitions
+uistate_defs:
+
+  - uistate: HUD
+    apply: !tags
+     - HUD
+
+  - uistate: MONO
+    apply: !tags
+     - MONO
+
+  - uistate: MENU
+    apply: !tags
+      - MENU
+
+  - uistate: HIDE_FPS
+    apply: !tags
+      - HIDE_FPS
+
+  - uistate: STATUS_MENU
+    parent: !ref_uistate MENU
+    apply: !tags
+      - STATUS_MENU
+
+  - uistate: AURA_MENU
+    parent: !ref_uistate MENU
+    apply: !tags
+      - AURA_MENU
+
+  - uistate: MENU_DEBUG
+    parent: !ref_uistate MENU
+    apply: !tags
+      - MENU_DEBUG
+
+  - uistate: OVERWORLD
+    apply: !tags
+      - OVERWORLD
+
+  - uistate: SPECTATOR
+    apply: !tags
+      - SPECTATOR
+
+  - uistate: CINEMATIC
+    apply: !tags
+      - CINEMATIC
+
+  - uistate: HUD_RESURRECTION
+    apply: !tags
+      - HUD_RESURRECTION
+
+  - uistate: SPLITSCREEN_HIDDEN
+    apply: !tags
+      - SPLITSCREEN_HIDDEN
+
+  - uistate: HUD_INIT_STEP3
+    apply: !tags
+     - HUD_INIT_3
+
+  - uistate: HUD_INIT_STEP2
+    parent: !ref_uistate HUD_INIT_STEP3
+    apply: !tags
+     - HUD_INIT_2
+
+  - uistate: HUD_INIT_STEP1
+    parent: !ref_uistate HUD_INIT_STEP2
+    apply: !tags
+     - HUD_INIT_1
+
+  - uistate: HUD_INIT_STEP0
+    parent: !ref_uistate HUD_INIT_STEP1
+    apply: !tags
+     - HUD_INIT_0
+
+  - uistate: MENU_DEBUG_INGAME
+    parent: !ref_uistate MENU
+    apply: !tags
+     - MENU_DEBUG_INGAME
+
+  - uistate: MENU_SIGN_IN
+    apply: !tags
+      - MENU_SIGN_IN
+  
+  - uistate: SPLITSCREEN_MAIN_MENU_HIDE
+    apply: !tags
+      - SPLITSCREEN_MAIN_MENU_HIDE
+
+  - uistate: SPLITSCREEN_LOAD_CHARACTER_HACK
+    apply: !tags
+      - SPLITSCREEN_LOAD_CHARACTER_HACK

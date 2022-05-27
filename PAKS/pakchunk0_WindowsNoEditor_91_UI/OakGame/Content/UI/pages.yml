@@ -1,0 +1,119 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uipage_defs:
+
+  - uipage: ingame
+    path: ingame.html
+
+  - uipage: mono_view
+    path: mono_view.html
+
+  - uipage: inventory_page
+    path: inventory_page.html
+
+  - uipage: endlessdungeon_page
+    path: endlessdungeon_page.html
+
+  - uipage: endlessdungeon_victory_page
+    path: endlessdungeon_victory_page.html
+
+  - uipage: guardian_page
+    path: guardian_page.html
+
+  - uipage: map_page
+    path: map_page.html
+
+  - uipage: missions_page
+    path: missions_page.html
+
+  - uipage: skills_page
+    path: skills_page.html
+
+  - uipage: mayhem_page
+    path: mayhem_page.html
+
+  - uipage: main_page
+    path: main_page.html
+
+  - uipage: pause_page
+    path: pause_page.html
+
+  - uipage: player_storage_page
+    path: player_storage_page.html
+
+  - uipage: enchantmentreroller_page
+    path: enchantmentreroller_page.html
+
+  - uipage: asia_font_test
+    path: font_test/asia_font_test.html
+
+  - uipage: euro_font_test
+    path: font_test/euro_font_test.html
+
+  - uipage: photomode_page
+    path: photomode_page.html
+
+  - uipage: quickchange_page
+    path: quickchange_page.html
+
+  - uipage: newcharacter_page
+    path: newcharacter_page.html
+
+  - uipage: options_page
+    path: options_page.html
+
+  - uipage: shift_page
+    path: shift_page.html
+
+  - uipage: lan_page
+    path: lan_page.html
+
+  - uipage: roster_page
+    path: roster_page.html
+
+  - uipage: matchmaking_page
+    path: matchmaking_page.html
+
+  - uipage: mail_page
+    path: mail_page.html
+
+  - uipage: sdu_vendor_page
+    path: sdu_vendor_page.html
+
+  - uipage: vending_machine_page
+    path: vending_machine_page.html
+
+  - uipage: item_trading_page
+    path: item_trading_page.html
+
+  - uipage: item_inspect_page
+    path: item_inspect_page.html
+
+  - uipage: credits_page
+    path: credits_page.html
+
+  - uipage: screen_calibration_page
+    path: screen_calibration_page.html
+
+  - uipage: first_time_calibration_page
+    path: first_time_calibration_page.html
+
+  - uipage: press_start_page
+    path: press_start_page.html
+
+  - uipage: legal_page
+    path: legal_page.html
+
+  - uipage: crossplay_first_boot_page
+    path: crossplay_first_boot_page.html
+
+  - uipage: navbar_page
+    path: navbar_page.html
+
+  - uipage: navbar_aura_page
+    path: navbar_aura_page.html
+
+  - uipage: hintbar_page
+    path: hintbar_page.html

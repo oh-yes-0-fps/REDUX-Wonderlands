@@ -1,0 +1,93 @@
+<div class="item_card_abbreviated" data-bind-class="{{data_entry.rarity}};{{data_entry.cardtype}}"
+    data-bind-class-toggle="foil:{{data_entry.foil}};level-required:{{data_entry.islevelrequired}};">
+    <div class="item_card_abb_backing">
+        <div class="item_card_abb_backing_bg"></div>
+        <div class="item_card_abb_side_frame">
+            <div class="item_card_abb_side_frame_left">
+            </div>
+            <div class="item_card_abb_side_frame_right">
+            </div>
+        </div>
+    </div>
+    <div class="item_card_abb_top_frame">
+        <div class="item_card_abb_top_frame_alpha"></div>
+    </div>
+    <div class="item_card_abb_bottom_frame">
+        <div class="item_card_abb_bottom_frame_alpha"></div>
+    </div>
+    <div class="item_card_abb_header">
+        <div class="d-flex flex-row flex-nowrap align-items-start item_card_abb_score">
+            <div class="item_card_abb_score_value" data-bind-value="{{data_entry.score}}">124</div>
+        </div>
+        <div class="item_card_abb_damage_type">
+            <div class="icon_elemental_type item_damage_type" data-bind-class="{{data_entry.elementaldamage}}">
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-wrap flex-row item_card_abb_content">
+        <div class="item_card_abb_class_stats_skill_cntr" data-bind-if="{{data_entry.bhasabilitystats}}">
+            <div class="d-flex flex-nowrap flex-row align-items-center justify-content-between item_card_abb_class_stats_skill_inner"
+                data-bind-for="ability:{{data_entry.abilitystats}}">
+                <div class="item_card_abb_class_stats_skill">
+                    <div class="stats_skill_icon_bg"></div>
+                    <div class="item_card_abb_class_stats_skill_icon_type"
+                        data-bind-class-toggle="wrong-class:{{ability.wrongclass}}"
+                        data-bind-style-background-image-url="{{ability.secondaryicon}}"
+                        data-bind-class="{{ability.comparisonresult}}">
+                    </div>
+                    <div class="item_card_abb_class_stats_skill_icon"
+                        data-bind-style-background-image-url="{{ability.image}}">
+                    </div>
+                    <div class="item_card_abb_class_stats_skilll_value_cntr">
+                        <div class="item_card_abb_class_stats_skill_value" data-bind-value="{{ability.value}}"></div>
+                        <div class="stats_skill_bg"></div>
+                    </div>
+                    <div class="item_card_abb_class_stats_description_cntr">
+                        <div class="item_card_abb_class_stats_description"
+                            data-bind-text-markup-no-paragraph="{{ability.description}}"></div>
+                    </div>
+                </div>
+                <div class="item_card_abb_class_stats_skill_divider">
+                </div>
+            </div>
+        </div>
+        <div class="item_card_abb_stats_list">
+            <div class="item_card_abb_stats_attributes" data-bind-for="stat:{{data_entry.primarystats}}">
+                <div class="attribute_resume" data-bind-class="{{stat.comparisonresult}}">
+
+                    <div class="attribute_bg"></div>
+
+                    <div class="attribute_inner">
+                        <div class="attribute_name_icon">
+                            <div class="attribute_icon" data-bind-style-background-image-url="{{stat.image}}">
+                            </div>
+                            <div class="attribute_name" data-bind-value="{{stat.description}}"></div>
+                        </div>
+                        <div class="attribute_values">
+                            <div class="attribute_current_value" data-bind-text-markup-no-paragraph="{{stat.value}}">
+                            </div>
+                            <div class="attribute_difference_value"></div>
+                            <div class="attribute_difference_better_icon">
+                                <div class="item_attr_better_icon"></div>
+                            </div>
+                            <div class="attribute_difference_worse_icon">
+                                <div class="item_attr_worse_icon"></div>
+                            </div>
+                            <div class="attribute_difference_same_icon">-</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item_card_abb_weapon_logo_cntr">
+        <div class="item_card_abb_weapon_logo"
+            data-bind-style-background-image-url="{{data_entry.manufacturerimagepath}}">
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center align-items-center item_card_currency">
+        <div class="currency_icon" data-bind-class="{{data_entry.currencytype}}"></div>
+        <div class="item_card_currency_value" data-bind-value="{{data_entry.currency}}"></div>
+    </div>
+</div>

@@ -1,0 +1,515 @@
+.split-horizontal .item_card_icon  {
+	--flag-size: 18.96vh;
+	width: 18.96vh;
+	height: 18.96vh;
+	background-size: 151.70vh 75.84vh;
+}
+.split-horizontal .item_card_level_bg {
+	right: 2.24vh;
+	top: -1.38vh;
+}
+.split-horizontal .item_card_score_cntr {
+	top: 2.24vh;
+}
+.split-horizontal .item_card_score_value {
+	margin-top: 0.48vh;
+	margin-right: 1.28vh;
+	font-size: 5.76rem;
+	line-height: 5.76rem;
+}
+.split-horizontal .item_card_score_text {
+	margin-top: 1.12vh;
+	font-size: 2.72rem;
+	line-height: 2.72rem;
+	letter-spacing: 0.42rem;
+}
+.split-horizontal  .item_card_level_value {
+	font-size: 4.48rem;
+	line-height: 4.32rem;
+	letter-spacing: 0.16rem;
+}
+.split-horizontal .dlc-required .item_card_level_text.dlc {
+	margin-right: 1.6vh;
+	margin-bottom: 1vh;
+}
+.split-horizontal .item_card_level_text {
+	margin-top: 1.12vh;
+	margin-right: 0.96vh;
+	font-size: 2.88rem;
+	line-height: 2.88rem;
+	letter-spacing: 0.35rem;
+	max-height: 2.88rem;
+}
+.split-horizontal .item_card_stats_attributes {
+	height: 4.00vh;
+	margin-bottom: 0.61vh;
+}
+.split-horizontal .item_card_stats_attributes .attribute_resume {
+	height: 4.00vh;
+}
+.split-horizontal .item_card_stats_attributes .attribute_name,
+.split-horizontal .item_card_stats_attributes .attribute_difference_value,
+.split-horizontal .item_card_stats_attributes .attribute_current_value {
+	font-size: 2.88rem;
+	line-height: 2.88rem;
+	letter-spacing: 0.19rem;
+}
+.split-horizontal .item_card_stats_attributes .attribute_name,
+.split-horizontal .item_card_stats_attributes .attribute_current_value {
+	max-height: 3.04rem;
+}
+.split-horizontal .item_card_stats_attributes .attribute_name_icon {
+	padding-left: 0.16vh;
+	padding-right: 0.48vh;
+}
+.split-horizontal .item_card_stats_attributes .attribute_icon {
+	height: 3.84vh;
+	margin-left: 0.64vh;
+	margin-right: 0.32vh;
+	width: 3.84vh;
+}
+.split-horizontal .item_card_stats_attributes .attribute_values {
+	margin-left: 0.32vh;
+}
+.split-horizontal .item_card_stats_attributes .attribute_difference_better_icon,
+.split-horizontal .item_card_stats_attributes .attribute_difference_worse_icon,
+.split-horizontal .attribute_difference_same_icon {
+	height: 1.92vh;
+	width: 1.92vh;
+}
+.split-horizontal .item_card_stats_attributes .attribute_bg {
+	height: 4.00vh;
+}
+.split-horizontal .item_card_description {
+	margin-top: 0.80vh;
+	width: 61.28vh;
+}
+.split-horizontal .item_card_description_cntr {
+	padding-bottom: 1.28vh;
+	padding-top: 1.28vh;
+	width: 62.08vh;
+}
+.split-horizontal .item_card_description_item {
+	margin-bottom: 0.32vh;
+	padding-left: 1.12vh;
+	padding-right: 1.28vh;
+	width: 62.08vh;
+}
+.split-horizontal .item_card_description_item_pip {
+	height: 1.92vh;
+	margin-right: 1.12vh;
+	margin-top: 0.64vh;
+	width: 1.92vh;
+}
+.split-horizontal .Ammo .item_card_description_item,
+.split-horizontal .Mission .item_card_description_item {
+	padding-left: 0vh;
+	padding-right: 0vh;
+}
+.split-horizontal .item_card_description_text_cntr {
+	width: 52.68vh;
+}
+.split-horizontal .item_card_description_text {
+	font-size: 2.69rem;
+	letter-spacing: 0.21rem;
+	line-height: 3.52rem;
+}
+.split-horizontal .item_card {
+	min-height: 50.24vh;
+	width: 75.84vh;
+}
+.split-horizontal .item_card_equipped_icon,
+.split-horizontal .item_card_attention_icon {
+	height: 4.16vh;
+	top: 2.20vh;
+}
+.split-horizontal .item_card_equipped_icon {
+	right: 0.64vh;
+	width: 5.12vh;
+}
+.split-horizontal .item_card_attention_icon {
+	right: 9.28vh;
+	width: 4.16vh;
+}
+.split-horizontal .item_card_backing {
+	width: 65.60vh;
+}
+.split-horizontal .item_card_backing_bg {
+	bottom: 8.00vh;
+	top: 7.68vh;
+}
+.split-horizontal .item_card_side_frame {
+	top: 22.40vh;
+	bottom: 9.60vh;
+}
+.split-horizontal .item_card_side_frame_left,
+.split-horizontal .item_card_side_frame_right {
+	width: 1.89vh;
+}
+.split-horizontal .item_card_top_frame_alpha,
+.split-horizontal .item_card_bottom_frame_alpha {
+	height: 38.08vh;
+	width: 75.84vh;
+}
+.split-horizontal .item_card_bottom_frame_alpha {
+    background-position-y: -17vh;
+}
+.split-horizontal .item_card_top_frame {
+	height: 29.62vh;
+	width: 75.84vh;
+	background-size:  227.55vh  50.37vh;
+}
+.split-horizontal .item_card_bottom_frame {
+	width: 75.84vh;
+	height: 20.74vh;
+    background-position-y: -29.51vh;
+	background-size:  227.55vh  50.37vh;
+}
+.split-horizontal .foil .item_card_top_frame {
+	background-position-x: -75.84vh;
+	background-position-y: 0vh;
+}
+.split-horizontal .foil .item_card_bottom_frame {
+	background-position-x: -75.84vh;
+	background-position-y: -29.62vh;
+}
+.split-horizontal .mayhem .item_card_top_frame {
+	background-position-x: -151.70vh;
+	background-position-y: 0vh;
+}
+.split-horizontal .mayhem .item_card_bottom_frame {
+	background-position-x: -151.70vh;
+	background-position-y: -29.62vh;
+}
+.split-horizontal .item_card_requirement_bg {
+	height: 6.67vh;
+	top: 0.80vh;
+	right: 0.64vh;
+	width: 62.08vh;
+}
+.split-horizontal .item_card_currency {
+	width: 69.76vh;
+}
+.split-horizontal .item_card_score_cntr {
+	width: 64.00vh;
+}
+.split-horizontal .item_card_header {
+	padding-top: 0.96vh;
+}
+.split-horizontal .item_card_subtitle {
+	font-size: 2.88rem;
+	line-height: 2.88rem;
+	letter-spacing: 0.16rem;
+}
+.split-horizontal .item_card_weapon_name {
+	font-size: 4.96rem;
+	letter-spacing: 0.48rem;
+	line-height: 4.96rem;
+}
+.split-horizontal .item_card_weapon_logo_bottom {
+	height: 8.64vh;
+}
+.split-horizontal .item_card_weapon_logo_bg {
+	height: 8.64vh;
+}
+.split-horizontal .pauldron_top {
+	margin-bottom: 0.32vh;
+	margin-top: 1.92vh;
+}
+.split-horizontal .item_card_category_bg,
+.split-horizontal .pauldron_top .item_card_weapon_rarity_bg {
+	height: 3.52vh;
+}
+.split-horizontal .item_card_stats_skills {
+	margin-top: 1.28vh;
+}
+.split-horizontal .item_card_category_bg,
+.split-horizontal .item_card_weapon_rarity_bg {
+	height: 4.00vh;
+}
+.split-horizontal .item_card_category_name,
+.split-horizontal .item_card_weapon_rarity_name {
+	font-size: 3.52rem;
+	line-height: 3.52rem;
+	max-height: 3.52rem;
+    padding-left: 0.78vh;
+    padding-right: 0.78vh;
+	left: 0.2vh;
+}
+.split-horizontal .item_card_category {
+	margin-top: 1.6vh;
+	height: 4vh;
+	margin-bottom: -1.92vh;
+}
+.split-horizontal .Accessory .item_card_cust_description {
+	margin-bottom: 3.2vh;
+	margin-top: 6.4vh;
+	font-size: 2.68rem;
+	letter-spacing: 0.11rem;
+	line-height: 3.2rem;
+}
+.split-horizontal .item_card_stats_weapon {
+	width: 20.16vh;
+}
+.split-horizontal .item_card_weapon_cntr {
+	width: 15.36vh;
+	height: 8.64vh;
+	margin-bottom: 3.68vh;
+}
+.split-horizontal .item_card_weapon {
+    margin-bottom: 2.72vh;
+	margin-left: 1.60vh;
+}
+.split-horizontal .item_card_weapon_logo {
+    padding-left: 0.96vh;
+    height: 15.04vh;
+}
+.split-horizontal .item_card_stats_list {
+	margin-left: 0.96vh;
+	width: 40.48vh;
+}
+.split-horizontal .item_card_stats_elemental {
+	height: 3.52vh;
+	width: 61.76vh;
+}
+.split-horizontal .item_card_stats_elemental_icon {
+	height: 3.20vh;
+	width: 3.20vh;
+}
+.split-horizontal .item_card_stats_elemental_dextery {
+	font-size:2.88rem;
+	letter-spacing: 0.32rem;
+	line-height:2.88rem;
+	margin-right: 2.24vh;
+}
+.split-horizontal .item_card_stats_elemental_bg {
+	height: 3.52vh;
+}
+.split-horizontal .item_card_stats {
+	margin-top: 3.20vh;
+}
+.split-horizontal .item_card_stats_skill_description_cntr {
+	top: 1.60vh;
+	left: 17.60vh;
+}
+.split-horizontal .item_card_stats_skill_value_cntr {
+	top: 10.96vh;	
+	right: -1vh;
+	width: 7.36vh;
+    height: 4vh;
+}
+.split-horizontal .item_card_stats_skill_cntr {
+	height: 12.80vh;
+}
+.split-horizontal .item_card_stats_skill_bg {
+	height: 12.80vh;
+	left: 4.16vh;
+	width: 15.47vh;
+}
+.split-horizontal .item_card_stats_skill_type_icon {
+	height: 6.4vh;
+	width: 6.4vh;
+}
+.split-horizontal .item_card_stats_skill_icon {
+	height: 9.28vh;
+	width: 14.40vh;
+}
+.split-horizontal .item_card_stats_skill_description,
+.split-horizontal .item_card_stats_skill_value {
+	font-size: 3.44rem;
+	letter-spacing: 0.32rem;
+	line-height: 2.88rem;
+}
+.split-horizontal .item_card_stats {
+	margin-top: 2.24vh;
+}
+.split-horizontal .item_card_stats_class_cntr {
+	height: 13.44vh;
+	margin-right: 1.60vh;
+	width: 16.00vh;
+}
+.split-horizontal .item_card_stats_class_icon {
+	height: 11.52vh;
+	margin-top: 0.96vh;
+}
+.split-horizontal .item_card_weapon {
+	margin-bottom: 0.96vh;
+}
+.split-horizontal .item_card_content {
+	margin-top: 10.24vh;
+	margin-bottom: 10.24vh;
+	padding-bottom: 1.60vh;
+	width: 62.24vh;
+}
+.split-horizontal .item_card_currency {
+	bottom: 2.56vh;
+	width: 56.64vh;
+}
+.split-horizontal .item_card_currency_value {
+	font-size: 5.12rem;
+	letter-spacing: 0.16rem;
+	line-height: 5.12rem;
+	margin-left: 1.28vh;
+}
+.split-horizontal .item_card_weapon_rarity_top {
+	margin-bottom: 2.56vh;
+	height: 4vh;
+}
+.split-horizontal .Pauldron .item_card_weapon_logo_bottom {
+	width: 20.16vh;
+}
+.split-horizontal .Pauldron .item_card_stats {
+	margin-top: 1.92vh;
+}
+.split-horizontal .Money .item_card_weapon_rarity_top,
+.split-horizontal .Accessory .item_card_weapon_rarity_top,
+.split-horizontal .Mission .item_card_weapon_rarity_top,
+.split-horizontal .Ammo .item_card_weapon_rarity_top,
+.split-horizontal .Scrolls .item_card_weapon_rarity_top,
+.split-horizontal .healthPickup .item_card_weapon_rarity_top {
+	width: 61.60vh;
+}
+.split-horizontal .Money .text_backing_content_container,
+.split-horizontal .Mission .text_backing_content_container,
+.split-horizontal .healthPickup .text_backing_content_container,
+.split-horizontal .Scrolls .text_backing_content_container,
+.split-horizontal .Ammo .text_backing_content_container {
+	min-height: 22.56vh;
+}
+.split-horizontal .Money .item_card_stats_cntr,
+.split-horizontal .Accessory .item_card_stats_cntr,
+.split-horizontal .Mission .item_card_stats_cntr,
+.split-horizontal .Ammo .item_card_stats_cntr,
+.split-horizontal .Scrolls .item_card_stats_cntr,
+.split-horizontal .healthPickup .item_card_stats_cntr {
+	width: 35%;
+}
+.split-horizontal .Money .item_card_description_text_cntr,
+.split-horizontal .Accessory .item_card_description_text_cntr,
+.split-horizontal .Mission .item_card_description_text_cntr,
+.split-horizontal .Ammo .item_card_description_text_cntr,
+.split-horizontal .Scrolls .item_card_description_text_cntr,
+.split-horizontal .healthPickup .item_card_description_text_cntr {
+	width: 33.3vh;
+}
+.split-horizontal .Money .item_card_description,
+.split-horizontal .Accessory .item_card_description,
+.split-horizontal .Mission .item_card_description,
+.split-horizontal .Ammo .item_card_description,
+.split-horizontal .Scrolls .item_card_description,
+.split-horizontal .healthPickup .item_card_description {
+	margin-top: 7.04vh;
+	width: 33.2vh;
+	bottom: 1.60vh;
+	right: 0.64vh;
+	max-height: 22.84vh;
+}
+.split-horizontal .Mission .item_card_content{
+	margin-left: 15.34vh;
+}
+.split-horizontal .Mission .item_card_description_text_cntr,
+.split-horizontal .Mission .item_card_description {
+	width: 33.2vh;
+}
+.split-horizontal .Accessory .item_card_content {
+	margin-left: 0vh;
+}
+.split-horizontal .Accessory .item_card_description {
+	max-height: 15.52vh;
+}
+.split-horizontal .Accessory .item_card_stats_elemental {
+	bottom: -14.40vh;
+	width: 61.44vh;
+}
+.split-horizontal .Accessory .item_card_description_text_cntr {
+	width: 32.00vh;
+}
+.split-horizontal .Accessory .item_card_description {
+	margin-bottom: 3.20vh;
+	bottom: 4.00vh;
+}
+.split-horizontal .Ring .item_card_stats_list,
+.split-horizontal .Amulet .item_card_stats_list {
+	width: 100%;
+	margin-left: 0vh;
+	padding-left: 0.16vh;
+	padding-right: 0.80vh;
+}
+.split-horizontal .Ring .item_card_stats_weapon,
+.split-horizontal .Amulet .item_card_stats_weapon {
+	width: 100%;
+	padding-top: 4.64vh;
+	margin-bottom: 0.48vh;
+}
+.split-horizontal .Ring .item_card_weapon,
+.split-horizontal .Amulet .item_card_weapon {
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	margin-left: 0vh;
+}
+.split-horizontal .Ring .item_card_weapon_logo_bottom,
+.split-horizontal .Amulet .item_card_weapon_logo_bottom {
+	width: 48%;
+}
+.split-horizontal .Ring .item_card_weapon_logo_bg,
+.split-horizontal .Amulet .item_card_weapon_logo_bg {
+	left: 0vh;
+	top: 0vh;
+	height: 8.64vh;
+}
+.split-horizontal .Ring .item_card_weapon_cntr,
+.split-horizontal .Amulet .item_card_weapon_cntr {
+	width: 48%;
+	height: 8.64vh;
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	margin-left: 0.48vh;
+	margin-right: 0.32vh;
+	left: 0%;
+}
+.split-horizontal .item_card_weapon {
+	width: 18.96vh;
+	height: 18.96vh;	
+	background-size: 94.80vh 75.84vh;
+	--weapon-flag-size : 18.96vh;
+	--flag-size: 18.96vh;
+	transform: translateX(-50%) translateY(-50%) scale(0.56, 0.56);
+}
+.split-horizontal .item_card_weapon.Pistol,
+.split-horizontal .item_card_weapon.Shotgun,
+.split-horizontal .item_card_weapon.SMG,
+.split-horizontal .item_card_weapon.Sniper,
+.split-horizontal .item_card_weapon.Heavy,
+.split-horizontal .item_card_weapon.AssaultRifle {
+	background-size: contain;
+}
+.split-horizontal .mayhem .item_card_subtitle_mayhem {
+    top: -1.6vh;
+	font-size: 2.88rem;
+	line-height: 2.88rem;
+	letter-spacing: 0.16rem;
+}
+.split-horizontal .item_owned_text {
+    font-size: 3.52rem;
+}
+.split-horizontal .item_card.mirror .attribute_value_txt {
+	margin-left: 0.64vh;
+}
+
+.split-horizontal .item_card_weapon.Health,
+.split-horizontal .item_card_weapon.AmmoPistol,
+.split-horizontal .item_card_weapon.AmmoSniper,
+.split-horizontal .item_card_weapon.AmmoSMG ,
+.split-horizontal .item_card_weapon.AmmoAssaultRifle,
+.split-horizontal .item_card_weapon.AmmoHeavy,
+.split-horizontal .item_card_weapon.AmmoShotgun {
+	background-size: 151.69vh 75.61vh;
+}
+
+.split-horizontal .Money .item_card_content,
+.split-horizontal .Mission .item_card_content,
+.split-horizontal .Scrolls .item_card_content,
+.split-horizontal .Ammo .item_card_content,
+.split-horizontal .healthPickup .item_card_content {
+    margin-left: 14.9vh;
+}

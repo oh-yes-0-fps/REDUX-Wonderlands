@@ -1,0 +1,16 @@
+priority: 1.0
+revision: 1
+author: steve.hebert
+
+# These defs are now unused after changes to glyph_manager.js to get the information from these CSS files from a map instead.
+glyph_defs:
+  - glyph: mouse_keyboard
+    source_path: coui://uiresources/glyphs/css/glyph_keyboard_mouse.css
+  - glyph: dualshock
+    source_path: coui://uiresources/glyphs/css/glyph_dualshock.css
+  - glyph: dualsense
+    source_path: coui://uiresources/glyphs/css/glyph_dualsense.css
+  - glyph: microsoft_gamepad
+    source_path: coui://uiresources/glyphs/css/glyph_microsoft_gamepad.css
+  - glyph: microsoft_gamepad_xsx
+    source_path: coui://uiresources/glyphs/css/glyph_microsoft_gamepad_xsx.css

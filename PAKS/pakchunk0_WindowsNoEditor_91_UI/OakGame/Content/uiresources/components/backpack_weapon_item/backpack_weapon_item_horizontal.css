@@ -1,0 +1,144 @@
+.split-horizontal .backpack_weapons_item {
+	height: 15.71vh;
+	margin-top: 0vh;
+	margin-right: 0.80vh;
+	margin-bottom: 1.60vh;
+	margin-left: 0.80vh;
+	width: 26.88vh;
+}
+.split-horizontal .backpack_cell_bg,
+.split-horizontal .backpack_weapons_item_cracks,
+.split-horizontal .backpack_cell_border,
+.split-horizontal .backpack_cell_selection {
+	background-size: 108.80vh 33.12vh;
+}
+.split-horizontal .backpack_cell_bg {
+	background-position-x: -54.40vh;
+	background-position-y: -0.64vh;
+}
+.split-horizontal .backpack_cell_border {
+	background-position-x: 0vh;
+	background-position-y: -0.64vh;
+}
+.split-horizontal .backpack_weapons_item_img {	
+	width: 20.8vh;
+	height: 100%;
+}
+.split-horizontal .backpack_cell_selection {
+	background-position-x: -27.20vh;
+	background-position-y: -0.64vh;
+}
+.split-horizontal .backpack_weapons_item_details_bg {
+	bottom: 0.96vh;
+	height: 4.48vh;
+	width: 25.28vh;
+	background-size: 108.80vh 33.12vh;
+	background-position-x: -82.40vh;
+	background-position-y: -18.24vh;
+}
+.split-horizontal .backpack_weapons_item_value {
+	bottom: 1.8vh;
+	left: 3.52vh;
+	font-size: 2.88rem;
+	letter-spacing: 0.16rem;
+	line-height: 2.88rem;
+}
+.split-horizontal .backpack_weapons_item_logo {
+	bottom: -1.04vh;
+	height: 6.56vh;
+	width: 10.40vh;
+}
+.split-horizontal .backpack_weapons_item .item_damage_type {
+	bottom: 1.4vh;
+	right: 2.72vh;
+}
+.split-horizontal .backpack_weapons_item .item_junk,
+.split-horizontal .backpack_weapons_item .item_favorite,
+.split-horizontal .backpack_weapons_item .item_mission_icon {
+	top: 1.60vh;
+	right: 1.92vh;
+}
+.split-horizontal .backpack_weapons_item .item_equipped {
+	top: 0vh;
+	left: 0vh;
+}
+.split-horizontal .backpack_weapons_item .item_new {
+	right: -0.96vh;
+	top: 4.80vh;
+}
+.split-horizontal .item_empty_text {
+	font-size: 3.84rem;
+}
+.split-horizontal .backpack_weapons_item_logo_cntr {
+    height: 4.00vh;
+    width: 10.40vh;
+    bottom: 0.00vh;
+    transform: translateX(-45%);
+}
+.split-horizontal .backpack_weapons_item .item_peak_bg {
+	height: 8.00vh;
+    width: 8.00vh;
+    background-size: 32.00vh 8.00vh;
+    background-position-x: -0.48vh;
+}
+.split-horizontal .item_cell_state_text {
+	bottom: 6.08vh;
+	font-size: 3.84rem;
+	line-height: 2.88rem;
+}
+.split-horizontal .backpack_weapons_item .item_gliphy_cntr {
+	height: 10.88vh;
+	width: 46.40vh;
+}
+.split-horizontal .backpack_weapons_item .item_gliphy_top,
+.split-horizontal .backpack_weapons_item .item_gliphy_bottom {
+	visibility: hidden;
+}
+.split-horizontal .backpack_weapons_item .item_gliphy_left {
+	left: 10.56vh;
+}
+.split-horizontal .backpack_weapons_item .item_gliphy_right {
+	right: 10.56vh;
+}
+.split-horizontal .backpack_weapons_item .gradient_glow {
+	top: -1.44vh;
+    min-height: 14.08vh;
+}
+.split-horizontal .backpack_weapons_item.common .backpack_weapons_item_cracks {
+	background-position-x: -81.60vh;
+	background-position-y: -0.64vh;
+}
+.split-horizontal .backpack_weapons_item.uncommon .backpack_weapons_item_cracks {
+	background-position-x: -81.60vh;
+	background-position-y: -0.64vh;
+}
+.split-horizontal .backpack_weapons_item.rare .backpack_weapons_item_cracks {
+	background-position-x: 0vh;
+	background-position-y: -17.12vh;
+}
+.split-horizontal .backpack_weapons_item.epic .backpack_weapons_item_cracks {
+	background-position-x: -27.20vh;
+	background-position-y: -17.12vh;
+}
+.split-horizontal .backpack_weapons_item.legendary .backpack_weapons_item_cracks {
+	background-position-x: -54.40vh;
+	background-position-y: -17.12vh;
+}
+.split-horizontal .backpack_weapons_item.selected  .item_gliphy_left {
+	left: 6.72vh;
+}
+.split-horizontal .backpack_weapons_item.selected  .item_gliphy_right {
+	right: 6.72vh;
+}
+.split-horizontal .backpack_weapons.selected .item_gliphy_left,
+.split-horizontal .backpack_weapons_item[data-input-focused=true] .item_gliphy_left {
+	left: 5.5vh;
+}
+.split-horizontal .backpack_weapons.selected .item_gliphy_right,
+.split-horizontal .backpack_weapons_item[data-input-focused=true] .item_gliphy_right {
+	right: 5.5vh;
+}
+.split-horizontal .backpack_weapons .item_select_top {
+	height: 8.32vh;
+	left: 44%;
+}

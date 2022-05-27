@@ -1,0 +1,222 @@
+<!--<div class="item_card" data-bind-class="{{data_entry.rarity}};{{data_entry.cardtype}}" #This still has mayhem txt
+  data-bind-class-toggle="foil:{{data_entry.foil}};dlc-required:{{data_entry.isdlcrequired}};level-required:{{data_entry.islevelrequired}};mayhem:{{data_entry.mayhem}};hidelevel:!{{data_entry.useslevelrequirement}};hidecurrency:!{{data_entry.usescurrency}};hideitemscore:!{{data_entry.usesitemscore}}">-->
+<div class="item_card" data-bind-class="{{data_entry.rarity}};{{data_entry.cardtype}}"
+  data-bind-class-toggle="foil:{{data_entry.foil}};dlc-required:{{data_entry.isdlcrequired}};level-required:{{data_entry.islevelrequired}};hidelevel:!{{data_entry.useslevelrequirement}};hidecurrency:!{{data_entry.usescurrency}};hideitemscore:!{{data_entry.usesitemscore}}">-->
+  <div class="item_card_backing">
+    <div class="item_card_backing_bg">
+    </div>
+    <div class="item_card_side_frame">
+      <div class="item_card_side_frame_left">
+      </div>
+      <div class="item_card_side_frame_right">
+      </div>
+    </div>
+  </div>
+  <div class="item_card_top_frame">
+    <div class="item_card_top_frame_alpha"></div>
+    <div class="item_card_requirement_bg"></div>
+  </div>
+  <div class="item_card_bottom_frame">
+    <div class="item_card_bottom_frame_alpha"></div>
+  </div>
+  <div class="item_card_equipped_icon">
+    <div class="item_equipped">
+    </div>
+  </div>
+  <div class="item_card_attention_icon item_attention_soft">
+    <div class="item_noticed">
+    </div>
+  </div>
+  <div class="item_card_score_cntr">
+    <div class="item_card_score">
+      <div class="item_card_score_value" data-bind-text-markup-no-paragraph="{{data_entry.score}}"></div>
+      <div class="item_card_score_text" data-bind-text-markup-no-paragraph="{{data_entry.labelscore}}"></div>
+    </div>
+    <div class="item_card_level">
+      <div class="item_card_level_bg"></div>
+      <div class="item_card_level_text dlc" data-bind-text-markup-no-paragraph="{{data_entry.dlcrequiredtext}}">
+      </div>
+      <div class="item_card_level_text" data-bind-text-markup-no-paragraph="{{data_entry.labelrequiredplayerlevel}}">
+      </div>
+      <div class="item_card_level_value" data-bind-text-markup-no-paragraph="{{data_entry.requiredplayerlevel}}"></div>
+    </div>
+  </div>
+  <div class="item_card_content">
+<!--    <div class="item_card_subtitle_mayhem" data-bind-if="{{data_entry.mayhem}}"
+      data-bind-value="{{data_entry.mayhemtext}}"></div>-->
+    <div class="item_card_header">
+      <div class="item_card_weapon_name item_card_header_title"
+        data-bind-text-markup-no-paragraph="{{data_entry.itemname}}"></div>
+    </div>
+    <div class="item_card_category" data-bind-class="{{data_entry.imagepath}}">
+      <div class="item_card_category_bg"></div>
+      <div class="item_card_category_name" data-bind-text-markup-no-paragraph="{{data_entry.categorytext}}"></div>
+    </div>
+    <div class="item_card_stats_cntr">
+      <div class="item_card_weapon_rarity_top pauldron_top">
+        <div class="item_card_weapon_rarity_bg">
+        </div>
+        <div class="item_card_weapon_rarity_name" data-bind-text-markup-no-paragraph="{{data_entry.raritytext}}">
+        </div>
+      </div>
+      <div class="item_card_stats_skills">
+
+        <div class="item_card_stats_skill_cntr" data-bind-for="skill:{{data_entry.abilitystats}}">
+          <div class="item_card_stats_skill_type_icon" data-bind-class-toggle="wrong-class:{{skill.wrongclass}}"
+            data-bind-style-background-image-url="{{skill.secondaryicon}}" data-bind-class="{{skill.comparisonresult}}">
+          </div>
+          <div class="item_card_stats_skill_value_cntr">
+            <div class="item_card_stats_skill_value" data-bind-text-markup-no-paragraph="{{skill.value}}"></div>
+          </div>
+          <div class="item_card_stats_skill_description_cntr">
+            <div class="item_card_stats_skill_description" data-bind-text-markup-no-paragraph="{{skill.description}}">
+            </div>
+          </div>
+          <div class="item_card_stats_skill_bg">
+            <div class="item_card_stats_skill_icon" data-bind-style-background-image-url="{{skill.image}}">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="item_card_stats">
+        <div class="stats_container">
+          <div class="item_card_stats_weapon">
+            <div class="item_card_weapon_rarity_top">
+              <div class="item_card_weapon_rarity_bg">
+              </div>
+              <div class="item_card_weapon_rarity_name" data-bind-text-markup-no-paragraph="{{data_entry.raritytext}}">
+              </div>
+            </div>
+            <div class="item_card_weapon_cntr">
+              <div class="item_card_weapon icon_base" data-bind-class="{{data_entry.imagepath}}">
+              </div>
+              <div class="item_card_weapon icon_mask" data-bind-class="{{data_entry.imagepath}}">
+              </div>
+            </div>
+            <div class="item_card_weapon_logo_bottom" data-bind-if="{{data_entry.bhasmanufacturerimagepath}}">
+              <div class="item_card_weapon_logo_bg">
+              </div>
+              <div class="item_card_weapon_logo"
+                data-bind-style-background-image-url="{{data_entry.manufacturerimagepath}}">
+              </div>
+            </div>
+          </div>
+          <div class="item_card_cust_description">
+            <div class="item_card_cust_description_value" data-bind-value="{{data_entry.description}}"></div>
+          </div>
+          <div class="item_card_stats_list">
+            <div class="item_card_stats_attributes" data-bind-for="stat:{{data_entry.primarystats}}">
+              <div class="attribute_resume" data-bind-class="{{stat.comparisonresult}}"
+                data-bind-class-toggle="disabled:!{{stat.bhasvalue}}">
+                <div class="attribute_bg"></div>
+                <div class="attribute_name_icon">
+                  <div class="attribute_icon" data-bind-style-background-image-url="{{stat.image}}">
+                  </div>
+                  <div class="attribute_name" data-bind-text-markup-no-paragraph="{{stat.description}}"></div>
+                  <div class="attribute_current_value">
+                    <div class="attribute_value_txt" data-bind-text-markup-no-paragraph="{{stat.value}}"></div>
+                    <div class=" attribute_values">
+                      <div class="attribute_difference_value">-2</div>
+                      <div class="attribute_difference_better_icon">
+                        <div class="item_attr_better_icon">
+                        </div>
+                      </div>
+                      <div class="attribute_difference_worse_icon">
+                        <div class="item_attr_worse_icon">
+                        </div>
+                      </div>
+                      <div class="attribute_difference_same_icon">-</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item_card_stats_attributes fake">
+              <div class="attribute_resume" data-bind-if="{{data_entry.primarystats}}.length<1">
+                <div class="attribute_bg"></div>
+              </div>
+              <div class="attribute_resume" data-bind-if="{{data_entry.primarystats}}.length<2">
+                <div class="attribute_bg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item_card_stats_elemental" data-bind-if="{{data_entry.elementaldamage}}.length>0"
+          data-bind-class="{{data_entry.elementaldamage}}">
+          <div class="item_card_stats_elemental_bg">
+          </div>
+          <div class="item_card_stats_elemental_icon">
+            <div class="item_damage_type" data-bind-class="{{data_entry.elementaldamage}}">
+            </div>
+          </div>
+          <div class="item_card_stats_elemental_dextery">
+            <div data-bind-text-markup-no-paragraph="{{data_entry.elementalstat.description}}"></div>
+          </div>
+          <div class="item_card_stats_elemental_dextery">
+            <div data-bind-text-markup-no-paragraph="{{data_entry.elementalstat.value}}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item_card_description" data-bind-if="{{data_entry.bhassecondarystats}}">
+      <div class="text_backing">
+        <div class="text_backing_border"></div>
+        <div class="text_backing_content_container">
+          <div class="text_backing_content_parent">
+            <div class="paragraph text_backing_content">
+              <div class="item_card_description_cntr">
+                <div class="item_card_description_item" data-bind-for="secondarystat:{{data_entry.secondarystats}}">
+                  <div class="item_card_description_item_pip">
+                    <div class="item_pip">
+                    </div>
+                  </div>
+                  <div class="item_card_description_text_cntr">
+                    <div class="item_card_description_text">
+                      <div data-bind-text-markup="{{secondarystat.value}}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item_owned_text" data-bind-if="{{data_entry.showalreadyknowntext}}"
+      data-bind-value="{{data_entry.alreadyknowntext}}">
+    </div>
+    <div class="item_card_description manufacturer_stats" data-bind-if="{{data_entry.bhasmanufacturerstats}}">
+      <div class="text_backing">
+        <div class="text_backing_border"></div>
+        <div class="text_backing_content_container">
+          <div class="text_backing_content_parent">
+            <div class="paragraph text_backing_content">
+              <div class="item_card_description_cntr">
+                <div class="item_card_description_item"
+                  data-bind-for="manufacturerstat:{{data_entry.manufacturerstats}}">
+                  <div class="item_card_description_item_pip">
+                    <div class="item_pip">
+                    </div>
+                  </div>
+                  <div class="item_card_description_text_cntr">
+                    <div class="item_card_description_text">
+                      <div data-bind-text-markup="{{manufacturerstat.value}}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item_card_currency" data-bind-if="{{data_entry.cansell}}">
+    <div class="currency_icon" data-bind-class="{{data_entry.currencytype}}"></div>
+    <div class="item_card_currency_value" data-bind-value="{{data_entry.currency}}"></div>
+  </div>
+</div>

@@ -1,0 +1,110 @@
+.split-4p .backpack {
+	height: 68.80vh;
+	right: 8.00vh;
+	padding-left: 5.60vh;
+	padding-right: 5.60vh;
+	top: 16.32vh;
+	width: 81.60vh;
+}
+.split-4p .backpack .scrollbar {
+	height: 46.40vh;
+	top: 17.28vh;
+	right: 9.60vh;
+}
+.split-4p .backpack_frame_header {
+	height: 10.88vh;
+}
+.split-4p .backpack_title {
+	top: 3.20vh;
+	font-size: 4.16rem;
+	letter-spacing: 0.16rem;
+	line-height: 4.16rem;
+}
+.split-4p .backpack_sort {
+	height: 4.80vh;
+	margin-top: 1.44vh;
+	width: 57.92vh;
+	margin-left: 1vh;
+}
+.split-4p .backpack_sort_left,
+.split-4p .backpack_sort_right {
+	height: 6.40vh;
+	width: 6.40vh;
+}
+.split-4p .backpack_sort_left {
+	left: 2vh;
+}
+.split-4p .backpack_sort_right {
+	right: 1vh;
+}
+.split-4p .backpack_sort_by {
+	width: 40.00vh;
+	display: flex;
+	justify-content: center;
+}
+.split-4p .backpack .tab_panel .tab_panel_nav_item_text,
+.split-4p .backpack_sort_name,
+.split-4p .backpack_sort_type {
+	font-size: 3.52rem;
+	letter-spacing: 0.16rem;
+	line-height: 3.52rem;
+}
+.split-4p .backpack_sort_type {
+	margin-left: 1.28vh;
+}
+.split-4p .backpack .divider {
+	padding-left: 7.84vh;
+    padding-right: 8.00vh;
+	height: 4.6vh;
+}
+.split-4p .backpack .big_panel {
+	margin-top: -6.40vh;
+	min-height: 76.16vh;
+}
+.split-4p .backpack .big_panel .bigpanel_content_container {
+	margin-bottom: 9.60vh;
+	margin-left: -5.60vh;
+	margin-top: 6.40vh;
+	margin-right: -5.60vh;
+	min-height: 58vh;
+}
+.split-4p .backpack_weapons {
+	padding-top: 0.00vh;
+	padding-bottom: 4.80vh;
+	max-height: 51vh;
+}
+.split-4p .backpack_weapons_item {
+	margin-bottom: 2.08vh;
+	margin-left: 0.80vh;
+	margin-right: 0.80vh;
+}
+
+
+/* 4p */
+.split-4p .backpack .tab_panel {
+	width: 25.24vh;
+	text-align: center;
+	transform: none;
+	left: initial;
+	bottom: initial;
+	right: 0vh;
+	margin-top: 1vh;
+	width: 29vh;
+}
+.split-4p .backpack .tab_panel .action_btn {
+	margin-left: -3vh;
+	margin-right: -3vh;
+}
+.split-4p .backpack .tab_panel .action_btn .action_btn_icon_cntr{
+    margin-right: 3.20vh;
+    margin-left: 3.20vh;
+}
+.split-4p .backpack .tab_panel .backing_top_bg {
+	min-width: 25.44vh;
+}
+.split-4p .backpack .tab_panel .tab_panel_nav_item_text {
+	max-width: 19vh;
+	text-align: center;
+	margin-left: 1.2vh;
+	margin-right: 1.2vh;
+}

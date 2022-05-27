@@ -1,0 +1,644 @@
+.item_card_abbreviated .icon_elemental_type{
+width: 8vh;
+height:8vh;
+background-position: center;
+background-size: cover;
+display: flex;
+flex-direction: column;
+}
+
+.item_card_abbreviated {
+	min-height: 24vh;
+	position: absolute;
+	transform-origin: center;
+	width: 23.7vh;
+	z-index: 5;
+}
+.item_card_abbreviated .item_card_abb_backing,
+.item_card_abbreviated .item_card_abb_top_frame,
+.item_card_abbreviated .item_card_abb_top_frame_alpha,
+.item_card_abbreviated .item_card_abb_bottom_frame,
+.item_card_abbreviated .item_card_abb_bottom_frame_alpha {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+.item_card_abbreviated .item_card_abb_backing {
+	position: absolute;
+	height: 100%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 15.3vh;
+}
+.item_card_abbreviated .item_card_abb_top_frame,
+.item_card_abbreviated .item_card_abb_top_frame_alpha,
+.item_card_abbreviated .item_card_abb_bottom_frame,
+.item_card_abbreviated .item_card_abb_bottom_frame_alpha {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 23.7vh;
+	pointer-events: none;
+	width: 23.7vh;
+}
+.item_card_abbreviated .item_card_abb_top_frame {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-HeaderBase.png");
+	top: 0vh;
+	z-index: 1;
+}
+.item_card_abbreviated .item_card_abb_bottom_frame {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-FooterBase.png");
+	bottom: 0vh;
+	z-index: 1;
+}
+.item_card_abbreviated .item_card_abb_top_frame_alpha,
+.item_card_abbreviated .item_card_abb_bottom_frame_alpha {
+	opacity: 0.6;
+	filter: coh-color-matrix(0, 0, 0, 0, 0.569, 0, 0, 0, 0, 0.569, 0, 0, 0, 0, 0.569, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated .item_card_abb_top_frame_alpha {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-HeaderTint.tga");
+}
+.item_card_abbreviated .item_card_abb_bottom_frame_alpha {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-FooterTint.tga");
+}
+.item_card_abbreviated .item_card_abb_header,
+.item_card_abbreviated .item_card_abb_content,
+.item_card_abbreviated .item_card_abb_weapon_logo_cntr {
+	z-index: 1;
+}
+.item_card_abbreviated .item_card_abb_weapon_logo_cntr {
+	height: 4.2vh;
+	margin-left: 6vh;
+	margin-bottom: 2.8vh;
+	width: 11.8vh;
+}
+.item_card_abbreviated .item_card_abb_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 1, 0);
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.item_card_abbreviated .item_card_abb_backing .item_card_abb_backing_bg {
+	background-color: rgba(10, 10, 11, 0.62);
+	bottom: 2vh;
+	left: 0vh;
+	position: absolute;
+	top: 5vh;
+	right: 0vh;
+	width: 100%;
+}
+.item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame {
+	bottom: 6vh;
+	left: 0vh;
+	right: 0vh;
+	top: 5vh;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+}
+.item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_left,
+.item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_right {
+	height: 100%;
+	position: absolute;
+	top: 0vh;
+	width: 1.2vh;
+	z-index: 1;
+	background-image: url("../../item_card/assets/ItemCard_SideFrame.png");
+	background-repeat: repeat-y;
+	background-size: 1.2vh 2.6vh;
+}
+.item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_left {
+	left: 0vh;
+}
+.item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_right {
+	right: 0vh;
+	transform: scaleX(-1);
+}
+.item_card_abbreviated .item_card_abb_header {
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	top: 1.5vh;
+	width: 16.2vh;
+}
+.item_card_abbreviated .item_card_abb_header .item_card_abb_score {
+	position: relative;
+}
+.item_card_abbreviated .item_card_abb_header .item_card_abb_score_value {
+	color: #bcbcbc;
+	font-family: var(--header-font);
+	font-size: 3.60rem;
+	letter-spacing: 0rem;
+	line-height: 3.60rem;
+	text-align: center;
+	text-stroke: 0.3rem black;
+	text-transform: none;
+	width: 100%;
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+.item_card_abbreviated .item_card_abb_header .item_card_abb_damage_type {
+	height: 2.2vh;
+	position: absolute;
+	right: 1.5vh;
+	top: .8vh;
+	width: 2.2vh;
+}
+.item_card_abbreviated .item_damage_type {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%) scale(0.34, 0.34);
+	transform-origin: center;
+}
+.item_card_abbreviated .item_card_abb_content {
+	width: 12vh;
+	margin-top: 6.4vh;
+	margin-left: 5.9vh;
+	flex: 1 1 auto;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_divider {
+	background-color: #504c6f;
+	height: 0.3vh;
+	margin-right: 1vh;
+	width: 2.4vh;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill {
+	height: 5.2vh;
+	margin-right: 1vh;
+	margin-bottom: 1vh;
+	position: relative;
+	width: 7.2vh;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_description,
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_value {
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	color: #e8d6b5;
+	font-family: var(--body-font);
+	font-size: 1.5rem;
+	height: 100%;
+	top: 50%;
+	letter-spacing: 0.2rem;
+	text-stroke: 0.3rem black;
+	text-align: center;
+	line-height: 2.2rem;
+	z-index: 1;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_description {
+	font-size: 2rem;
+}
+
+.item_card_abbreviated .item_card_abb_content .stats_skill_bg {
+	background-image: url("../../_shared/assets/skill_screen/gear_overlay_small.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skilll_value_cntr {
+	height: 2vh;
+	position: absolute;
+    left: 4vh;
+    bottom: -0.4vh;
+    width: 4vh;
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon_type.better {
+	filter: coh-color-matrix(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.83, 0, 0, 0, 0, 0.2, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon_type.worse {
+	filter: coh-color-matrix(0, 0, 0, 0, 1, 0, 0, 0, 0, 0.27, 0, 0, 0, 0, 0.27, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon_type {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: 50%;
+	background-position-y: 50%;	
+    position: absolute;
+    left: -0.5vh;
+    bottom: -0.9vh;
+	height: 3.2vh;
+    width: 3.2vh;
+    z-index: 1;
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_description_cntr {
+    position: absolute;
+	top: 0.8vh;
+    right: -1.5vh;
+    z-index: 1;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_bg {
+	position: absolute;
+	left: 0vh;
+	top: 0vh;
+	transform-origin: left top;
+	transform: scale(0.23, 0.23);
+	z-index: -1;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_stats_list {
+	width: 100%;
+}
+.item_card_abbreviated .item_card_abb_content .item_card_abb_stats_attributes {
+	height: 2.6vh;
+	margin-bottom: 0.6vh;
+	width: 100%;
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr {
+	width: 100%;
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr .stats_skill_icon_bg {
+	background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon {
+	margin-top: 0.7vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 5.6vh;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	width: 5.6vh;
+}
+.item_card_abbreviated .item_card_abb_stats_attributes .attribute_resume {
+	height: 3.4vh;
+	width: 100%;
+}
+.item_card_abbreviated .attribute_resume .text_backing {
+	min-width: 10vh;
+	margin: 0vh;
+}
+.item_card_abbreviated .attribute_resume .text_backing_content_container {
+	margin: 0.6vh;
+}
+.item_card_abbreviated .attribute_resume .attribute_name {
+	display: none;
+}
+.item_card_abbreviated .attribute_resume .attribute_icon {
+	height: 2.2vh;
+	width: 2.2vh;
+}
+.item_card_abbreviated .attribute_resume .attribute_difference_value {
+	margin-left: 0.6vh;
+}
+.item_card_abbreviated .attribute_resume .attribute_difference_value,
+.item_card_abbreviated .attribute_resume .attribute_current_value {
+	font-size: 1.80rem;
+	line-height: 1.80rem;
+}
+.item_card_abbreviated .attribute_resume .attribute_inner {
+	height: 2.6vh;
+}
+.item_card_abbreviated .attribute_resume .attribute_icon {
+	margin-left: 0.4vh;
+}
+.item_card_abbreviated .attribute_resume .attribute_bg {
+	z-index: -1;
+	width: 100%;
+	height: 2.6vh;
+	background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(0.9);
+}
+.item_card_abbreviated .item_card_currency {
+	bottom: 0.6vh;
+	visibility: hidden;
+}
+.item_card_abbreviated .item_card_currency .item_card_currency_value {
+	font-family: var(--header-font);
+	font-size: 3.60rem;
+	letter-spacing: 0rem;
+	line-height: 3.60rem;
+	text-align: center;
+	text-stroke: 0.3rem black;
+}
+.item_card_abbreviated.Pearl .item_card_abb_top_frame_alpha,
+.item_card_abbreviated.Pearl .item_card_abb_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.080, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 0.888, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Pearl .item_card_abb_header .item_card_abb_score_value {
+	color: #0ffff0;
+}
+.item_card_abbreviated.Pearl .item_card_abb_weapon_logo_cntr .item_card_abb_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.950, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Legendary .item_card_abb_top_frame_alpha,
+.item_card_abbreviated.Legendary .item_card_abb_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.945, 0, 0, 0, 0, 0.643, 0, 0, 0, 0, 0.11, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Legendary .item_card_abb_header .item_card_abb_score_value {
+	color: #ecb149;
+}
+.item_card_abbreviated.Legendary .item_card_abb_weapon_logo_cntr .item_card_abb_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.925, 0, 0, 0, 0, 0.694, 0, 0, 0, 0, 0.286, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Epic .item_card_abb_top_frame_alpha,
+.item_card_abbreviated.Epic .item_card_abb_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.718, 0, 0, 0, 0, 0.169, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Epic .item_card_abb_header .item_card_abb_score_value {
+	color: #c759ff;
+}
+.item_card_abbreviated.Epic .item_card_abb_weapon_logo_cntr .item_card_abb_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.733, 0, 0, 0, 0, 0.259, 0, 0, 0, 0, 0.976, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Rare .item_card_abb_top_frame_alpha,
+.item_card_abbreviated.Rare .item_card_abb_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.231, 0, 0, 0, 0, 0.757, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Rare .item_card_abb_header .item_card_abb_score_value {
+	color: #2eaee9;
+}
+.item_card_abbreviated.Rare .item_card_abb_weapon_logo_cntr .item_card_abb_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0.682, 0, 0, 0, 0, 0.914, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Uncommon .item_card_abb_top_frame_alpha,
+.item_card_abbreviated.Uncommon .item_card_abb_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.235, 0, 0, 0, 0, 0.933, 0, 0, 0, 0, 0.396, 0, 0, 0, 1, 0);
+}
+.item_card_abbreviated.Uncommon .item_card_abb_header .item_card_abb_score_value {
+	color: #5bd577;
+}
+.item_card_abbreviated.Uncommon .item_card_abb_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.357, 0, 0, 0, 0, 0.835, 0, 0, 0, 0, 0.467, 0, 0, 0, 1, 0);
+}
+.foil .item_card_abb_top_frame {
+	background-image: url("../../item_card/assets/ItemCard_Abbreviated-HeaderBase-Enchanted.png");
+}
+.foil .item_card_abb_top_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard_Abbreviated-HeaderTint-Enchanted.tga");
+}
+.foil .item_card_abb_bottom_frame {
+	background-image: url("../../item_card/assets/ItemCard_Abbreviated-FooterBase-Enchanted.png");
+}
+.foil .item_card_abb_bottom_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard_Abbreviated-FooterTint-Enchanted.tga");
+}
+.mayhem .item_card_abb_top_frame {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-HeaderBase-Foil.png");
+}
+.mayhem .item_card_abb_top_frame_alpha {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-HeaderTint-Foil.tga");
+}
+.mayhem .item_card_abb_bottom_frame {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-FooterBase-Foil.png");
+}
+.mayhem .item_card_abb_bottom_frame_alpha {
+	background-image: url("../../item_card_abbreviated/assets/ItemCard_Abbreviated-FooterTint-Foil.tga");
+}
+.item_card_abbreviated .attribute_difference_better_icon .item_attr_better_icon {
+	width: 1.6vh; /* Fix */
+}
+.item_card_abbreviated .attribute_inner,
+.item_card_abbreviated .attribute_values{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.item_card_abbreviated.mirror .attribute_inner,
+.item_card_abbreviated.mirror .attribute_values {
+	flex-direction: row-reverse;
+}
+.split-4p .item_card_abbreviated,
+.split-horizontal .item_card_abbreviated {
+	min-height: 38.40vh;
+	width: 37.92vh;
+	top: 10vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_backing,
+.split-horizontal .item_card_abbreviated .item_card_abb_backing {
+	width: 24.48vh;
+}
+.item_card_abbreviated .attribute_difference_same_icon,
+.item_card_abbreviated .attribute_difference_better_icon,
+.item_card_abbreviated .attribute_difference_worse_icon {
+	margin-left: 0vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_top_frame,
+.split-4p .item_card_abbreviated .item_card_abb_top_frame_alpha,
+.split-4p .item_card_abbreviated .item_card_abb_bottom_frame,
+.split-4p .item_card_abbreviated .item_card_abb_bottom_frame_alpha,
+.split-horizontal .item_card_abbreviated .item_card_abb_top_frame,
+.split-horizontal .item_card_abbreviated .item_card_abb_top_frame_alpha,
+.split-horizontal .item_card_abbreviated .item_card_abb_bottom_frame,
+.split-horizontal .item_card_abbreviated .item_card_abb_bottom_frame_alpha {
+	height: 37.92vh;
+	width: 37.92vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_weapon_logo_cntr,
+.split-horizontal .item_card_abbreviated .item_card_abb_weapon_logo_cntr {
+	height: 6.72vh;
+	margin-left: 9.60vh;
+	margin-bottom: 4.48vh;
+	width: 18.88vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_backing .item_card_abb_backing_bg,
+.split-horizontal .item_card_abbreviated .item_card_abb_backing .item_card_abb_backing_bg {
+	bottom: 3.20vh;
+	top: 8.00vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame,
+.split-horizontal .item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame {
+	bottom: 9.60vh;
+	top: 8.00vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_left,
+.split-4p .item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_right,
+.split-horizontal .item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_left,
+.split-horizontal .item_card_abbreviated .item_card_abb_backing .item_card_abb_side_frame_right {
+	width: 1.92vh;
+	background-size: 1.92vh 4.16vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_header,
+.split-horizontal .item_card_abbreviated .item_card_abb_header {
+	top: 2.24vh;
+	width: 25.92vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_header .item_card_abb_score_value,
+.split-horizontal .item_card_abbreviated .item_card_abb_header .item_card_abb_score_value {
+	font-size: 5.76rem;
+	line-height: 5.76rem;
+	padding-left: 3.20vh;
+	padding-right: 3.20vh;
+}
+.split-4p .item_card_abbreviated .item_card_currency .item_card_currency_value,
+.split-horizontal .item_card_abbreviated .item_card_currency .item_card_currency_value  {
+	font-size: 5.76rem;
+	line-height: 5.76rem;
+    width: 13vh;
+	coh-font-fit-mode: shrink;
+}
+.split-vertical .item_card_abbreviated .item_card_currency .item_card_currency_value {
+	font-size: 5.76rem;
+	line-height: 5.76rem;
+	coh-font-fit-mode: shrink;
+}
+.split-4p .item_card_abbreviated .item_card_abb_header .item_card_abb_damage_type,
+.split-horizontal .item_card_abbreviated .item_card_abb_header .item_card_abb_damage_type {
+	height: 5.12vh;
+    right: 1.60vh;
+    top: 0.16vh;
+    width: 5.12vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content,
+.split-horizontal .item_card_abbreviated .item_card_abb_content {
+	width: 19.20vh;
+	margin-top: 9vh;
+	margin-left: 9.44vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_divider,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_divider {
+	height: 0.48vh;
+	margin-right: 1.60vh;
+	width: 3.84vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill {
+	height: 8.32vh;
+	margin-right: 1.60vh;
+	margin-bottom: .75vh;
+	width: 11.52vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_value,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_value {
+	font-size: 3rem;
+    margin-top: 0.5vh;
+    letter-spacing: 0.32rem;
+    line-height: 3.52rem;
+}
+.split-4p .item_card_abbreviated .icon_elemental_type,
+.split-horizontal .item_card_abbreviated .icon_elemental_type {
+    width: 14vh;
+    height: 14vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .stats_skill_bg,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .stats_skill_bg {
+	height: 4.16vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skilll_value_cntr,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skilll_value_cntr {
+	bottom: -2.2vh;
+	height: 5.48vh;
+	left:  5vh;
+	width: 7.36vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .item_card_abb_stats_attributes,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .item_card_abb_stats_attributes {
+	height: 4.16vh;
+	margin-bottom: 0.96vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon,
+.split-horizontal .item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon {
+	margin-top: 1.12vh;
+	height: 6.96vh;
+	width: 9.60vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_stats_attributes .attribute_resume,
+.split-horizontal .item_card_abbreviated .item_card_abb_stats_attributes .attribute_resume {
+	height: 5.44vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .text_backing,
+.split-horizontal .item_card_abbreviated .attribute_resume .text_backing {
+	min-width: 16.00vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .text_backing_content_container,
+.split-horizontal .item_card_abbreviated .attribute_resume .text_backing_content_container {
+	margin-bottom: 0.96vh;
+	margin-top: 0.96vh;
+	margin-left: 0.96vh;
+	margin-right: 0.96vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .attribute_icon,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_icon {
+	height: 4.52vh;
+	width: 4.52vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .attribute_difference_value,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_difference_value {
+	margin-left: 0.96vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .attribute_difference_value,
+.split-4p .item_card_abbreviated .attribute_resume .attribute_current_value,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_difference_value,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_current_value {
+	font-size: 2.88rem;
+	line-height: 2.88rem;
+	max-height: 2.88rem;
+}
+.split-4p .item_card_abbreviated .attribute_resume .attribute_inner,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_inner {
+	height: 4.16vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .attribute_icon,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_icon {
+	margin-left: 0.64vh;
+}
+.split-4p .item_card_abbreviated .attribute_resume .attribute_bg,
+.split-horizontal .item_card_abbreviated .attribute_resume .attribute_bg {
+	height: 4.16vh;
+}
+.split-4p .item_card_abbreviated .attribute_difference_better_icon .item_attr_better_icon,
+.split-horizontal .item_card_abbreviated .attribute_difference_better_icon .item_attr_better_icon {
+	width: 2.56vh; /* Fix */
+}
+.split-4p .item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_description_cntr,
+.split-horizontal .item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_description_cntr {
+    top: 1.3vh;
+    right: 2.5vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon_type,
+.split-horizontal .item_card_abbreviated .item_card_abb_class_stats_skill_cntr .item_card_abb_class_stats_skill_icon_type {
+    left: -1.5vh;
+    bottom: -1.44vh;
+	height: 6.12vh;
+    width: 6.12vh;
+}
+.split-4p .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_description,
+.split-horizontal .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_description {
+    font-size: 3rem;
+}
+.split-vertical .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_description {
+    font-size: 3.3rem;
+}
+/* SPLIT VERTICAL */
+.split-vertical .item_card_abbreviated .item_card_abb_header .item_card_abb_score_value {
+	font-size: 6.56rem;
+	line-height: 5.76rem;
+	padding-left: 3.20vh;
+	padding-right: 3.20vh;
+}
+.split-vertical .item_card_abbreviated .item_card_abb_content .item_card_abb_class_stats_skill_value {
+	font-size: 3.3rem;
+}
+.split-vertical .item_card_abbreviated .attribute_resume .attribute_difference_value,
+.split-vertical .item_card_abbreviated .attribute_resume .attribute_current_value {
+	font-size: 3.52rem;
+	line-height: 3.52rem;
+	max-height: 3.52rem;
+}
+.split-vertical .item_card_abbreviated .item_card_abb_header{
+    top: 1.8vh;
+}
+/* END SPLIT VERTICAL */
+
+.item_card_abbreviated .item_card_abb_header .item_card_abb_score_value,
+.loc-zh-hans.split-4p .item_card_abbreviated .item_card_abb_header .item_card_abb_score_value,
+.loc-zh-hans.split-horizontal .item_card_abbreviated .item_card_abb_header .item_card_abb_score_value {
+	line-height: 140%;
+    margin-bottom: -0.4em;
+}

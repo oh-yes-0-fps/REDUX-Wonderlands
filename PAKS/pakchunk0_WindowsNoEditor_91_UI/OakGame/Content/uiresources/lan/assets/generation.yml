@@ -1,0 +1,7 @@
+---
+texture_group: UI
+compression: BC7
+without_alpha: false
+overwrite: true
+mip_settings: FromTextureGroup
+...

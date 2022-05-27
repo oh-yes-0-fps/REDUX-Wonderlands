@@ -1,0 +1,97 @@
+.split-vertical .item_card_score_value {
+	margin-top: 0.64vh;
+	margin-right: 0.80vh;
+	font-size: 5.44rem;
+	line-height: 5.44rem;
+}
+.split-vertical .item_card_score_text {
+	margin-top: 0.80vh;
+	font-size: 3.04rem;
+	line-height: 3.04rem;
+	letter-spacing: 0.42rem;
+}
+.split-vertical .item_card_level_value {
+	font-size: 5.12rem;
+	line-height: 5.12rem;
+	letter-spacing: 0.16rem;
+	margin-top: 0.32vh;
+}
+.split-vertical .item_card_level_text {
+	margin-top: 1.12vh;
+	margin-right: 0.96vh;
+	font-size: 3.04rem;
+	line-height: 2.88rem;
+	letter-spacing: 0.35rem;
+	max-height: 3.20rem;
+}
+.split-vertical .attribute_name,
+.split-vertical .attribute_difference_value,
+.split-vertical .attribute_current_value {
+	font-size: 3.36rem;
+	line-height: 3.36rem;
+	letter-spacing: 0.19rem;
+}
+.split-vertical .item_card_stats_attributes .attribute_name,
+.split-vertical .item_card_stats_attributes .attribute_current_value {
+	max-height: 3.36rem;
+	line-height: 3.36rem;
+}
+.split-vertical .item_card_description_text {
+	font-size: 3.36rem;
+	letter-spacing: 0.11rem;
+	line-height: 3.52rem;
+}
+.split-vertical .item_card_subtitle {
+	font-size: 2.88rem;
+	line-height: 2.88rem;
+	letter-spacing: 0.16rem;
+}
+.split-vertical .item_card_weapon_name {
+	font-size: 5.76rem;
+	letter-spacing: 0.19rem;
+	line-height: 5.76rem;
+}
+.split-vertical .Accessory .item_card_cust_description {
+	font-size: 3.36rem;
+	letter-spacing: 0.14rem;
+	line-height: 4.4rem;
+}
+.split-vertical .item_card_category_name,
+.split-vertical .item_card_weapon_rarity_name {
+	font-size: 3.36rem;
+	line-height: 3.36rem;
+	max-height: 3.36rem;
+	letter-spacing: 0.35rem;
+	padding-left: 0.32vh;
+	padding-right: 0.32vh;
+}
+.split-vertical .item_card_stats_elemental_dextery {
+	font-size: 3.36rem;
+	letter-spacing: 0.32rem;
+	line-height: 3.36rem;
+	margin-right: 2.24vh;
+}
+.split-vertical .item_card_stats_skill_description,
+.split-vertical .item_card_stats_skill_value {
+	font-size: 2.88rem;
+	letter-spacing: 0.32rem;
+	line-height: 2.88rem;
+}
+.split-vertical .item_card_currency_value {
+	font-size: 5.12rem;
+	letter-spacing: 0.16rem;
+}
+.split-vertical .Pauldron .item_card_weapon_rarity_name,
+.split-vertical .Pauldron .item_card_weapon_rarity_name {
+	font-size: 3.52rem;
+	line-height: 3.52rem;
+	max-height: 3.52rem;
+}
+.split-vertical .mayhem .item_card_subtitle_mayhem {
+	font-size: 3.6rem;
+	line-height: 3.6rem;
+	letter-spacing: 0.2rem;
+}
+.split-vertical .item_owned_text {
+    font-size: 3.52rem;
+}

@@ -1,0 +1,132 @@
+<div class="backpack">
+	<div class="scaleEnter">
+		<div class="backpack_frame_header">
+			<div class="header">
+				<div class="header_border"></div>
+				<div class="backpack_title stroke_black"
+					data-bind-class-toggle="red-text:{{data_backpack.itemcount}}>={{data_backpack.containermaxsize}}"
+					data-bind-value="{{data_backpack.headertext}}"></div>
+			</div>
+		</div>
+		<div class="big_panel right">
+			<div class="big_panel_border"></div>
+			<div class="bigpanel_content_container">
+				<div class="bigpanel_content_parent">
+					<div class="big_panel_content">
+						<div class="backpack_sort stroke_black">
+							<div class="backpack_sort_left">
+								<gbx-button gbx-component-id="hintbar_item"
+									gbx-component-datamodel="data_entry:data_backpack.lefttriggerentry"
+									data-bind-entry-model="{{data_backpack.lefttriggerentry}}"
+									data-bind-parent="data_backpack" gbx-function-listener="OnClickPrevSort">
+								</gbx-button>
+							</div>
+							<div class="backpack_sort_by">
+								<div class="backpack_sort_name" data-bind-value="{{data_backpack.sortbytitle}}"></div>
+								<div class="backpack_sort_type" data-bind-value="{{data_backpack.sortbyoption}}"></div>
+							</div>
+							<div class="backpack_sort_right">
+								<gbx-button gbx-component-id="hintbar_item"
+									gbx-component-datamodel="data_entry:data_backpack.righttriggerentry"
+									data-bind-entry-model="{{data_backpack.righttriggerentry}}"
+									data-bind-parent="data_backpack" gbx-function-listener="OnClickNextSort">
+								</gbx-button>
+							</div>
+						</div>
+						<div class="divider">
+							<div class="divider_left"></div>
+							<div class="divider_center"></div>
+							<div class="divider_right"></div>
+						</div>
+
+						<!-- Full list -->
+						<div id="backpack" data-input-elem="true" data-input-id="backpack" class="backpack_weapons"
+							data-bind-if="{{data_backpack.pagesize}}==0" data-input-link-left="equip_ranged"
+							data-input-beh="grid" data-input-default="true">
+
+							<gbx-inventory-item id="backpack-inventory-item"
+								data-bind-for="index,entry:{{data_backpack.entries}}" class="back_pack_item"
+								gbx-component-id="backpack_weapon" data-bind-entry-model="{{entry}}"
+								gbx-component-datamodel="data_entry:entry,data_backpack_parent:data_backpack"
+								data-bind-parent="data_backpack">
+							</gbx-inventory-item>
+						</div>
+
+						<!-- Vlist -->
+						<div id="backpack" data-input-elem="true" data-input-id="backpack" class="backpack_weapons"
+							data-bind-if="{{data_backpack.pagesize}}>0" data-input-link-left="equip_ranged"
+							data-input-beh="grid" data-input-default="true">
+							<gbx-inventory-item id="backpack-inventory-item" data-bind-for="index,entry:data_vlist"
+								class="back_pack_item" gbx-component-id="backpack_weapon"
+								data-bind-entry-model="{{entry}}"
+								gbx-component-datamodel="data_entry:entry,data_backpack_parent:data_backpack"
+								data-bind-parent="data_backpack">
+							</gbx-inventory-item>
+						</div>
+
+						<!-- Page Count -->
+						<div class="tab_panel page" data-bind-if="{{data_backpack.pagesize}}>0">
+							<div class="backing_top_bg">
+								<div class="backing_top_bg_left">
+								</div>
+								<div class="backing_top_bg_center">
+								</div>
+								<div class="backing_top_bg_right">
+								</div>
+								<div class="backing_top_content_container">
+									<div class="backing_top_content_parent">
+										<div class="d-flex flex-nowrap flex-row align-items-center justify-content-between tab_panel_content"
+											data-bind-class-toggle="d-soft-opacity:!({{data_backpack.maxpages}} > 0)">
+											<div class="tab_panel_left d-soft-opacity"
+												data-bind-class-toggle="d-visible:{{data_backpack.prevpageentry.visible}}">
+												<gbx-hintbar-item data-input-id="r-prev-page"
+													gbx-component-id="hintbar_item"
+													gbx-component-datamodel="data_entry:data_backpack.prevpageentry"
+													data-bind-entry-model="{{data_backpack.prevpageentry}}"
+													data-bind-parent="data_backpack">
+												</gbx-hintbar-item>
+											</div>
+											<div
+												class="d-flex flex-nowrap flex-row align-items-center justify-content-between tab_panel_nav">
+												<div id="r-page-number-text" class="tab_panel_nav_item_text"
+													data-bind-value="data_backpack.pagetext + ' ' + ({{data_backpack.pageindex}} + 1)+'/'+{{data_backpack.maxpages}}">
+												</div>
+											</div>
+											<div class="tab_panel_right d-soft-opacity"
+												data-bind-class-toggle="d-visible:{{data_backpack.nextpageentry.visible}}">
+												<gbx-hintbar-item data-input-id="r-next-page"
+													gbx-component-id="hintbar_item"
+													gbx-component-datamodel="data_entry:data_backpack.nextpageentry"
+													data-bind-entry-model="{{data_backpack.nextpageentry}}"
+													data-bind-parent="data_backpack">
+												</gbx-hintbar-item>
+											</div>
+										</div>
+									</div>
+									<div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="scrollbar d-opacity">
+						<div class="scrollbar_scroll_up"></div>
+						<div class="scrollbar_scroll_down"></div>
+						<div class="scrollbar_bg">
+							<div class="scrollbar_bar"></div>
+							<div class="scrollbar_scroller">
+								<div class="scrollbar_scroller_up"></div>
+								<div class="scrollbar_scroller_center"></div>
+								<div class="scrollbar_scroller_down"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="highlightPanel">
+			</div>
+		</div>
+		<div class="backpack_frame_overlay"></div>
+	</div>
+</div>

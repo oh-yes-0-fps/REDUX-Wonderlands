@@ -1,0 +1,199 @@
+.backpack {
+	height: 66.4vh;
+	right: 5vh;
+	padding-left: 3.5vh;
+	padding-right: 3.5vh;
+	position: absolute;
+	top: 10.2vh;
+	width: 51vh;
+	isolation: isolate;
+	transition-property: transform;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+}
+.backpack .highlightPanel{
+	opacity: 0;
+}
+.scaleEnter{
+	isolation: isolate;
+	width: 100%;
+	height: 100%;
+	transition-property: transform; 
+	transition-duration: 0.2s;
+}
+.scaleEnter .big_panel{
+	z-index: 5;
+}
+.backpack .scrollbar {
+	height: 44vh;
+	top: 11vh;
+	right: 6vh;
+}
+.backpack .backpack_frame_header {
+	height: 6.8vh;
+	left: 50%;
+	position: relative;
+	top: 0vh;
+	isolation: isolate;
+	width: 90%;
+	max-width: 60vh;
+	transform: translateX(-50%) scale(1);
+	transform-origin: center;
+}
+.backpack_title {
+	position: absolute;
+	top: 2.3vh;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	color: #94795b;
+	font-size: 2.6rem;
+	font-family: var(--header-font);
+	letter-spacing: 0.1rem;
+	text-align: center;
+	line-height: 2.6rem;
+}
+.backpack_sort {
+	left: 50%;
+	transform: translateX(-50%);
+	height: 3vh;
+	margin-top: 0.4vh;
+	width: 36.2vh;
+}
+.backpack_sort_left,
+.backpack_sort_right {
+	height: 4vh;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 4vh;
+}
+.backpack_sort_left {
+	left: 0.4vh;
+}
+.backpack_sort_right {
+	right: 0.4vh;
+}
+.backpack_sort_by {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 25vh;
+}
+.backpack_sort_name,
+.backpack_sort_type {
+	color: #94795b;
+	font-size: 2.2rem;
+	font-family: var(--header-font);
+	letter-spacing: 0.1rem;
+	line-height: 2.2rem;
+	text-align: center;
+}
+.backpack_sort_type {
+	color: #e8d6b5;
+	margin-left: 0.8vh;
+}
+.backpack .divider {
+	padding-left: 5vh;
+	padding-right: 5.2vh;
+	transform: scale(0.87, 0.87);
+	transform-origin: center;
+	display: flex;
+	width: 100%;
+}
+.backpack .divider,
+.backpack .backpack_sort {
+	position: relative;
+}
+.backpack .big_panel {
+	margin-top: -3vh;
+}
+.backpack .bigpanel_content_container {
+	margin-bottom: 6vh;
+	margin-left: -3.5vh;
+	margin-top: 4vh;
+	margin-right: -3.5vh;
+}
+.backpack .bigpanel_content_container {
+	display: flex;
+}
+.backpack .bigpanel_content_parent {
+	overflow-y: visible;
+}
+.backpack_weapons {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	overflow-y: hidden;
+	padding-top: 1vh;
+	transform-origin: top;
+	transform: scale(1, 1);
+	width: 100%;
+	max-height: 45vh;
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+.backpack_weapons_item {
+	transform: scale(1.06, 1.06);
+	margin-bottom: 1.3vh;
+	margin-left: 0.7vh;
+	margin-right: 0.7vh;
+}
+.backpack_weapons_item.selected {
+	transform: scale(1.1, 1.1);
+	z-index: 9;
+}
+.backpack_weapons_item[data-input-focused=true] .backpack_cell_selection,
+.backpack_weapons_item[data-input-focused=true] .backpack_weapons_item_glow {
+	animation-duration: 0.15s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	opacity: 1;
+}
+.backpack_weapons_item[data-input-focused=true] .backpack_weapons_item_glow {
+	transform: rotateX(0deg) translate(-50%, -50%) scale(1.01, 1.01);
+}
+.backpack_weapons_item[data-input-focused=true] .item_gliphy_cntr {
+	opacity: 1;
+}
+.backpack_weapons_item[data-input-focused=true] .gradient_glow {
+}
+.backpack_weapons_item[data-input-focused=true] .item_gliphy_left {
+	left: 4.2vh;
+}
+.backpack_weapons_item[data-input-focused=true] .item_gliphy_right {
+	right: 4.2vh;
+}
+.backpack.selected .backpack_weapons {
+	transform: scale(1.1, 1.1);
+	transition: transform 0.2s;
+}
+
+.loc-zh-hans .backpack_sort_name {
+	margin-top: 0.6em;
+}
+
+.backpack .tab_panel {
+	bottom: 2vh;
+	left: 50%;
+	width: 29vh;
+	position: absolute;
+	transform: translateX(-50%);
+}
+.backpack .tab_panel .backing_top_bg_left,
+.backpack .tab_panel .backing_top_bg_center,
+.backpack .tab_panel .backing_top_bg_right {
+	opacity: 0;
+}
+.backpack .tab_panel .tab_panel_nav_item_text {
+	color: #94795b;
+	font-family: var(--body-font);
+	font-size: 1.80rem;
+	line-height: 1.80rem;
+	text-stroke: 0.2rem black;
+}
+.backpack .tab_panel .action_btn {
+	margin-left: initial;
+	margin-right: initial;
+}

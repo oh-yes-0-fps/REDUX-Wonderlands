@@ -1,0 +1,385 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+# Input Action Defs
+input_action_defs:
+- input_action: menu_escape
+- input_action: menu_nav_up
+- input_action: menu_nav_right
+- input_action: menu_nav_down
+- input_action: menu_nav_left
+- input_action: menu_select
+- input_action: menu_primary
+- input_action: menu_secondary
+- input_action: menu_tertiary
+- input_action: menu_cancel
+- input_action: menu_next_page
+- input_action: menu_prev_page
+- input_action: menu_next_sub_page
+- input_action: menu_prev_sub_page
+- input_action: menu_special_right
+- input_action: menu_pause_in_menu
+- input_action: menu_special_left
+- input_action: menu_special_start
+- input_action: menu_special_back
+- input_action: menu_right_stick_axis
+- input_action: menu_left_stick_axis
+- input_action: menu_trigger_axis
+- input_action: menu_mouse_wheel_axis
+- input_action: menu_mouse_axis
+- input_action: menu_hold_primary
+- input_action: menu_hold_secondary
+- input_action: menu_hold_tertiary
+- input_action: menu_hold_cancel
+- input_action: menu_hold_special_right
+- input_action: menu_hold_special_left
+- input_action: menu_hold_special_start
+- input_action: menu_hold_special_back
+- input_action: menu_text_entry_commit
+- input_action: menu_text_entry_backspace
+- input_action: menu_text_entry_delete
+- input_action: menu_text_entry_activate_keyboard
+- input_action: menu_cancel_keybind
+- input_action: menu_dpad_only_left
+- input_action: menu_dpad_only_right
+- input_action: menu_dpad_only_up
+- input_action: menu_dpad_only_down
+- input_action: menu_left_mouse
+- input_action: menu_right_mouse
+- input_action: menu_left_mouse_released
+- input_action: menu_right_mouse_released
+- input_action: menu_rename_character
+- input_action: menu_rename_pet1
+- input_action: menu_rename_pet2
+- input_action: edit_group
+- input_action: view_credits
+
+rebind_key_defs:
+- rebind_key: menu_escape
+- rebind_key: menu_nav_up
+- rebind_key: menu_nav_right
+- rebind_key: menu_nav_down
+- rebind_key: menu_nav_left
+- rebind_key: menu_select
+- rebind_key: menu_primary
+- rebind_key: menu_secondary
+- rebind_key: menu_tertiary
+- rebind_key: menu_cancel
+- rebind_key: menu_next_page
+- rebind_key: menu_prev_page
+- rebind_key: menu_next_sub_page
+- rebind_key: menu_prev_sub_page
+- rebind_key: menu_special_right
+- rebind_key: menu_pause_in_menu
+- rebind_key: menu_special_left
+- rebind_key: menu_special_start
+- rebind_key: menu_special_back
+- rebind_key: menu_hold_primary
+- rebind_key: menu_hold_secondary
+- rebind_key: menu_hold_tertiary
+- rebind_key: menu_hold_cancel
+- rebind_key: menu_hold_special_right
+- rebind_key: menu_hold_special_left
+- rebind_key: menu_hold_special_start
+- rebind_key: menu_hold_special_back
+- rebind_key: menu_text_entry_commit
+- rebind_key: menu_text_entry_backspace
+- rebind_key: menu_text_entry_delete
+- rebind_key: menu_text_entry_activate_keyboard
+- rebind_key: menu_cancel_keybind
+- rebind_key: menu_dpad_only_left
+- rebind_key: menu_dpad_only_right
+- rebind_key: menu_dpad_only_up
+- rebind_key: menu_dpad_only_down
+- rebind_key: menu_left_mouse
+- rebind_key: menu_right_mouse
+- rebind_key: menu_left_mouse_released
+- rebind_key: menu_right_mouse_released
+- rebind_key: menu_rename_character
+- rebind_key: menu_rename_pet1
+- rebind_key: menu_rename_pet2
+- rebind_key: edit_group
+- rebind_key: view_credits
+
+# Gbx Input Schema Defs
+input_schema_defs:
+- input_schema: ui_menu_base
+  input_events: !objs_input_event
+  - input_event: MenuEscape
+    evt_released: !ref_input_action menu_escape
+    keys:
+    - Escape
+    - Gamepad_FaceButton_Right
+  - input_event: NavUp
+    evt_pressed: !ref_input_action menu_nav_up
+    keys:
+    - Up
+    - Gamepad_DPad_Up
+    - Gamepad_LeftStick_Up
+  - input_event: NavRight
+    evt_pressed: !ref_input_action menu_nav_right
+    keys:
+    - Right
+    - Gamepad_DPad_Right
+    - Gamepad_LeftStick_Right
+  - input_event: NavDown
+    evt_pressed: !ref_input_action menu_nav_down
+    keys:
+    - Down
+    - Gamepad_DPad_Down
+    - Gamepad_LeftStick_Down
+  - input_event: NavLeft
+    evt_pressed: !ref_input_action menu_nav_left
+    keys:
+    - Left
+    - Gamepad_DPad_Left
+    - Gamepad_LeftStick_Left
+  - input_event: MenuSelect
+    evt_released: !ref_input_action menu_select
+    keys:
+    - Enter
+    - Gamepad_FaceButton_Bottom
+  - input_event: DefaultPrimary
+    evt_released: !ref_input_action menu_primary
+    keys:
+    - E
+    - Enter
+    - Gamepad_FaceButton_Bottom
+  - input_event: DefaultSecondary
+    evt_released: !ref_input_action menu_secondary
+    keys:
+    - Q
+    - Gamepad_FaceButton_Left
+  - input_event: DefaultTertiary
+    evt_released: !ref_input_action menu_tertiary
+    keys:
+    - F
+    - Gamepad_FaceButton_Top
+  - input_event: DefaultCancel
+    evt_released: !ref_input_action menu_cancel
+    keys:
+    - Escape
+    - Gamepad_FaceButton_Right
+  - input_event: DefaultNextPage
+    evt_released: !ref_input_action menu_next_page
+    keys:
+    - C
+    - Gamepad_RightShoulder
+  - input_event: DefaultPrevPage
+    evt_released: !ref_input_action menu_prev_page
+    keys:
+    - Z
+    - Gamepad_LeftShoulder
+  - input_event: DefaultNextSubPage
+    evt_released: !ref_input_action menu_next_sub_page
+    keys:
+    - LeftAlt
+    - Gamepad_RightTrigger
+  - input_event: DefaultPrevSubPage
+    evt_released: !ref_input_action menu_prev_sub_page
+    keys:
+    - LeftControl
+    - Gamepad_LeftTrigger
+  - input_event: ActionName
+    evt_released: !ref_input_action menu_action_name
+    keys:
+    - KbKey
+    - GpKey
+  - input_event: DefaultHoldPrimary
+    evt_held: !ref_input_action menu_hold_primary
+    keys:
+    - E
+    - Enter
+    - Gamepad_FaceButton_Bottom
+  - input_event: DefaultHoldSecondary
+    evt_held: !ref_input_action menu_hold_secondary
+    keys:
+    - Q
+    - Gamepad_FaceButton_Left
+  - input_event: DefaultHoldTertiary
+    evt_held: !ref_input_action menu_hold_tertiary
+    keys:
+    - F
+    - Gamepad_FaceButton_Top
+  - input_event: DefaultHoldCancel
+    evt_held: !ref_input_action menu_hold_cancel
+    keys:
+    - Escape
+    - Gamepad_FaceButton_Right
+  - input_event: DefaultRenameCharacter
+    evt_held: !ref_input_action menu_rename_character
+    keys:
+    - N
+    - Gamepad_FaceButton_Left
+  - input_event: DefaultRenamePet1
+    evt_held: !ref_input_action menu_rename_pet1
+    keys:
+    - M
+    - Gamepad_FaceButton_Right
+  - input_event: DefaultRenamePet2
+    evt_held: !ref_input_action menu_rename_pet2
+    keys:
+    - L
+    - Gamepad_FaceButton_Bottom
+  - input_event: DefaultTextEntryCommit
+    evt_released: !ref_input_action menu_text_entry_commit
+    keys:
+    - Enter
+    - Gamepad_FaceButton_Bottom
+  - input_event: DefaultTextEntryBackSpace
+    evt_released: !ref_input_action menu_text_entry_backspace
+    keys:
+    - BackSpace
+  - input_event: DefaultTextEntryDelete
+    evt_released: !ref_input_action menu_text_entry_delete
+    keys:
+    - Delete
+  - input_event: DefaultTextEntryActivateKeyboard
+    evt_released: !ref_input_action menu_text_entry_activate_keyboard
+    keys:
+    - Gamepad_FaceButton_Left
+  - input_event: DefaultCancelKeybind
+    evt_released: !ref_input_action menu_cancel_keybind
+    keys:
+    - Escape
+    - Gamepad_Special_Right
+  - input_event: DefaultSpecialRight
+    evt_released: !ref_input_action menu_special_right
+    keys:
+    - X
+    - Gamepad_RightThumbstick
+  - input_event: DefaultPauseInMenu
+    evt_released: !ref_input_action menu_pause_in_menu
+    keys:
+    - I
+    - Gamepad_Special_Right
+  - input_event: DefaultSpecialLeft
+    evt_released: !ref_input_action menu_special_left
+    keys:
+    - R
+    - Gamepad_LeftThumbstick
+  - input_event: DefaultSpecialStart
+    evt_released: !ref_input_action menu_special_start
+    keys:
+    - SpaceBar
+    - Gamepad_Special_Right
+  - input_event: DefaultSpecialBack
+    evt_released: !ref_input_action menu_special_back
+    keys:
+    - Tab
+    - Gamepad_Special_Left
+  - input_event: DefaultHoldSpecialRight
+    evt_held: !ref_input_action menu_hold_special_right
+    keys:
+    - X
+    - Gamepad_RightThumbstick
+  - input_event: DefaultHoldSpecialLeft
+    evt_held: !ref_input_action menu_hold_special_left
+    keys:
+    - R
+    - Gamepad_LeftThumbstick
+  - input_event: DefaultHoldSpecialStart
+    evt_held: !ref_input_action menu_hold_special_start
+    keys:
+    - SpaceBar
+    - Gamepad_Special_Right
+  - input_event: DefaultHoldSpecialBack
+    evt_held: !ref_input_action menu_hold_special_back
+    keys:
+    - Tab
+    - Gamepad_Special_Left
+  - input_event: DefaultDpadOnlyLeft
+    evt_released: !ref_input_action menu_dpad_only_left
+    keys:
+    - Left
+    - Gamepad_DPad_Left
+  - input_event: DefaultDpadOnlyRight
+    evt_released: !ref_input_action menu_dpad_only_right
+    keys:
+    - Right
+    - Gamepad_DPad_Right
+  - input_event: DefaultDpadOnlyUp
+    evt_released: !ref_input_action menu_dpad_only_up
+    keys:
+    - Up
+    - Gamepad_DPad_Up
+  - input_event: DefaultDpadOnlyDown
+    evt_released: !ref_input_action menu_dpad_only_down
+    keys:
+    - Down
+    - Gamepad_DPad_Down
+  - input_event: DefaultLeftMouse
+    evt_pressed: !ref_input_action menu_left_mouse
+    evt_released: !ref_input_action menu_left_mouse_released
+    keys:
+    - LeftMouseButton
+  - input_event: DefaultRightMouse
+    evt_pressed: !ref_input_action menu_right_mouse
+    evt_released: !ref_input_action menu_right_mouse_released
+    keys:
+    - RightMouseButton
+  - input_event: DefaultMenuRightStickAxis
+    action: !ref_input_action menu_right_stick_axis
+    feel: !ref_input_feel cursor_scroll
+    axis_keys:
+    - axis_key:
+      key: Gamepad_RightX
+      X: 1.0
+    - axis_key:
+      key: Gamepad_RightY
+      Y: 1.0
+    - axis_key:
+      key: RightBracket
+      X: 1.0
+    - axis_key:
+      key: LeftBracket
+      X: -1.0
+  - input_event: DefaultMenuLeftStickAxis
+    action: !ref_input_action menu_left_stick_axis
+    feel: !ref_input_feel cursor_move
+    axis_keys:
+    - axis_key:
+      key: Gamepad_LeftX
+      X: 1.0
+    - axis_key:
+      key: Gamepad_LeftY
+      Y: 1.0
+  - input_event: DefaultMenuTriggerAxis
+    action: !ref_input_action menu_trigger_axis
+    axis_keys:
+    - axis_key:
+      key: Gamepad_LeftTriggerAxis
+      X: -1.0
+    - axis_key:
+      key: Gamepad_RightTriggerAxis
+      X: 1.0
+  - input_event: DefaultMenuMouseWheelAxis
+    action: !ref_input_action menu_mouse_wheel_axis
+    axis_keys:
+    - axis_key:
+      key: MouseWheelAxis
+      X: 1.0
+  - input_event: DefaultMenuMouseAxis
+    action: !ref_input_action menu_mouse_axis
+    axis_keys:
+    - axis_key:
+      key: MouseX
+      X: 1.0
+    - axis_key:
+      key: MouseY
+      Y: 1.0
+
+- input_schema: ui_menu_start
+  parent: !ref_input_schema ui_menu_base
+  input_events: !objs_input_event
+  - input_event: EditGroup
+    evt_released: !ref_input_action edit_group
+    keys:
+    - R
+    - Gamepad_FaceButton_Top
+  - input_event: ViewCredits
+    evt_held: !ref_input_action view_credits
+    keys:
+    - X
+    - Gamepad_FaceButton_Top

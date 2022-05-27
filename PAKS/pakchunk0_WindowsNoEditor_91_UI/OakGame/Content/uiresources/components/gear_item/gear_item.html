@@ -1,0 +1,47 @@
+<div class="weapons_gear_item" data-bind-class="{{data_entry.rarity}};{{data_entry.splitside}}"
+	 data-bind-class-toggle="new:{{data_entry.isnew}};tracked:{{data_entry.istracked}};empty:{{data_entry.isempty}}&&!{{data_entry.islocked}};refresh:{{data_entry.isrefresh}};junk:{{data_entry.isjunk}};favorite:{{data_entry.isfavorite}};invalid:{{data_entry.isinvalid}};locked:{{data_entry.islocked}};"
+	 data-input-elem="true" data-bind-input-disabled="{{data_entry.isdisabled}}">
+
+	<div class="gear_cell_bg"></div>
+    <div class="gear_cell_electricity"></div>
+	<div class="gear_item_cracks"></div>
+
+	<div class="gear_item_type" data-bind-class="{{data_entry.ident}}">
+		<div class="gear_item_type_bg"></div>
+		<div class="gear_item_type_icon"></div>
+	</div>
+
+	<div class="gear_item_img" data-bind-class-toggle="d-hidden:{{data_entry.isempty}}"
+		 data-bind-style-background-image-url="{{data_entry.assetpath}}"></div>
+
+    <div class="item_empty" data-bind-if="{{data_entry.isempty}}&&!{{data_entry.islocked}}">
+		<div class="item_peak_bg"></div>
+		<div class="item_empty_text" data-bind-value="{{data_entry.emptytext}}"></div>
+	</div>
+
+	<div class="item_locked"></div>
+	<div class="item_favorite"></div>
+	<div class="item_tracked"></div>
+	<div class="item_junk"></div>
+	<div class="gear_item_element_bg"></div>
+	<div class="item_damage_type" data-bind-class="{{data_entry.damagetypeident}}"></div>
+	<div class="gear_cell_border"></div>
+	<div class="gear_cell_selection"></div>
+
+	<div class="item_new">
+		<div class="item_new_bg"></div>
+	</div>
+
+	<div class="item_invalid" data-bind-if="{{data_entry.isinvalid}}"></div>
+
+	<div class="item_select_y">
+		<div class="item_select_top"></div>
+		<div class="item_select_bottom"></div>
+	</div>
+
+	<div class="item_gliphy_cntr">
+		<div class="item_gliphy_left"></div>
+		<div class="item_gliphy_right"></div>
+		<div class="gradient_glow"></div>
+	</div>
+</div>

@@ -1,0 +1,93 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+globals_defs:
+
+  - globals: def_globals_ui
+
+    #DefaultView: view_hud
+    DefaultInfo:
+      Ident: Default
+      States: !tags
+        - HUD
+    
+    DefaultInfoMaps: !objs_Ident
+    - Ident: MenuMap_P
+
+    #DefaultInfoModes: 
+    # Example DefaultInfoModes entry:
+    #- Ident: some_game_mode
+    #  Page: ingame
+    #  States: !tags
+    #    - HUD
+    #- Mode:
+    #- Mode:
+    #- Mode: 
+    UseGFxPauseMenu: false
+    UseGFxMainMenu: false
+            
+    StatusMenuSettings:
+      DefaultSubMenu: Inventory
+      SubMenuLookup:
+      - Ident: Inventory
+        State: MENU_INVENTORY
+      - Ident: SHIFTMenu
+        State: MENU_SHIFT
+      - Ident: LANMenu
+        State: MENU_LAN
+      - Ident: ROSTERMenu
+        State: MENU_ROSTER
+      - Ident: MEATCHMAKINGMenu
+        State: MENU_MATCHMAKING
+      - Ident: MailMenu
+        State: MENU_MAIL
+      - Ident: SkillScreen
+        State: MENU_SKILLS
+      - Ident: MissionLog
+        State: MENU_MISSIONS
+      - Ident: Map
+        State: MENU_MAP
+      - Ident: GuardianRank
+        State: MENU_GUARDIAN
+      - Ident: MayhemMode
+        State: MENU_MAYHEMMODE
+      - Ident: EndlessDungeon
+        State: MENU_ENDLESSDUNGEON
+      - Ident: MenuMain
+        State: MENU_MAIN
+      - Ident: MenuMain
+        State: MENU_PAUSE
+
+    CoreInputActions: !tags
+    - jump
+    - move
+    - look
+    - use
+    - use_alt
+    - melee
+    - crouch
+    - sprint
+    - equip
+    - action_skill
+    - action_skill_hold
+    - action_skill_override
+    - next_weapon
+    - prev_weapon
+    - drop_weapon
+    - fire
+    - zoom
+    - reload
+    - weapon_mode
+    - give_up
+    - pause_menu
+    - status_menu
+    - track_next_mission
+    - track_prev_mission
+    - mark_target
+    - spell
+    - secondary_spell
+    - contextual_prompt
+    - handle_notification
+    - quick_menu
+    

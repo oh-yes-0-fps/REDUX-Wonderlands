@@ -1,0 +1,30 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uiview_defs:
+
+  - uiview: view_hud
+    page: ingame
+    inactive_behavior: suspend
+    use_core_input_glyphs: true
+    preload: true
+
+  - uiview: view_menu_base
+    abstract: true
+    page: ingame
+    display_order: 100
+
+  - uiview: view_menu_aura_overlay
+    page: navbar_aura_page
+    display_order: 200
+
+  - uiview: view_status_menu_overlay
+    page: navbar_page
+    display_order: 200
+    inactive_behavior: suspend
+    preload: true
+    components:
+    - hintbar_item
+    - navigationbar_item
+    

@@ -1,0 +1,243 @@
+.lan_connection {
+	height: 61.5vh;
+	left: 50%;
+	position: absolute;
+	top: 18vh;
+	transform: translateX(-50%);
+	width: 109.4vh;
+	isolation: isolate;
+}
+.lan_connection .lc_panel_header {
+	left: 50%;
+	position: absolute;
+	top: 0vh;
+	transform: translateX(-50%);
+	width: 51vh;
+	isolation: isolate;
+}
+.lan_connection .lc_column_tab {
+	height: 4vh;
+	margin-left: 11.2vh;
+	margin-right: 11.4vh;
+}
+.lan_connection .lc_column_tab .text_backing_top_center,
+.lan_connection .lc_column_tab .text_backing_top_right,
+.lan_connection .lc_column_tab .text_backing_top_left,
+.lan_connection .lc_column_tab .text_backing_center_right,
+.lan_connection .lc_column_tab .text_backing_center_center,
+.lan_connection .lc_column_tab .text_backing_center_left,
+.lan_connection .lc_column_tab .text_backing_bottom_left,
+.lan_connection .lc_column_tab .text_backing_bottom_center,
+.lan_connection .lc_column_tab .text_backing_bottom_right {
+	filter: opacity(0.8) contrast(1.4) grayscale(100);
+}
+.lan_connection .lc_column_tab .text_backing_content_container {
+	margin-left: 0vh;
+	margin-right: 0vh;
+}
+.lan_connection .lc_column_tab .lc_column_titles {
+	padding-left: 1.8vh;
+	padding-right: 1.8vh;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.lan_connection .lc_column_tab .lc_column_titles .lc_column_group_1,
+.lan_connection .lc_column_tab .lc_column_titles .lc_column_group_2 {
+	color: #94795b;
+	font-size: 1.60rem;
+	font-family: var(--body-font);
+	letter-spacing: 0.1rem;
+	line-height: 1.60rem;
+	pointer-events: none;
+	text-align: left;
+	text-stroke: 0.3rem black;
+}
+.lan_connection .lc_column_tab .lc_column_host_name {
+	padding-right: 18vh;
+}
+.lan_connection .lc_column_tab .lc_column_players {
+	padding-right: 2.7vh;
+}
+.lan_connection .lc_column_tab .lc_column_ping {
+	padding-right: 4.9vh;
+}
+.lan_connection .lc_button_list {
+	padding-top: 0.5vh;
+	padding-left: 10.1vh;
+	padding-right: 9.6vh;
+	max-height: 44vh;
+	overflow: hidden;
+}
+.lan_connection .button_item_list {
+	margin-bottom: 0.7vh;
+}
+.lan_connection .button_item_list[data-input-focused=true] .gradient_glow {
+    width: 107.6%;
+    margin-left: -3.6%;
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_text {
+	color: #9c9ccc;
+	font-size: 1.60rem;
+	letter-spacing: 0.14rem;
+	line-height: 1.50rem;
+	text-transform: none;
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_text.host_name {
+	width: 27.8vh;
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_text.mission {
+	width: 51vh;
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_text.players {
+	width: 9.8vh;
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_ping_icon {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 1.66vh;
+	width: 1.29vh;
+}
+.lan_connection .lan_button_item {
+	width: 100%;
+	padding-left: 3vh;
+	padding-right: 3vh;
+}
+.lan_connection .button_item_list.none .button_item_list_content .button_item_list_ping_icon {
+	background-image: url("../assets/lan_none_icon.png");
+	background-repeat: no-repeat;
+}
+.lan_connection .button_item_list.bad .button_item_list_content .button_item_list_ping_icon {
+	background-image: url("../assets/lan_bad_icon.png");
+	background-repeat: no-repeat;
+}
+.lan_connection .button_item_list.good .button_item_list_content .button_item_list_ping_icon {
+	background-image: url("../assets/lan_good_icon.png");
+	background-repeat: no-repeat;
+}
+.lan_connection .button_item_list.great .button_item_list_content .button_item_list_ping_icon {
+	background-image: url("../assets/lan_icon.png");
+	background-repeat: no-repeat;
+}
+.lan_connection .button_item_list.good .button_item_list_content .button_item_list_ping_icon,
+.lan_connection .button_item_list.great .button_item_list_content .button_item_list_ping_icon {
+	filter: hue-rotate(40deg) brightness(85%) grayscale(20%);
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_content_group_1 {
+	width: 83%;
+}
+.lan_connection .button_item_list .button_item_list_content .button_item_list_content_group_2 {
+	width: 17%;
+}
+.lan_connection .button_item_list[data-input-focused=true] {
+	transform: scale(1.1, 1.1);
+}
+.lan_connection .button_item_list[data-input-focused=true] .button_item_list_content .button_item_list_text {
+	color: #e8d6b5;
+}
+.lan_connection .lc_panel_title {
+	color: #94795b;
+	font-size: 3.00rem;
+	font-family: var(--header-font);
+	letter-spacing: 0.10rem;
+	line-height: 3.00rem;
+	position: absolute;
+	left: 50%;
+	top: 2.6vh;
+	transform: translateX(-50%);
+	text-align: center;
+	text-stroke: 0.3rem black;
+	z-index: 1;
+}
+.lan_connection .big_panel {
+	margin-top: 3.4vh;
+	height: 100%;
+}
+.lan_connection .big_panel .bigpanel_content_container {
+	margin-left: 0vh;
+	margin-top: 4.4vh;
+	margin-right: 0vh;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 113%;
+}
+.lan_connection .action_btn {
+	height: 3vh;
+	padding-left: 12vh;
+	transform: scale(1.08, 1.08);
+	transform-origin: left;
+}
+.lan_connection .action_btn .action_btn_txt {
+	font-size: 1.80rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.80rem;
+	padding-left: 0.6vh;
+	text-transform: none;
+}
+.lan_connection .search_server {
+	height: 23.9vh;
+	left: 50%;
+	margin-top: 1.2vh;
+	position: relative;
+	transform: translateX(-50%);
+	width: 35.6vh;
+}
+.lan_connection .search_server_title {
+	color: #e8d6b5;
+	font-family: var(--header-font);
+	font-size: 5.2rem;
+	left: 50%;
+	letter-spacing: 0.04rem;
+	line-height: 5.2rem;
+	position: absolute;
+	top: 48%;
+	text-transform: none;
+	transform: translateY(-50%) translateX(-50%);
+	width: 40vh;
+	text-align: center;
+}
+.lan_connection .search_server_glyph {
+	background-image: url("../../_shared/assets/glyphs/NewParts_Glyph.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 23.9vh;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 23.9vh;
+}
+
+.lan_connection .lc_customization_glyph {
+	background-image: url("../../_shared/assets/glyphs/MissionComplete_Glyph.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: 0vh;
+	height: 31.52vh;
+	left: 50%;
+	opacity: 0.2;
+	position: absolute;
+	transform: translateX(-50%) scale(1.1, 1.1) scaleX(-1);
+	transform-origin: center;
+	width: 65.18vh;
+	z-index: -1;
+}
+.lan_connection .search_server_glyph.searching {
+	animation: rotating 2s linear infinite;
+}
+.lan_connection .scrollbar {
+	height: 59.9vh;
+	right: -3vh;
+	top: 1vh;
+}
+
+@keyframes rotating {
+    from{
+        transform: translateX(-50%) translateY(-50%)  rotate(0deg);
+    }
+    to{
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}

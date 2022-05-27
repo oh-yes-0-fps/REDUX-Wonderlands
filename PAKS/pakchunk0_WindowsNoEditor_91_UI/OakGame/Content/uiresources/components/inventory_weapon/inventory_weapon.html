@@ -1,0 +1,45 @@
+<div class="weapons_guns_item" data-bind-class="{{data_entry.rarity}}"
+	 data-bind-class-toggle="new:{{data_entry.isnew}};empty:{{data_entry.isempty}}&&!{{data_entry.islocked}};refresh:{{data_entry.isrefresh}};junk:{{data_entry.isjunk}};favorite:{{data_entry.isfavorite}};invalid:{{data_entry.isinvalid}};locked:{{data_entry.islocked}};"
+	 data-input-elem="true" data-bind-input-disabled="{{data_entry.islocked}}||{{data_entry.isinvalid}}">
+
+	<div class="weapons_cell_bg"></div>
+ 	<div class="weapons_cell_electricity"></div>
+	<div class="weapons_guns_item_crack"></div>
+	<div class="weapons_cell_border"></div>
+	<div class="weapons_cell_selection"></div>
+	<div class="weapons_guns_item_img" data-bind-style-background-image-url="{{data_entry.assetpath}}"></div>
+
+	<div class="weapons_guns_item_order">
+		<div class="weapons_guns_item_order_bg"></div>
+		<div class="weapons_guns_item_order_value" data-bind-value="{{index}}+1"></div>
+	</div>
+
+	<div class="weapons_guns_item_element_bg"></div>
+	<div class="item_damage_type" data-bind-class="{{data_entry.damagetypeident}}"></div>
+	<div class="item_junk"></div>
+	<div class="item_favorite"></div>
+	<div class="item_tracked" data-bind-class-toggle="d-hidden:{{data_entry.istracked}}"></div>
+	<div class="item_locked"></div>
+
+  	<div data-bind-class-toggle="d-hidden:!{{data_entry.isempty}} && !{{data_entry.islocked}}" class="item_empty">
+		<div class="item_peak_bg"></div>
+		<div class="item_empty_text" data-bind-value="{{data_entry.emptytext}}"></div>
+	</div>
+
+	<div class="item_new">
+		<div class="item_new_bg"></div>
+	</div>
+
+	<div data-bind-class-toggle="d-hidden:!{{data_entry.isinvalid}}&&!{{data_entry.islocked}}" class="item_invalid"></div>
+
+	<div class="item_select_y">
+		<div class="item_select_top"></div>
+		<div class="item_select_bottom"></div>
+	</div>
+
+	<div class="item_gliphy_cntr">
+		<div class="item_gliphy_left"></div>
+		<div class="item_gliphy_right"></div>
+		<div class="gradient_glow"></div>
+	</div>
+</div>

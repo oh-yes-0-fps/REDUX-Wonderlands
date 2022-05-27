@@ -1,0 +1,503 @@
+.backpack_weapons_item {
+	height: 9.82vh;
+	margin: 0vh 0.5vh 1vh 0.5vh;
+	position: relative;
+	width: 16.8vh;
+}
+/* .backpack_weapons_item[data-input-focused="selected"] .backpack_weapons_item_cracks,
+.backpack_weapons_item[data-input-focused="true"] .backpack_weapons_item_cracks  {
+	background-image: none;
+} */
+.backpack_cell_bg,
+.backpack_weapons_item_cracks,
+.backpack_cell_border,
+.backpack_cell_selection {
+	position: absolute;
+	background-image: url("../../_shared/assets/inventory_components/BackpackCell_Sprites.png");
+	background-size: 68vh 20.7vh;
+	/* background-repeat: no-repeat; jpb*/
+	height: 100%;
+	width: 100%;
+}
+.backpack_cell_bg {
+	background-position: -34vh -0.4vh;
+}
+.backpack_weapons_item .backpack_weapon_cell_electricity {
+	animation-duration: 1.4s, 0.1s;
+	animation-timing-function: steps(48), linear;
+	animation-iteration-count: infinite, 1;
+	animation-fill-mode: none, forwards;
+	filter: coh-color-matrix(0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 1, 0);
+	background-image: url("../../_shared/assets/inventory_components/BackpackCell_Electricity.png");
+	background-size: 440vh 16vh;
+	background-repeat: no-repeat;
+	opacity: 0;
+	height: 16vh;
+	position: absolute;
+	pointer-events: none;
+	width: 9.2vh;
+	transform: rotateX(0deg) rotateZ(90deg) translateY(-3.7vh) translateX(-3.1vh);
+	background-position-x: 0vh;
+	background-position-y: 0vh;
+	z-index: 1;
+}
+.backpack_weapons_item.common .backpack_weapon_cell_electricity {
+	animation-name: none !important;
+	visibility: hidden;
+
+}
+.backpack_weapons_item.uncommon .backpack_weapon_cell_electricity {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.357, 0, 0, 0, 0, 0.835, 0, 0, 0, 0, 0.467, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.rare .backpack_weapon_cell_electricity {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0.682, 0, 0, 0, 0, 0.914, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.epic .backpack_weapon_cell_electricity {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.733, 0, 0, 0, 0, 0.259, 0, 0, 0, 0, 0.976, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.legendary .backpack_weapon_cell_electricity {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.925, 0, 0, 0, 0, 0.694, 0, 0, 0, 0, 0.286, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.pearl .backpack_weapon_cell_electricity {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.empty .backpack_weapon_cell_electricity {
+	animation-name: none !important;
+	visibility: hidden;
+}
+/* .backpack_weapons_item[data-input-focused="true"] .backpack_weapon_cell_electricity, .backpack_weapons_item.selected .backpack_weapon_cell_electricity {
+	/* animation-name: fxWeaponBackElectricity, fadeIn; */
+.backpack_cell_border {
+	z-index: 2;
+	background-position: 0vh -0.4vh;
+}
+.backpack_weapons_item_cracks {
+	z-index: 1;
+}
+.backpack_weapons_item_img {
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 13vh;
+	left: 50%;
+    transform: translateX(-50%) scale(1, 1) ;
+}
+.backpack_cell_selection {
+	opacity: 0;
+	pointer-events: none;
+	/* transition: opacity 0.1s linear; */
+	z-index: 4;
+	background-position: -17vh -0.4vh;
+}
+.backpack_weapons_item_details_bg {
+	bottom: 0.6vh;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 2;
+	background-image: url("../../_shared/assets/inventory_components/BackpackCell_Sprites.png");
+	background-size: 68vh 20.7vh;
+	/* background-repeat: no-repeat; jpb*/
+	background-position: -51.5vh -11.4vh;
+	height: 2.8vh;
+	width: 15.8vh;
+	overflow-y: hidden;
+}
+.backpack_weapons_item.empty .item_damage_type,
+.backpack_weapons_item.empty .backpack_weapons_item_cracks,
+.backpack_weapons_item.empty .backpack_weapons_item_value,
+.backpack_weapons_item.empty .backpack_weapons_item_img,
+.backpack_weapons_item.empty .backpack_weapons_item_details_bg {
+	visibility: hidden;
+}
+.backpack_weapons_item.empty .item_empty {
+	opacity: 1;
+}
+.backpack_weapons_item_value,
+.backpack_weapons_item_logo {
+	z-index: 3;
+	position: absolute;
+}
+.backpack_weapons_item_value {
+	bottom: 1vh;
+	left: 2.2vh;
+	color: #c9c9c9;
+	font-size: 1.8rem;
+	font-family: var(--header-font);
+	letter-spacing: 0.1rem;
+	line-height: 1;
+}
+.backpack_weapons_item_logo_cntr {
+	height: 2.5vh;
+	width: 6.5vh;
+	position: absolute;
+	bottom: 0vh;
+	left: 50%;
+	transform: translateX(-45%);
+	overflow-y: hidden;
+}
+.backpack_weapons_item_logo {
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: -.65vh;
+	height: 4.1vh;
+	width: 6.5vh;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+.backpack_weapons_item .item_damage_type {
+	bottom: 1vh;
+	right: 1.3vh;
+}
+.backpack_weapons_item .item_junk,
+.backpack_weapons_item .item_favorite,
+.backpack_weapons_item .item_tracked {
+	opacity: 0;
+	top: 1vh;
+	right: 1.2vh;
+	z-index: 3;
+}
+.backpack_weapons_item .item_equipped {
+	opacity: 0;
+	top: 0vh;
+	left: 0vh;
+	z-index: 5;
+}
+.backpack_weapons_item .item_new {
+	right: -0.6vh;
+	top: 3.2vh;
+	z-index: 5;
+	opacity: 0;
+}
+.backpack_weapons_item .item_invalid,
+.backpack_weapons_item .cant_sell_text,
+.backpack_weapons_item .item_locked,
+.backpack_weapons_item .item_empty,
+.backpack_weapons_item .item_refresh,
+.backpack_weapons_item .item_gliphy_cntr,
+.backpack_weapons_item .item_gliphy_gradient {
+	left: 50%;
+	opacity: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.backpack_weapons_item .item_select_y {	
+	height: 138%;
+    width: 100%;
+	opacity: 0;
+	z-index: 5;
+}
+.item_empty_text {
+	font-size: 2rem;
+}
+.item_cell_state_text {
+	bottom: 3.8vh;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	transform: translateX(-50%);
+	z-index: 4;
+	visibility: hidden;
+	color: #bf2528;
+	font-size: 2.3rem;
+	line-height: 1;
+	font-family: var(--header-font);
+	text-transform: none;
+}
+.backpack_weapons_item .item_gliphy_cntr {
+	height: 6.8vh;
+	pointer-events: none;
+	position: absolute;
+	width: 30vh;
+	z-index: -1;
+}
+.backpack_weapons_item .item_gliphy_top,
+.backpack_weapons_item .item_gliphy_bottom {
+	visibility: hidden;
+}
+.backpack_weapons_item .item_gliphy_left {
+	left: 6.6vh;
+}
+.backpack_weapons_item .item_gliphy_right {
+	right: 6.6vh;
+}
+.backpack_weapons_item .gradient_glow {
+	top: -0.9vh;
+    opacity: 1;
+    min-height: 8.8vh;
+}
+/* .backpack_weapons_item[data-input-focused=true] .backpack_weapons_item_cracks {
+	background-image: url("../../_shared/assets/inventory_components/BackpackCell_Background_Tint.png");
+}
+.backpack_weapons_item[data-input-focused=true] .backpack_weapons_item_cracks {
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-position-x: 50% !important;
+	background-position-y: 50% !important;
+} */
+.backpack_weapons_item[data-input-focused=true].common .backpack_weapons_item_cracks {
+	background-image: none;
+	filter: none;
+}
+.backpack_weapons_item[data-input-focused=true].uncommon .backpack_weapons_item_cracks {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.34, 0, 0, 0, 0, 0.64, 0, 0, 0, 0, 0.38, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item[data-input-focused=true].rare .backpack_weapons_item_cracks {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0.25, 0, 0, 0, 0, 0.74, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item[data-input-focused=true].epic .backpack_weapons_item_cracks {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.73, 0, 0, 0, 0, 0.38, 0, 0, 0, 0, 0.73, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item[data-input-focused=true].legendary .backpack_weapons_item_cracks {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.77, 0, 0, 0, 0, 0.48, 0, 0, 0, 0, 0.11, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item[data-input-focused=true].pearl .backpack_weapons_item_cracks {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.150, 0, 0, 0, 0, 0.850, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.common .backpack_weapons_item_cracks {
+	background-position: -34vh -0.4vh;
+	visibility: hidden;
+}
+.backpack_weapons_item.common .backpack_weapons_item_value {
+	color: #c9c9c9;
+}
+.backpack_weapons_item.common .backpack_weapons_item_logo {
+	filter: grayscale(100%) brightness(0.85);
+}
+.backpack_weapons_item.uncommon .backpack_weapons_item_cracks  {
+	background-position: -51vh -0.4vh;
+}
+.backpack_weapons_item.uncommon .backpack_weapons_item_value  {
+	color: #59a663;
+}
+.backpack_weapons_item.uncommon .backpack_weapons_item_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.349, 0, 0, 0, 0, 0.651, 0, 0, 0, 0, 0.388, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.rare .backpack_weapons_item_cracks {
+	background-position: 0vh -10.7vh;
+}
+.backpack_weapons_item.rare .backpack_weapons_item_value  {
+	color: #6f94be;
+}
+.backpack_weapons_item.rare .backpack_weapons_item_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.435, 0, 0, 0, 0, 0.58, 0, 0, 0, 0, 0.745, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.epic .backpack_weapons_item_cracks  {
+	background-position: -17vh -10.7vh;
+}
+.backpack_weapons_item.epic .backpack_weapons_item_value  {
+	color: #b079b8;
+}
+.backpack_weapons_item.epic .backpack_weapons_item_logo  {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.69, 0, 0, 0, 0, 0.475, 0, 0, 0, 0, 0.722, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.legendary .backpack_weapons_item_cracks  {
+	background-position: -34vh -10.7vh;
+}
+.backpack_weapons_item.legendary .backpack_weapons_item_value  {
+	color: #debc6e;
+}
+.backpack_weapons_item.legendary .backpack_weapons_item_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.871, 0, 0, 0, 0, 0.737, 0, 0, 0, 0, 0.431, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.pearl .backpack_weapons_item_cracks  {
+	background-position: -34vh -10.7vh;
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.pearl .backpack_weapons_item_value  {
+	color: #0ffff0;
+}
+.backpack_weapons_item.pearl .backpack_weapons_item_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.selected .backpack_cell_selection {
+	/* animation-name: goldGlowingTexture; */
+	animation-duration: 0.15s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	opacity: 1;
+}
+
+.backpack_weapons_item.selected .item_gliphy_cntr {
+	opacity: 1;
+}
+.backpack_weapons_item.selected .gradient_glow {
+	/* animation-name: gliphyGradientHorizontal; */
+}
+.backpack_weapons_item.selected .item_gliphy_left {
+	left: 4.2vh;
+}
+.backpack_weapons_item.selected .item_gliphy_right {
+	right: 4.2vh;
+}
+.backpack_weapons_item[data-input-selected="true"] {
+	z-index: 9;
+}
+.backpack_weapons_item[data-input-selected="true"] .item_select_y {
+	/* animation-name: fadeIn; */
+}
+.backpack_weapons_item[data-input-selected="true"] .item_select_top {
+	animation-name: scaleUpCenterX;
+}
+.backpack_weapons_item[data-input-selected="true"] .item_select_bottom {
+	animation-name: scaleUpCenterXRotated;
+}
+.backpack_weapons_item[data-input-selected="true"] .backpack_weapons_item_img {
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+	animation-name: growingDownScale;
+}
+.backpack_weapons_item.new .item_new {
+	/* animation-name: newBeating; */
+	opacity: 1;
+}
+.backpack_weapons_item.favorite .item_favorite {
+	/* animation-name: blinking; */
+	opacity: 1;
+}
+.backpack_weapons_item.vending-favorite .item_favorite {
+	opacity: 1;
+}
+.backpack_weapons_item.vending-favorite .item_cell_state_text {
+	color: #777c89;
+	visibility: visible;
+}
+.backpack_weapons_item.junk .item_junk {
+	/* animation-name: blinkingJunk; */
+	opacity: 1;
+}
+.backpack_weapons_item.tracked .item_tracked {
+	opacity: 1;
+}
+.backpack_weapons_item.not-tracked .item_tracked {
+	opacity: 0.35;
+}
+.backpack_weapons_item.equipped .item_equipped {
+	opacity: 1;
+}
+.backpack_weapons_item.equipped .item_cell_state_text {
+	color: #57c953;
+}
+.backpack_weapons_item.vending-equipped .item_equipped {
+	opacity: 1;
+}
+.backpack_weapons_item.vending-equipped .item_cell_state_text {
+	color: #57c953;
+	visibility: visible;
+}
+.backpack_weapons_item.cosmetic .item_cell_state_text {
+	color: #777c89;
+	visibility: visible;
+}
+.backpack_weapons_item .item_refresh,
+.backpack_weapons_item .item_refresh_bg,
+.backpack_weapons_item .item_loading_icon {
+	opacity: 0;
+}
+.refresh .item_refresh,
+.refresh .item_refresh_bg,
+.refresh .item_loading_icon {
+	opacity: 1;
+}
+.backpack_weapons_item .item_loading_icon {
+	animation-name: loadingRotateCW;
+}
+.backpack_weapons_item.locked .item_locked {
+	opacity: 1;
+}
+.backpack_weapons_item.locked .backpack_cell_bg,
+.backpack_weapons_item.locked .backpack_cell_border,
+.backpack_weapons_item.locked .backpack_weapons_item_img,
+.backpack_weapons_item.locked .backpack_weapons_item_cracks,
+.backpack_weapons_item.locked .backpack_weapons_item_value,
+.backpack_weapons_item.locked .item_damage_type,
+.backpack_weapons_item.locked .backpack_weapons_item_details_bg {
+	animation-duration: 0.4s;
+	animation-delay: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	filter:  coh-color-matrix(0.590, 0.000, 0.000, 0.000, 0.255, 0.000, 0.590, 0.000, 0.000, 0.000, 0.000, 0.000, 0.590, 0.000, 0.000, 0.000, 0.000, 0.000, 1.000, 0.000);
+}
+.backpack_weapons_item.locked .backpack_weapons_item_logo {
+	animation-duration: 0.4s;
+	animation-delay: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	filter: coh-color-matrix(2, 0, 0, 0, 0.088, 0, 0.51, 0, 0, 0, 0, 0, 0.61, 0, 0, 0, 0, 0, 0.6, 0);
+}
+.backpack_weapons_item.lockedout .item_locked {
+	animation-name: lockedExplotion;
+	z-index: 8;
+}
+.backpack_weapons_item.lockedout .backpack_cell_bg,
+.backpack_weapons_item.lockedout .backpack_cell_border,
+.backpack_weapons_item.lockedout .backpack_weapons_item_img,
+.backpack_weapons_item.lockedout .backpack_weapons_item_cracks,
+.backpack_weapons_item.lockedout .backpack_weapons_item_details_bg {
+	animation-name: lockedOut;
+	filter: coh-color-matrix(0.99, 0, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 0, 1, 0);
+}
+.backpack_weapons_item.lockedout .backpack_weapons_item_logo {
+	animation-name: lockedOut;
+	filter: coh-color-matrix(2, 0, 0, 0, 0.088, 0, 0.51, 0, 0, 0, 0, 0, 0.61, 0, 0, 0, 0, 0, 0.6, 0);
+}
+.backpack_weapons_item.cant-sell .item_invalid {
+	opacity: 1;
+}
+.backpack_weapons_item.cant-sell .cant_sell_text {
+	animation-name: beatingCentered;
+	opacity: 1;
+}
+.backpack_weapons_item.invalid .item_invalid {
+	opacity: 1;
+}
+/* .backpack_weapons_item.cant-sell .item_invalid, */
+.backpack_weapons_item.cant-sell .item_cell_state_text {
+	animation-name: fadeInOutStep; 
+	animation-duration: .6s;
+	animation-delay: 0s;
+}
+.backpack_weapons_item.cant-sell.favorite .item_favorite {
+	animation-name: blinkingRed;
+	filter:  coh-color-matrix(0.7, 0, 0, 0, 0.4, 0, 0.6, 0, 0, 0.094, 0, 0, 0.7, 0, 0.118, 0, 0, 0, 1, 0);
+	opacity: 1;
+}
+.backpack_weapons_item.disabled .backpack_cell_bg,
+.backpack_weapons_item.disabled .backpack_cell_border,
+.backpack_weapons_item.disabled .backpack_weapons_item_img,
+.backpack_weapons_item.disabled .backpack_weapons_item_details_bg,
+.backpack_weapons_item.disabled .backpack_weapons_item_value,
+.backpack_weapons_item.disabled .backpack_weapons_item_cracks {
+	filter: grayscale(100%);
+}
+.backpack_weapons_item.disabled .backpack_weapons_item_img {
+	filter: grayscale(100%);
+}
+.backpack_weapons_item.disabled .item_new {
+	opacity: 0;
+}
+.backpack_weapons_item.disabled .item_damage_type,
+.backpack_weapons_item.disabled .item_junk,
+.backpack_weapons_item.disabled .item_favorite,
+.backpack_weapons_item.disabled .item_tracked,
+.backpack_weapons_item.disabled .item_equipped,
+.backpack_weapons_item.disabled .item_invalid,
+.backpack_weapons_item.disabled .cant_sell_text,
+.backpack_weapons_item.disabled .item_locked,
+.backpack_weapons_item.disabled .item_empty,
+.backpack_weapons_item.disabled .item_refresh,
+.backpack_weapons_item.disabled .item_gliphy_cntr,
+.backpack_weapons_item.disabled .item_gliphy_gradient {
+	filter: grayscale(100%) coh-color-matrix(0, 0, 0, 0, 0.4, 0, 0, 0, 0, 0.4, 0, 0, 0, 0, 0.4, 0, 0, 0, 1, 0);
+}
+
+.loc-zh-hans .backpack_weapons_item_value {
+	font-size: 1.2rem;	
+	line-height: 1.8rem;
+}

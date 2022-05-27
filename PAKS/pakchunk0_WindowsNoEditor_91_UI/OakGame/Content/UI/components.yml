@@ -1,0 +1,150 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uicomponent_defs:
+  - uicomponent: button
+    jspath: components/button/base_button.js
+    path: components/button/button.html
+
+  - uicomponent: action_button
+    path: components/action_button/action_button.html
+
+  - uicomponent: option_button
+    jspath: components/option_button/option_button.js
+    path: components/option_button/option_button.html
+
+  - uicomponent: horizontal_selector
+    jspath: components/horizontal_selector/horizontal_selector.js
+    path: components/horizontal_selector/horizontal_selector.html
+
+  - uicomponent: hero_point_toggle
+    jspath: components/hero_point_toggle/hero_point_toggle.js
+    path: components/hero_point_toggle/hero_point_toggle.html
+
+  - uicomponent: checkbox_button
+    jspath: components/checkbox_button/checkbox_button.js
+    path: components/checkbox_button/checkbox_button.html
+
+  - uicomponent: lut_button
+    jspath: components/lut_button/lut_button.js
+    path: components/lut_button/lut_button.html
+
+  - uicomponent: progress_bar
+    jspath: components/progress_bar/progress_bar.js
+    path: components/progress_bar/progress_bar.html
+
+  - uicomponent: simple_text
+    jspath: components/simple_text/simple_text.js
+    path: components/simple_text/simple_text.html
+
+  - uicomponent: inner_title
+    jspath: components/inner_title/inner_title.js
+    path: components/inner_title/inner_title.html
+
+  - uicomponent: slider
+    jspath: components/slider/slider.js
+    path: components/slider/slider.html
+
+  - uicomponent: tooltip
+    jspath: components/tooltip/tooltip.js
+    path: components/tooltip/tooltip.html
+
+  - uicomponent: panel
+    jspath: components/panel/panel.js
+    path: components/panel/panel.html
+
+  - uicomponent: spinner
+    jspath: components/spinner/spinner.js
+    path: components/spinner/spinner.html
+
+  - uicomponent: hintbar_item
+    jspath: components/hintbar_item/hintbar_item.js
+    path: components/hintbar_item/hintbar_item.html
+
+  - uicomponent: navigationbar_item
+    path: components/navigationbar_item/navigationbar_item.html
+
+  - uicomponent: input_component
+    jspath: components/input_component/input_component.js
+    path: components/input_component/input_component.html
+
+  - uicomponent: ammo_item
+    path: components/ammo_item/ammo_item.html
+
+  - uicomponent: inventory_weapon
+    path: components/inventory_weapon/inventory_weapon.html
+
+  - uicomponent: backpack_weapon
+    path: components/backpack_weapon/backpack_weapon.html
+
+  - uicomponent: gear_item
+    path: components/gear_item/gear_item.html
+
+  - uicomponent: customization_item
+    path: components/customization_item/customization_item.html
+    jspath: components/customization_item/customization_item.js
+
+  - uicomponent: progress_bar_thin
+    path: components/progress_bar_thin/progress_bar_thin.html
+
+  - uicomponent: progress_bar_radial
+    path: components/progress_bar_radial/progress_bar_radial.html
+
+  - uicomponent: inventory_item
+    jspath: components/inventory_item/js/inventory_item.js
+
+  - uicomponent: melee_weapon
+    jspath: components/melee_weapon/melee_weapon.js
+    path: components/melee_weapon/melee_weapon.html
+
+  - uicomponent: item_card
+    jspath: components/item_card/item_card.js
+    path: components/item_card/item_card.html
+
+  - uicomponent: item_card_abbreviated
+    jspath: components/item_card_abbreviated/item_card_abbreviated.js
+    path: components/item_card_abbreviated/item_card_abbreviated.html
+
+  - uicomponent: backpack
+    jspath: components/backpack/backpack.js
+    path: components/backpack/backpack.html
+
+  - uicomponent: pet_progress_bar
+    path: components/pet_progress_bar/pet_progress_bar.html
+
+  - uicomponent: text_button
+    path: components/text_button/text_button.html
+
+  - uicomponent: message_tutorial
+    path: components/screen_messages/message_tutorial.html    
+
+  - uicomponent: message_challenge
+    path: components/screen_messages/message_challenge.html
+
+  - uicomponent: radial_wheel
+    path: components/radial_wheel/radial_wheel.html
+    jspath: components/radial_wheel/radial_wheel.js
+
+  - uicomponent: item_of_the_day
+    path: components/item_of_the_day/item_of_the_day.html
+
+  - uicomponent: player_widget
+    path: components/player_widget/player_widget.html
+
+  - uicomponent: social_offline
+    path: components/social_offline/social_offline.html
+
+  - uicomponent: currencywidget
+    path: components/currencywidget/currencywidget.html
+
+  - uicomponent: credits_section
+    jspath: components/credits_section/credits_section.js
+    path: components/credits_section/credits_section.html
+
+  - uicomponent: credits_line
+    jspath: components/credits_section/credits_line.js  
+    path: components/credits_section/credits_line.html
+
+  - uicomponent: matchmaking_search_text
+    path: components/matchmaking_search_text/matchmaking_search_text.html

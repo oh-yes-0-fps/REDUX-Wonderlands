@@ -1,0 +1,55 @@
+priority: 1.0
+revision: 1
+author: bowan.foryt
+
+uiwidgetclass_defs:
+
+  - uiwidgetclass: mod
+    parent: !ref_uiwidgetclass aura_menu
+    use_cursor: true
+    path: mod/mod.html
+
+uistate_defs:
+
+  - uistate: MENU_MOD
+    parent: !ref_uistate AURA_MENU
+    apply: !tags
+       - MENU_MOD
+
+uiview_defs:
+  - uiview: view_menu_mod
+    parent: !ref_uiview view_menu_aura 
+    page: mod_page  
+    display_order: 200
+
+#UI Widget Definitions
+uiwidget_defs:
+
+  - uiwidget: def_mod
+    parent: !ref_uiwidget def_aura_menu
+    class: mod
+    view: view_menu_mod
+    require_tags: !tags
+      - MENU_MOD
+    provider_channels: !objs_channel
+    - channel: mail_channel
+      provider: mail_provider
+      context: player_controller
+
+    params:
+      input_schema: ui_menu_base
+      menu_title: MODS
+      primary_state: MENU_MOD
+      loaded_input_actions: !objs_loaded_input_action
+        - loaded_input_action: menu_escape
+          loc_text_ident: Shared.BackText
+      MailText: !loc mail, MailText, MAILBOX
+      NoMailText: !loc mail, NoMailText, NO MAIL
+      NoMailItemsText: !loc mail, NoMailItemsText, NO MAIL ITEMS
+      OfflineTitleText: !loc mail, OfflineTitleText, AVAILABLE IN-GAME ONLY
+      OfflineBodyText: !loc mail, OfflineBodyText, The mailbox is only available while in the game.
+      NewItemText: !loc mail, NewItemText, New Item
+      AcceptItemText: !loc mail, AcceptItemText, Accept Item
+      ReceivedItemText: !loc mail, ReceivedItemText, RECEIVED
+      audio:
+        mail_accept: Menu_Mail_Accept

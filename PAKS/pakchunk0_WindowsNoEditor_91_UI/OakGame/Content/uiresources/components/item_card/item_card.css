@@ -1,0 +1,1697 @@
+.item_card_level_bg {
+	display: none;
+	position: absolute;
+	right: 1.4vh;
+	top: -0.86vh;
+	transform-origin: right;
+	transform: scale(0.7, 0.7);
+	z-index: -1;
+}
+
+.item_card_score_cntr {
+	top: 1.4vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.item_card_score {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+}
+.item_card_score_value,
+.item_card_score_text {
+	text-align: left;
+	color: #e1e1e1;
+	text-transform: none;
+}
+.item_card_score_value {
+	margin-top: 0.3vh;
+	margin-right: 0.8vh;
+	font-family: var(--header-font);
+	font-size: 3.60rem;
+	line-height: 3.60rem;
+	letter-spacing: 0rem;
+		text-stroke: 0.3rem black;
+;
+}
+.item_card_score_text {
+	margin-top: 0.7vh;
+	font-family: var(--body-font);
+	font-size: 1.70rem;
+	line-height: 1.70rem;
+	letter-spacing: 0.26rem;
+		text-stroke: 0.3rem black;
+;
+
+
+}
+.item_card_level {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+.item_card_level_value,
+.item_card_level_text {
+	text-align: right;
+	color: #e1e1e1;
+	text-transform: none;
+}
+.item_card_level_value {
+	font-family: var(--header-font);
+	font-size: 2.80rem;
+	line-height: 3.60rem;
+	letter-spacing: 0.1rem;
+		text-stroke: 0.3rem black;
+;
+
+
+}
+.item_card_level_text {
+	margin-top: 0.7vh;
+	margin-right: 0.6vh;
+	font-family: var(--body-font);
+	font-size: 1.80rem;
+	line-height: 1.80rem;
+	letter-spacing: 0.22rem;
+		text-stroke: 0.3rem black;
+;
+	coh-font-fit-mode: fit;
+	max-height: 1.80rem;
+}
+
+.item_card_stats_attributes {
+	height: 2.5vh;
+	margin-bottom: 0.38vh;
+	width: 100%;
+}
+.item_card_stats_attributes.fake {
+	display: none;
+}
+.Pauldron .item_card_stats_attributes.fake {
+	height: auto;
+	margin-bottom: 0vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.item_card_stats_attributes .attribute_resume {
+	height: 2.5vh;
+	margin-bottom: .3vh;
+}
+.item_card_stats_attributes .disabled .attribute_current_value {
+	width: auto;
+}
+.item_card_stats_attributes .disabled .attribute_name {
+	margin-left: 0vh;
+}
+.item_card_stats_attributes .attribute_difference_value {
+	display: none;
+}
+.item_card_stats_attributes .attribute_name {
+	display: flex;
+	flex: 1 1 0;
+	margin-right: .4vh;
+}
+.item_card_stats_attributes .attribute_name,
+.item_card_stats_attributes .attribute_difference_value,
+.item_card_stats_attributes .attribute_current_value {
+	text-align: left;
+	font-size: 1.80rem;
+	line-height: 1.80rem;
+	letter-spacing: 0.12rem;
+}
+.item_card_stats_attributes .attribute_current_value {
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+.item_card_stats_attributes .attribute_name,
+.item_card_stats_attributes .attribute_current_value {
+	max-height: 2rem;
+	line-height: 2rem;
+}
+.item_card_stats_attributes .attribute_name_icon {
+	display: flex;
+	align-items: center;
+	flex: 1 1 0;
+	padding-left: 0.1vh;
+	padding-right: 0.3vh;
+}
+.item_card_stats_attributes .attribute_icon {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	height: 2.4vh;
+	margin-left: 0.4vh;
+	margin-right: 0.2vh;
+	width: 2.4vh;
+}
+.item_card_stats_attributes .attribute_values {
+	margin-left: 0vh;
+}
+.item_card_stats_attributes .attribute_difference_better_icon,
+.item_card_stats_attributes .attribute_difference_worse_icon,
+.item_card_stats_attributes .attribute_difference_same_icon {
+	height: 1.2vh;
+	width: 1.2vh;
+}
+.item_card_stats_attributes .attribute_bg {
+	z-index: -1;
+	width: 100%;
+	height: 2.5vh;
+	background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.item_card_description {
+	margin-top: .6vh;
+	width: 38.3vh;
+}
+.item_card_description .text_backing {
+	margin: 0vh;
+	min-width: 100%;
+}
+.item_card_description .text_backing_content_container {
+	margin: 0vh;
+}
+.item_card_description_cntr {
+	position: relative;
+	padding-bottom: 0.8vh;
+	padding-top: 0.8vh;
+}
+.item_card .item_damage_type{
+	background-position: center;
+	background-size: contain;
+}
+.item_card_description_item {
+	margin-bottom: 0.2vh;
+	padding-left: 0.7vh;
+	padding-right: 0.8vh;
+	display: flex;
+	align-content: flex-start;
+}
+.Mission .item_card_description_item,
+.Ammo .item_card_description_item {
+	padding-left: 0vh;
+	padding-right: 0vh;
+}
+.item_pip {
+	position: absolute;
+	pointer-events: none;
+	height: 1.2vh;
+	width: 1.2vh;
+	z-index: 1;
+	background-image: url("../../item_card/assets/itemcard_pip.png");
+	background-repeat: no-repeat;
+	background-size: 1.2vh 1.2vh;
+}
+.item_card_description_item_pip {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 1, 0);
+	height: 1.2vh;
+	margin-right: 0.7vh;
+	margin-top: 0.4vh;
+	position: relative;
+	width: 1.2vh;
+}
+.item_card_description_text_cntr {
+	margin-top: 0vh;
+	width: 97%;
+}
+.item_card_description_text {
+	color: #9c9dc8;
+	font-family: var(--body-font);
+	font-size: 1.68rem;
+	letter-spacing: 0.07rem;
+	line-height: 2.20rem;
+	text-align: left;
+}
+.item_card_description_text p{
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+}
+.item_card {
+	left: 0vh;
+	min-height: 31.4vh;
+	position: absolute;
+	top: 0vh;
+	width: 47.4vh;
+	z-index: 50;
+	opacity: 1;
+}
+.item_card_backing,
+.item_card_top_frame,
+.item_card_bottom_frame {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+.item_card_equipped_icon,
+.item_card_attention_icon {
+	display: none;
+	height: 2.6vh;
+	position: absolute;
+	top: 1.5vh;
+}
+.item_card_equipped_icon {
+	right: 0.4vh;
+	width: 3.2vh;
+}
+.item_card_attention_icon {
+	right: 5.8vh;
+	width: 2.6vh;
+}
+.item_card_backing {
+	height: 100%;
+	top: 50%;
+	transform: translate(-50.4%, -50%);
+	
+	isolation: isolate;
+	width: 41vh;
+}
+.item_card_backing_bg {
+	background-color: #0a0a0b;
+	bottom: 5vh;
+	left: 0vh;
+	position: absolute;
+	top: 4.8vh;
+	width: 100%;
+}
+.item_card_side_frame {
+	left: 0vh;
+	right: 0vh;
+	top: 14vh;
+	bottom: 6vh;
+	pointer-events: none;
+	width: 100%;
+	position: absolute;
+}
+.item_card_side_frame_left,
+.item_card_side_frame_right {
+	height: 100%;
+	position: absolute;
+	top: 0vh;
+	width: 1.18vh;
+	z-index: 1;
+	background-image: url("../../item_card/assets/ItemCard_SideFrame.png");
+	background-repeat: repeat-y;
+	background-size: contain;
+}
+.item_card_side_frame_left {
+	left: 0vh;
+}
+.item_card_side_frame_right {
+	transform: scaleX(-1);
+	right: 0vh;
+}
+.item_card_top_frame_alpha,
+.item_card_bottom_frame_alpha {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 23.8vh;
+	width: 47.4vh;
+}
+.item_card_top_frame {
+	background-image: url("../../item_card/assets/ItemCard-Borders.png");
+	width: 47.4vh;
+	height: 18.51vh;
+	top: 0vh;
+	background-position: 0vh 0vh;
+	background-size: 142.22vh 31.48vh;
+}
+.item_card_bottom_frame {
+	background-image: url("../../item_card/assets/ItemCard-Borders.png");
+	bottom: 0vh;
+	background-position: 0vh -18.51vh;
+	background-size: 142.22vh 31.48vh;
+	width: 47.4vh;
+	height: 12.96vh;
+	transform: translateX(-50.4%);
+}
+.item_card_top_frame_alpha,
+.item_card_bottom_frame_alpha {
+	opacity: 0.6;
+	filter: coh-color-matrix(0, 0, 0, 0, 0.569, 0, 0, 0, 0, 0.569, 0, 0, 0, 0, 0.569, 0, 0, 0, 1, 0);
+}
+.item_card_top_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard-HeaderTint.tga");
+}
+.item_card_bottom_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard-FooterTint.tga");
+    background-position-y: -10.7vh;
+}
+.item_card_requirement_bg {
+	background-image: url("../../item_card/assets/ItemCardRequirementBG.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 4.17vh;
+	opacity: 0;
+	position: absolute;
+	top: 0.5vh;
+	right: 0.4vh;
+	width: 38.8vh;
+}
+.item_card_score_cntr,
+.item_card_currency {
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.item_card_content {
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 1;
+	isolation: isolate;
+}
+.item_card_currency {
+	width: 43.6vh;
+	justify-content: center;
+}
+.item_card_score_cntr {
+	width: 40vh;
+	justify-content: space-between;
+}
+.item_card_header {
+	padding-top: 0.6vh;
+	width: 100%;
+}
+.item_card_subtitle,
+.item_card_weapon_name {
+	text-align: center;
+}
+.item_card_subtitle {
+	color: #74cdca;
+	font-family: var(--body-font);
+	font-size: 1.80rem;
+	line-height: 1.80rem;
+	letter-spacing: 0.10rem;
+	text-stroke: 0.3rem black;
+}
+/*.mayhem .item_card_subtitle_mayhem {
+	color: rgba(118, 203, 208, 1.000000);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1vh;
+	font-family: var(--body-font);
+	font-size: 1.80rem;
+	line-height: 1.80rem;
+	letter-spacing: 0.10rem;
+	text-stroke: 0.3rem black;
+}*/
+.Money .item_card_subtitle_mayhem, 
+.Mission .item_card_subtitle_mayhem, 
+.Scrolls .item_card_subtitle_mayhem, 
+.Ammo .item_card_subtitle_mayhem, 
+.healthPickup .item_card_subtitle_mayhem {
+	display: none;
+}
+.item_card_weapon_name {
+	color: #bcbcbc;
+	font-family: var(--header-font);
+	font-size: 3.10rem;
+	letter-spacing: 0.12rem;
+	line-height: 3.10rem;
+	text-stroke: 0.3rem black;
+	text-transform: none;
+}
+.item_card_weapon_logo_bottom {
+	height: 5.4vh;
+	position: relative;
+	width: 100%;
+}
+.item_card_weapon_logo_bg {
+	left: 0vh;
+	position: absolute;
+	top: 0vh;
+	width: 100%;
+	height: 5.4vh;
+    background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item_card_weapon_rarity_top {
+	margin-bottom: 1.6vh;
+	position: relative;
+	width: 100%;
+	height: 2.5vh;
+}
+.item_card_weapon_rarity_top.pauldron_top {
+	display: none;
+	margin-bottom: 0.2vh;
+	margin-top: 1.2vh;
+}
+.item_card_weapon_rarity_top.pauldron_top .item_card_weapon_rarity_bg {
+	height: 2.2vh;
+}
+.item_card_stats_skills {
+	margin-top: 0.8vh;
+	display: none;
+
+	align-items: center;
+	justify-content: center;
+}
+.item_card_category_bg,
+.item_card_weapon_rarity_bg {
+	left: 0vh;
+	position: absolute;
+	top: 0vh;
+	width: 100%;
+	height: 2.5vh;
+	background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.item_card_category {
+	position: relative;
+	margin-top: 1vh;
+	display: none;
+	width: 100%;
+	height: 2.5vh;
+	margin-bottom: -1.2vh;
+}
+.item_card_category.Banner {
+	display: block;
+}
+.item_card_category_name,
+.item_card_weapon_rarity_name {
+	text-align: center;
+	width: 100%;
+	color: #bcbcbc;
+	font-family: var(--body-font);
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	letter-spacing: 0.22rem;
+	padding-left: 0.7vh;
+	padding-right: 0.7vh;
+	text-stroke: 0.3rem black;
+	max-height: 1.8rem;
+	coh-font-fit-mode: shrink;
+	left: 0.1vh;
+	top: 50%;
+	transform: translateY(-42%);
+	position: relative;
+}
+.item_card_category_name {
+	transform: translateY(-44%);
+}
+.item_card_stats_weapon {
+	position: relative;
+	width: 12.6vh;
+}
+.item_card_weapon,
+.item_card_weapon_logo {
+	position: relative;
+	height: 11vh;
+	width: 100%;
+	background-size: contain;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%) scale(0.76, 0.76);
+}
+.item_card_weapon,
+.item_card_weapon_logo {
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+.item_card_weapon {
+	margin-bottom: 1.5vh;
+	margin-left: 1vh;
+	margin-top: 2.5vh;
+	width: 14.6vh;
+	height: 9.4vh;
+	isolation: isolate;
+}
+.stats_container{
+	display: flex;
+}
+.Ring .stats_container,
+.Amulet .stats_container{
+	width: 100%;
+    flex-direction: column;
+    margin-bottom: -0.6vh;
+}
+.item_card_weapon_cntr {
+	position: relative;
+	width: 9.6vh;
+	margin-left: 1vh;
+	height: 5.4vh;
+	margin-top: 0vh;
+	margin-bottom: 1.5vh;
+}
+.item_card_weapon_logo {
+	padding-left: 0.6vh;
+	background-repeat: no-repeat;
+}
+.item_card_stats_list {
+	margin-left: 0.6vh;
+	width: 25vh;
+    max-height: 16.9vh;
+}
+.item_card_stats_elemental {
+	height: 2.2vh;
+	position: relative;
+	width: 38.3vh;
+	display: flex;
+	color: #5caa65;
+	align-items: center;
+	justify-content: center;
+}
+.item_card_stats_elemental_icon {
+	height: 2vh;
+	margin-right: 1vh;
+	position: relative;
+	width: 2vh;
+}
+.item_card_stats_elemental_icon div {
+	left: 50%;
+	transform: translateX(-50%);
+	margin-right: .5vh;
+}
+.item_card_stats_elemental_dextery {
+	font-family: var(--body-font);
+	font-size: 1.80rem;
+	letter-spacing: 0.20rem;
+	line-height: 1.80rem;
+	margin-right: 1.4vh;
+	text-stroke: 0.3rem black;
+}
+.item_card_stats_elemental_bg {
+	position: absolute;
+	width: 100%;
+	height: 2.2vh;
+	background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.item_card_stats_elemental.Fire {
+	color: #e8ae3e;
+}
+.item_card_stats_elemental.Void {
+	color: #832bbc;
+}
+.item_card_stats_elemental.Cryo {
+	color: #71fbf6;
+}
+.item_card_stats_elemental.Radioactive,
+.item_card_stats_elemental.DarkMagic {
+	color: #D75C96;
+}
+.item_card_stats_elemental.Corrosive,
+.item_card_stats_elemental.Poison {
+	color: #68d847;
+}
+.item_card_stats_elemental.Shock,
+.item_card_stats_elemental.Electric {
+	color: #347aea;
+}
+.item_card_stats_elemental.Impact {
+	display: none;
+}
+.item_card_stats {
+	margin-top: 2vh;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.item_card_stats_skill_value_cntr {
+	top: 6vh;
+    position: absolute;
+    right: 0vh;
+    z-index: 1;
+    height: 3vh;
+	width: 4.6vh;
+	height: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../../_shared/assets/skill_screen/gear_overlay_small.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item_card_stats_skill_description_cntr {
+	top: 0.5vh;
+	position: absolute;
+	right: 1vh;
+	z-index: 1;
+}
+.item_card_stats_skill_cntr {
+	height: 8vh;
+	position: relative;
+	width: 33.33%;
+}
+.item_card_stats_skill_bg {
+	background-image: url("../../item_card/assets/pauldronStatsBG.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 8vh;
+	left: 2.6vh;
+	position: absolute;
+	width: 9.67vh;
+	z-index: 0;
+}
+.item_card_stats_skill_type_icon {
+	bottom: 0vh;
+	position: absolute;
+	transform-origin: bottom;
+	z-index: 1;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 4vh;
+	height: 4vh;
+}
+.item_card_stats_skill_type_icon.better {
+	filter: coh-color-matrix(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.83, 0, 0, 0, 0, 0.2, 0, 0, 0, 1, 0);
+}
+.item_card_stats_skill_type_icon.worse {
+	filter: coh-color-matrix(0, 0, 0, 0, 1, 0, 0, 0, 0, 0.27, 0, 0, 0, 0, 0.27, 0, 0, 0, 1, 0);
+}
+.item_card_stats_skill_icon {
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 5.8vh;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 9vh;
+	z-index: 1;
+}
+.item_card .attribute_current_value,
+.item_card .attribute_name_icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.item_card.mirror .attribute_current_value,
+.item_card.mirror .attribute_name_icon {
+	flex-direction: row-reverse;
+}
+.item_card.mirror .attribute_current_value {
+	justify-content: flex-end;
+}
+.item_card.mirror .attribute_value_txt {
+	margin-left: 0.4vh;
+}
+.item_card.mirror .attribute_name {
+	flex: 1 1;
+	justify-content: flex-end;
+}
+.item_card.mirror .attribute_icon {
+	margin-left: 0vh;
+}
+.item_card.mirror .disabled  .attribute_name_icon{
+	justify-content: flex-start;
+}
+.item_card_stats_skill_description,
+.item_card_stats_skill_value {
+	color: #e8d6b5;
+	font-family: var(--body-font);
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.80rem;
+	text-align: left;
+	z-index: 1;
+	text-stroke: 0.3rem black;
+}
+.hidelevel .item_card_level {
+	visibility: hidden;
+}
+.hideitemscore .item_card_score{
+	visibility: hidden;
+}
+.hidecurrency .item_card_currency{
+	visibility: hidden;
+}
+.item_card_stats {
+	margin-top: 1.4vh;
+}
+.item_owned_text{
+	font-size: 2.2rem;
+	color: #e21316;
+	width: 100%;
+	text-align: center;
+	margin-top: 1vh;
+	font-family: var(--body-font);
+}
+.item_card_stats_class_cntr {
+	height: 8.4vh;
+	margin-right: 1vh;
+	position: relative;
+	width: 10vh;
+}
+.item_card_stats_class_icon {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.749, 0, 0, 0, 0, 0.145, 0, 0, 0, 0, 0.157, 0, 0, 0, 1, 0);
+	height: 7.2vh;
+	margin-top: 0.6vh;
+	position: relative;
+	width: 100%;
+	background-image: url("../../_shared/assets/item_card/ItemClassIcon.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.item_card_gear_stats {
+	margin-top: 0h;
+}
+.item_card_gear_stats_weapon {
+	margin-top: 0vh;
+}
+.item_card_weapon {
+	margin-bottom: 0.6vh;
+}
+.item_card_stats_elemental {
+	margin-bottom: 0vh;
+	margin-top: 0.6vh;
+	pointer-events: none;
+}
+.item_card_weapon {
+	margin-top: 0vh;
+}
+.item_card_content {
+	margin-top: 6.4vh;
+	margin-bottom: 6.4vh;
+	padding-bottom: 1vh;
+	position: relative;
+	width: 38.9vh;
+	flex-direction: column;
+	display: flex;
+}
+.item_card_stats_cntr {
+	width: 100%;
+}
+.item_card_currency {
+	bottom: 1.7vh;
+	width: 35.4vh;
+}
+.item_card_currency_value {
+	color: #e1e1e1;
+	text-transform: none;
+	font-family: var(--header-font);
+	font-size: 3.20rem;
+	letter-spacing: 0.1rem;
+	line-height: 1;
+	text-stroke: 0.3rem black;
+;
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	margin-left: 0.8vh;
+}
+
+.Pearl .item_card_top_frame_alpha{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.150, 0, 0, 0, 0, 0.988, 0, 0, 0, 0, 0.800, 0, 0, 0, 0.95, 0);
+}
+.Pearl .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.988, 0, 0, 0, 0, 0.999, 0, 0, 0, 1, 0);
+}
+.Pearl .item_card_backing_bg_top {
+	background-position: -3.8vh -3vh;
+}
+.Pearl .item_card_backing_bg_bottom {
+	background-position: -3.8vh -20.2vh;
+}
+.Pearl .item_card_score_value,
+.Pearl .item_card_score_text {
+	color: #eddfc4;
+}
+.Pearl .item_card_level_value,
+.Pearl .item_card_level_text {
+	color: #eddfc4;
+}
+.Pearl .item_card_content .item_card_weapon_name {
+	color: #0ffff0;
+}
+.Pearl .item_card_weapon_rarity_name {
+	color: #0ffff0;
+}
+.Pearl .item_card_category_name {
+	color: #0ffff0;
+}
+.Pearl .icon_mask,
+.Pearl .item_card_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.988, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.Pearl .item_card_description_item_pip {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.988, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.Pearl .item_card_currency_value {
+	color: #eddfc4;
+}
+.Legendary .item_card_top_frame_alpha,
+.Legendary .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.945, 0, 0, 0, 0, 0.643, 0, 0, 0, 0, 0.11, 0, 0, 0, 1, 0);
+}
+.Legendary .item_card_backing_bg_top {
+	background-position: -3.8vh -3vh;
+}
+.Legendary .item_card_backing_bg_bottom {
+	background-position: -3.8vh -20.2vh;
+}
+.Legendary .item_card_score_value,
+.Legendary .item_card_score_text {
+	color: #eddfc4;
+}
+.Legendary .item_card_level_value,
+.Legendary .item_card_level_text {
+	color: #eddfc4;
+}
+.Legendary .item_card_content .item_card_weapon_name {
+	color: #ecb149;
+}
+.Legendary .item_card_weapon_rarity_name {
+	color: #ecb149;
+}
+.Legendary .item_card_category_name {
+	color: #ecb149;
+}
+.Legendary .icon_mask,
+.Legendary .item_card_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.925, 0, 0, 0, 0, 0.694, 0, 0, 0, 0, 0.286, 0, 0, 0, 1, 0);
+}
+.Legendary .item_card_description_item_pip {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.925, 0, 0, 0, 0, 0.694, 0, 0, 0, 0, 0.286, 0, 0, 0, 1, 0);
+}
+.Legendary .item_card_currency_value {
+	color: #eddfc4;
+}
+.Epic .item_card_top_frame_alpha,
+.Epic .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.718, 0, 0, 0, 0, 0.169, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0);
+}
+.Epic .item_card_backing_bg_top {
+	background-position: -54.2vh -3vh;
+}
+.Epic .item_card_backing_bg_bottom {
+	background-position: -54.3vh -20.2vh;
+}
+.Epic .item_card_score_value,
+.Epic .item_card_score_text {
+	color: #e9bfff;
+}
+.Epic .item_card_level_value,
+.Epic .item_card_level_text {
+	color: #e9bfff;
+}
+.Epic .item_card_weapon_name {
+	color: #c759ff;
+}
+.Epic .item_card_weapon_rarity_name {
+	color: #c759ff;
+}
+.Epic .item_card_category_name {
+	color: #c759ff;
+}
+.Epic .icon_mask,
+.Epic .item_card_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.733, 0, 0, 0, 0, 0.259, 0, 0, 0, 0, 0.976, 0, 0, 0, 1, 0);
+}
+.Epic .item_card_description_item_pip {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.733, 0, 0, 0, 0, 0.259, 0, 0, 0, 0, 0.976, 0, 0, 0, 1, 0);
+}
+.Epic .item_card_currency_value {
+	color: #e9bfff;
+}
+.Rare .item_card_top_frame_alpha,
+.Rare .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.231, 0, 0, 0, 0, 0.757, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0);
+}
+.Rare .item_card_backing_bg_top {
+	background-position: -105.2vh -3vh;
+}
+.Rare .item_card_backing_bg_bottom {
+	background-position: -105.8vh -20.2vh;
+}
+.Rare .item_card_score_value,
+.Rare .item_card_score_text {
+	color: #b8e6fb;
+}
+.Rare .item_card_level_value,
+.Rare .item_card_level_text {
+	color: #b8e6fb;
+}
+.Rare .item_card_weapon_name {
+	color: #2eaee9;
+}
+.Rare .item_card_weapon_rarity_name {
+	color: #2eaee9;
+}
+.Rare .item_card_category_name {
+	color: #2eaee9;
+}
+.Rare .icon_mask,
+.Rare .item_card_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0.682, 0, 0, 0, 0, 0.914, 0, 0, 0, 1, 0);
+}
+.Rare .item_card_description_item_pip {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0.682, 0, 0, 0, 0, 0.914, 0, 0, 0, 1, 0);
+}
+.Rare .item_card_currency_value {
+	color: #b8e6fb;
+}
+.Uncommon .item_card_top_frame_alpha,
+.Uncommon .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.235, 0, 0, 0, 0, 0.933, 0, 0, 0, 0, 0.396, 0, 0, 0, 1, 0);
+}
+.Uncommon .item_card_backing_bg_top {
+	background-position: -155.5vh -3vh;
+}
+.Uncommon .item_card_backing_bg_bottom {
+	background-position: -155.5vh -20.2vh;
+}
+.Uncommon .item_card_score_value,
+.Uncommon .item_card_score_text {
+	color: #c1e0be;
+}
+.Uncommon .item_card_level_value,
+.Uncommon .item_card_level_text {
+	color: #c1e0be;
+}
+.Uncommon .item_card_weapon_name {
+	color: #5bd577;
+}
+.Uncommon .item_card_weapon_rarity_name {
+	color: #5bd577;
+}
+.Uncommon .item_card_category_name {
+	color: #5bd577;
+}
+.Uncommon .icon_mask,
+.Uncommon .item_card_weapon_logo {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.357, 0, 0, 0, 0, 0.835, 0, 0, 0, 0, 0.467, 0, 0, 0, 1, 0);
+}
+.Uncommon .item_card_content .item_card_description_item .item_card_description_item_pip {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.357, 0, 0, 0, 0, 0.835, 0, 0, 0, 0, 0.467, 0, 0, 0, 1, 0);
+}
+.Uncommon .item_card_currency .item_card_currency_value {
+	color: #c1e0be;
+}
+.healthPickup .item_card_top_frame_alpha,
+.healthPickup .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0.62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0);
+}
+.currencyEridium .item_card_top_frame_alpha,
+.currencyEridium .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0.46, 0, 0, 0, 0, 0, 0.67, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0);
+}
+.Mission .item_card_top_frame_alpha,
+.Mission .item_card_bottom_frame_alpha {
+	filter: coh-color-matrix(0.04, 0, 0, 0, 0, 0, 0.72, 0, 0, 0, 0, 0, 0.93, 0, 0, 0, 0, 0, 1, 0);
+}
+.foil .item_card_top_frame {
+	
+	background-position: -47.4h 0vh;
+}
+.foil .item_card_top_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard-HeaderTint-Enchanted.tga");
+}
+.foil .item_card_bottom_frame {
+	background-position: -47.4vh -18.51vh;
+}
+.foil .item_card_bottom_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard-FooterTint-Enchanted.tga");
+}
+.mayhem .item_card_top_frame {
+	
+	background-position: -94.81vh 0vh;
+}
+.mayhem .item_card_top_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard-HeaderTint-Foil.tga");
+}
+.mayhem .item_card_bottom_frame {
+	
+	background-position: -94.81vh -18.51vh;
+}
+.mayhem .item_card_bottom_frame_alpha {
+	background-image: url("../../item_card/assets/ItemCard-FooterTint-Foil.tga");
+}
+.equipped .item_card_equipped_icon {
+	display: block;
+}
+.level-required .item_card_attention_icon {
+	display: block;
+}
+.level-required .item_card_requirement_bg {
+	opacity: 0.9;
+}
+.level-required .item_card_level {
+	padding-right: 2vh;
+}
+.level-required .item_card_level_value,
+.level-required .item_card_level_text {
+	color: #ff7a6a;
+}
+.level-required .item_card_level_bg {
+	display: block;
+}
+.hidelevel .item_card_requirement_bg,
+.hidelevel .item_card_attention_icon {
+	visibility: hidden;
+}
+.dlc-required .item_card_attention_icon {
+	display: block;
+}
+.dlc-required .item_card_requirement_bg {
+	opacity: 0.9;
+}
+.dlc-required .item_card_level_value {
+	display: none;
+}
+.dlc-required .item_card_level_bg {
+	display: block;
+}
+.dlc-required .item_card_level_value,
+.dlc-required .item_card_level_text {
+	display: none;
+	margin-right: 0vh;
+	color: #ff7a6a;
+}
+.dlc-required .item_card_level_text.dlc {
+	display: block;
+	margin-right: 1vh;
+	margin-bottom: 0.5vh;
+}
+.Pauldron .item_card_weapon_rarity_top{
+	display: none;
+}
+.Pauldron .item_card_weapon_rarity_top.pauldron_top{
+	display: block;
+}
+.Pauldron .item_card_weapon_logo_bottom{
+	width: 12.6vh;
+}
+.Pauldron .item_card_stats {
+	margin-top: 1.2vh;
+}
+.Pauldron .item_card_stats {
+	margin-top: 0.1vh;
+	margin-bottom: -0.4vh;
+}
+.Pauldron .item_card_weapon_rarity_name {
+	font-size: 2.20rem;
+	line-height: 2.20rem;
+	max-height: 2.20rem;
+	letter-spacing: 0.24rem;
+	padding-left: 0vh;
+	padding-right: 0vh;
+	top: 50%;
+    transform: translateY(-55%);
+    left: 0vh;
+}
+.Pauldron .item_card_stats_elemental{
+	display: none;
+}
+.Pauldron .item_card_stats_skills{
+	display: flex;
+	margin-top: .01vh;
+
+	align-items: center;
+	justify-content: center;
+}
+.Pauldron .item_card_weapon_cntr{
+	display: none;
+}
+.Ring .item_card_stats_list, .Amulet .item_card_stats_list {
+	width: 100%;
+	margin-left: 0vh;
+	padding-left: 0.1vh;
+	padding-right: 0.5vh;
+}
+.Ring .item_card_stats_weapon, .Amulet .item_card_stats_weapon {
+	width: 100%;
+	display: flex;
+	padding-top: 2.9vh;
+	margin-bottom: 0.3vh;
+}
+.Ring .item_card_weapon_rarity_top, .Amulet .item_card_weapon_rarity_top {
+	position: absolute;
+}
+.Ring .item_card_weapon, .Amulet .item_card_weapon {
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	margin-left: 0vh;
+	z-index: 2;
+}
+.Ring .item_card_weapon_logo_bottom, .Amulet .item_card_weapon_logo_bottom {
+	width: 50%;
+}
+.Ring .item_card_weapon_logo_bg,
+.Amulet .item_card_weapon_logo_bg {
+	left: 0vh;
+	position: absolute;
+	top: 0vh;
+	width: 100%;
+	height: 5.4vh;
+    background-image: url("../../_shared/assets/backgrounds/AttributeResumeBg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.Ring .item_card_weapon_cntr, .Amulet .item_card_weapon_cntr {
+	width: 48%;
+	height: 5.4vh;
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	margin-left: 0.3vh;
+	margin-right: 0.2vh;
+	left: 0%;
+	transform: none;
+}
+.Ring .item_card_stats_elemental, .Amulet .item_card_stats_elemental {
+	display: none;
+}
+.Ring.mirror .item_card_stats_list,
+.Ring.mirror .item_card_stats_weapon, .Amulet.mirror .item_card_stats_list,
+.Amulet.mirror .item_card_stats_weapon {
+	transform: none;
+}
+.Scrolls .item_card_content, .Mission .item_card_content, .Money .item_card_content, .Mission .item_card_content, .Ammo .item_card_content, .healthPickup .item_card_content {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.Scrolls .item_card_content, .Mission .item_card_content, .Ammo .item_card_content, .healthPickup .item_card_content {
+	margin-left: 8.9vh;
+	margin-right: 8.9vh;
+}
+.Scrolls .item_card_header, .Accessory .item_card_header, .Money .item_card_header, .Accessory .item_card_header, .Mission .item_card_header, .Ammo .item_card_header, .healthPickup .item_card_header {
+	position: relative;
+}
+.Money .item_card_weapon_name,
+.Mission .item_card_weapon_name,
+.Scrolls .item_card_weapon_name,
+.Ammo .item_card_weapon_name,
+.healthPickup .item_card_weapon_name {
+	coh-font-fit-mode: shrink;
+}
+.Mission .item_card_weapon_name {
+	color: rgba(9, 183, 238, 1);
+}
+.Money .item_card_stats_elemental,
+.Money .item_card_stats_list, .Accessory .item_card_stats_elemental,
+.Accessory .item_card_stats_list, .Mission .item_card_stats_elemental,
+.Mission .item_card_stats_list, .Ammo .item_card_stats_elemental, .Scrolls .item_card_stats_elemental,
+.Ammo .item_card_stats_list, .healthPickup .item_card_stats_elemental, .Scrolls .item_card_stats_elemental,
+.healthPickup .item_card_stats_list {
+	display: none;
+}
+.Money .item_card_score_cntr,
+.Money .item_card_attention_icon,
+.Mission .item_card_score_cntr,
+.Mission .item_card_attention_icon,
+.Scrolls .item_card_score_cntr,
+.Scrolls .item_card_attention_icon,
+.Ammo .item_card_score_cntr,
+.Ammo .item_card_attention_icon,
+.healthPickup .item_card_attention_icon,
+.healthPickup .item_card_score_cntr {
+	display: none !important;
+}
+.Money .item_card_requirement_bg,
+.Mission .item_card_requirement_bg,
+.Scrolls .item_card_requirement_bg,
+.Ammo .item_card_requirement_bg,
+.healthPickup .item_card_requirement_bg {
+	opacity: 0;
+}
+.Money .item_card_weapon_rarity_top, .Accessory .item_card_weapon_rarity_top, .Mission .item_card_weapon_rarity_top, .Ammo .item_card_weapon_rarity_top, .healthPickup .item_card_weapon_rarity_top, .Scrolls .item_card_weapon_rarity_top  {
+	width: 37.6vh;
+}
+.Money .item_card_stats_cntr, .Accessory .item_card_stats_cntr, .Mission .item_card_stats_cntr, .Ammo .item_card_stats_cntr, .healthPickup .item_card_stats_cntr,.Scrolls .item_card_stats_cntr {
+	width: 35%;
+}
+.Money .item_card_description_text_cntr, .Accessory .item_card_description_text_cntr, .Mission .item_card_description_text_cntr, .Ammo .item_card_description_text_cntr, .healthPickup .item_card_description_text_cntr,.Scrolls .item_card_description_text_cntr {
+	width: 20vh;
+}
+.Money .item_card_description, .Accessory .item_card_description, .Mission .item_card_description, .Ammo .item_card_description, .healthPickup .item_card_description,.Scrolls .item_card_description {
+	margin-top: 4.4vh;
+	width: 19.5vh;
+	overflow: hidden;
+	max-height: initial;
+	bottom: 1vh;
+	position: relative;
+	flex-basis: 30%;
+}
+.Money .item_card_description, .Accessory .item_card_description {
+	bottom: 0vh;
+}
+.Money .text_backing_content_container,.Mission .text_backing_content_container, .healthPickup .text_backing_content_container,.Ammo .text_backing_content_container,.Scrolls .text_backing_content_container {
+	min-height: 14.1vh;
+}
+.Mission .item_card_description_text_cntr {
+	width: 20vh;
+}
+.Mission .item_card_currency {
+	opacity: 0;
+}
+.item_card_cust_description {
+	display: none;
+}
+.Accessory .item_card_cust_description {
+	display: block;
+	margin-bottom: 2vh;
+	margin-top: 4vh;
+	color: rgba(156, 157, 200, 1);
+	font-family: var(--body-font) ;
+	font-size: 1.68rem;
+	letter-spacing: 0.07rem;
+	line-height: 2.2rem;
+	text-align: left;
+}
+.Accessory .item_card_description {
+	max-height: 9.7vh;
+}
+.Accessory .item_card_stats_elemental {
+	display: flex;
+	position: absolute;
+	bottom: -7.5vh;
+	width: 35.6vh;
+}
+.Accessory .item_card_description_text_cntr {
+	width: 20vh;
+}
+.Accessory .item_card_weapon_logo_bottom {
+	display: none;
+}
+.Accessory .item_card_stats_elemental_dextery {
+	color: #bf2528;
+}
+.Accessory .item_card_description {
+	margin-bottom: 2vh;
+}
+.Accessory .item_card_stats_elemental_bg {
+	opacity: 0;
+}
+
+
+.item_card_icon  {
+	background-image: url("../../item_card/assets/FlagIcons/ItemFlags.png");
+	width: 11.85vh;
+	height: 11.85vh;
+	background-size: 94.81vh 47.4vh;
+	background-position-x: 0vh;
+	background-position-y: 0vh;
+	--flag-size : 11.85vh;
+}
+
+.item_card_icon.Soul  {
+	background-image: url("../../../PatchDLC/Indigo1/Common/UI/uiresources/itemcard/assets/ItemFlags-Souls.png");
+	width: 11.85vh;
+	height: 11.85vh;
+	background-size: contain !important;
+	background-position-x: 0vh;
+	background-position-y: 0vh;
+}
+
+
+/* First row icons */
+.item_card_icon.AmmoAssaultRifle {
+	
+}
+
+.item_card_weapon.AmmoHeavy,
+.item_card_icon.AmmoHeavy {
+	background-position-x: calc( var(--flag-size) * -1);
+}
+
+.item_card_weapon.AmmoPistol,
+.item_card_icon.AmmoPistol {
+	background-position-x: calc( var(--flag-size) * -2);
+}
+
+.item_card_icon.AmmoShotgun,
+.item_card_weapon.AmmoShotgun {
+	background-position-x: calc( var(--flag-size) * -3);
+}
+
+.item_card_weapon.AmmoSMG,
+.item_card_icon.AmmoSMG {
+	background-position-x: calc( var(--flag-size) * -4);
+}
+
+.item_card_weapon.AmmoSniper,
+.item_card_icon.AmmoSniper {
+	background-position-x: calc( var(--flag-size) * -5);
+}
+
+.item_card_icon.Amulet {
+	background-position-x: calc( var(--flag-size) * -6);
+}
+
+.item_card_icon.AssaultRifle {
+	background-position-x: calc( var(--flag-size) * -7);
+}
+
+
+/* Second row icons */
+.item_card_icon.Banner,				/* Column 0 */
+.item_card_icon.Body,				/* Column 1 */
+.item_card_icon.Emote,				/* Column 2 */
+.item_card_icon.EGC,				/* Column 3 */
+.item_card_icon.egc,				/* Column 3 */
+.item_card_icon.currencyEridium,	/* Column 3 */
+.item_card_icon.Cookie,				/* Column 4 */
+.item_card_icon.Pistol,				/* Column 5 */
+.item_card_icon.HeadCustomization,	/* Column 6 */
+.item_card_weapon.Health,			/* Column 7 */
+.item_card_icon.Health				/* Column 7 */
+{
+	background-position-y: calc( var(--flag-size) * -1);
+}
+
+.item_card_icon.Body {
+	background-position-x: calc( var(--flag-size) * -1);
+}
+
+.item_card_icon.Emote {
+	background-position-x: calc( var(--flag-size) * -2);
+}
+
+.item_card_icon.EGC,
+.item_card_icon.egc,
+.item_card_icon.currencyEridium {
+	background-position-x: calc( var(--flag-size) * -3);
+}
+
+.item_card_icon.Cookie {
+	background-position-x: calc( var(--flag-size) * -4);
+}
+
+.item_card_icon.Pistol {
+	background-position-x: calc( var(--flag-size) * -5);
+}
+
+.item_card_icon.HeadCustomization {
+	background-position-x: calc( var(--flag-size) * -6);
+}
+
+.item_card_weapon.Health,
+.item_card_icon.Health {
+	background-position-x: calc( var(--flag-size) * -7);
+}
+
+/* Third row icons */
+.item_card_icon.Heavy,				/* Column 0 */
+.item_card_icon.HeroStatue,			/* Column 1 */
+.item_card_icon.Melee,				/* Column 2 */
+.item_card_icon.Cash,				/* Column 3 */
+.item_card_icon.Money,				/* Column 3 */
+.item_card_icon.Pauldron,			/* Column 4 */
+.item_card_icon.Quest,				/* Column 6 */
+.item_card_icon.MissionItem,		/* Column 6 */
+.item_card_icon.Quest_2,			/* Column 7 */
+.item_card_icon.MissionItem_2		/* Column 7 */
+{
+	background-position-y: calc( var(--flag-size) * -2);
+}
+
+.item_card_icon.HeroStatue {
+	background-position-x: calc( var(--flag-size) * -1);
+}
+
+.item_card_icon.Melee {
+	background-position-x: calc( var(--flag-size) * -2);
+}
+
+.item_card_icon.Cash,
+.item_card_icon.Money {
+	background-position-x: calc( var(--flag-size) * -3);
+}
+
+.item_card_icon.Pauldron {
+	background-position-x: calc( var(--flag-size) * -4);
+}
+
+.item_card_icon.Quest,
+.item_card_icon.MissionItem {
+	background-position-x: calc( var(--flag-size) * -6);
+}
+
+.item_card_icon.Quest_2,
+.item_card_icon.MissionItem_2 {
+	background-position-x: calc( var(--flag-size) * -7);
+}
+
+/* Fourth row icons */
+.item_card_icon.Ring,				/* Column 0 */
+.item_card_icon.Scroll,				/* Column 1 */
+.item_card_icon.Shotgun,			/* Column 3 */
+.item_card_icon.SMG,				/* Column 4 */
+.item_card_icon.Sniper,				/* Column 5 */
+.item_card_icon.Grenade,			/* Column 6 */
+.item_card_icon.Spell,				/* Column 6 */
+.item_card_icon.Shield,				/* Column 7 */
+.item_card_icon.Ward				/* Column 7 */
+{
+	background-position-y: calc( var(--flag-size) * -3);
+}
+
+.item_card_icon.Scroll {
+	background-position-x: calc( var(--flag-size) * -1);
+}
+
+.item_card_icon.Shotgun {
+	background-position-x: calc( var(--flag-size) * -3);
+}
+
+.item_card_icon.SMG {
+	background-position-x: calc( var(--flag-size) * -4);
+}
+
+.item_card_icon.Sniper {
+	background-position-x: calc( var(--flag-size) * -5);
+}
+
+.item_card_icon.Grenade,
+.item_card_icon.Spell {
+	background-position-x: calc( var(--flag-size) * -6);
+}
+
+.item_card_icon.Shield,
+.item_card_icon.Ward {
+	background-position-x: calc( var(--flag-size) * -7);
+}
+
+
+
+.item_card_weapon {
+	background-image: url("../../item_card/assets/FlagIcons/ItemFlags_2.png");
+	width: 11.85vh;
+	height: 11.85vh;	
+	background-size: 59.25vh 47.4vh;
+	background-position-x: 0vh;
+	background-position-y: 0vh;
+	--weapon-flag-size : 11.85vh;
+	--flag-size : 11.85vh;
+	transform: translateX(-50%) translateY(-50%) scale(0.56, 0.56);
+}
+
+
+.item_card_weapon.HeroStatue,
+.item_card_weapon.HeadCustomization,
+.item_card_weapon.Pauldron {
+	background-position-y: calc( var(--weapon-flag-size) * -1);
+}
+
+.item_card_weapon.Quest,
+.item_card_weapon.MissionItem,
+.item_card_weapon.Quest_2,
+.item_card_weapon.MissionItem_2,
+.item_card_weapon.Ring,
+.item_card_weapon.Scroll {
+	background-position-y: calc( var(--weapon-flag-size) * -2);
+}
+
+.item_card_weapon.Shield,
+.item_card_weapon.Ward,
+.item_card_weapon.Amulet,
+.item_card_weapon.Grenade,
+.item_card_weapon.Spell {
+	background-position-y: calc( var(--weapon-flag-size) * -3);
+}
+.item_card_weapon.Emote {
+	background-position-x: calc( var(--weapon-flag-size) * -4);
+}
+
+.item_card_weapon.Scroll {
+	background-position-x: calc( var(--weapon-flag-size) * -3);
+}
+
+.item_card_weapon.Quest_2,
+.item_card_weapon.MissionItem_2 {
+	background-position-x: calc( var(--weapon-flag-size) * -1);
+}
+
+.item_card_weapon.HeadCustomization {
+	background-position-x: calc( var(--weapon-flag-size) * -1);
+}
+
+.item_card_weapon.Body {
+	background-position-x: calc( var(--weapon-flag-size) * -3);
+}
+
+.item_card_weapon.Banner {
+	background-position-x: calc( var(--weapon-flag-size) * -2);
+}
+
+.item_card_weapon.Ring {
+	background-position-x: calc( var(--weapon-flag-size) * -2);
+    transform: translateX(-50%) translateY(-50%) scale(0.46, 0.46);
+}
+
+.item_card_weapon.Shield,
+.item_card_weapon.Ward {
+	background-position-x: calc( var(--weapon-flag-size) * -3);
+}
+
+.item_card_weapon.Pauldron {
+	background-position-x: calc( var(--weapon-flag-size) * -4);
+}
+
+.item_card_weapon.Amulet {
+	background-position-x: calc( var(--weapon-flag-size) * -4);
+    transform: translateX(-50%) translateY(-50%) scale(0.46, 0.46);
+}
+
+.item_card_weapon.Grenade,
+.item_card_weapon.Spell {
+	background-position-x: calc( var(--weapon-flag-size) * -2);
+}
+
+.item_card_weapon.HeroStatue {
+	background-position-x: calc( var(--weapon-flag-size) * -3);
+}
+
+.item_card_weapon.Pistol,
+.item_card_weapon.Shotgun,
+.item_card_weapon.SMG,
+.item_card_weapon.Sniper,
+.item_card_weapon.Heavy,
+.item_card_weapon.AssaultRifle {
+	background-position-y: 50%;
+	background-position-x: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.item_card_weapon.Pistol {
+	background-image: url("../../_shared/assets/icons/SDU/SDU_Handgun.png");
+}
+.item_card_weapon.Shotgun {
+	background-image: url("../../_shared/assets/icons/SDU/SDU_Shotgun.png");	
+}
+.item_card_weapon.SMG {
+	background-image: url("../../_shared/assets/icons/SDU/SDU_SMG.png");
+}
+.item_card_weapon.Sniper {
+	background-image: url("../../_shared/assets/icons/SDU/SDU_Sniper.png");
+}
+.item_card_weapon.Heavy {
+	background-image: url("../../_shared/assets/icons/SDU/SDU_Heavy.png");
+}
+.item_card_weapon.AssaultRifle {
+	background-image: url("../../_shared/assets/icons/SDU/SDU_AssaultRiffle.png");
+}
+.item_card_weapon.Health,
+.item_card_weapon.AmmoPistol,
+.item_card_weapon.AmmoSniper,
+.item_card_weapon.AmmoSMG ,
+.item_card_weapon.AmmoAssaultRifle,
+.item_card_weapon.AmmoHeavy,
+.item_card_weapon.AmmoShotgun {
+	background-image: url("../../item_card/assets/FlagIcons/ItemFlags.png");
+	background-size: 94.81vh 47.26vh;
+}
+
+.item_card_weapon.Health{
+	background-position-y: calc( var(--flag-size) * -1);
+}
+
+.item_card .item_card_stats_weapon .item_card_weapon.icon_mask {
+	position: absolute;
+}
+
+.icon_mask{
+	position: absolute;
+	z-index: 2;
+	mix-blend-mode: multiply;
+	filter: coh-color-matrix(0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 1, 0);
+}
+.icon_mask.common{
+	display: none;
+}
+.icon_mask.Uncommon{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.357, 0, 0, 0, 0, 0.835, 0, 0, 0, 0, 0.467, 0, 0, 0, 1, 0);
+}
+.icon_mask.Rare{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0.682, 0, 0, 0, 0, 0.914, 0, 0, 0, 1, 0);
+}
+.icon_mask.Epic{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.733, 0, 0, 0, 0, 0.259, 0, 0, 0, 0, 0.976, 0, 0, 0, 1, 0);
+}
+.icon_mask.Legendary{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.925, 0, 0, 0, 0, 0.694, 0, 0, 0, 0, 0.286, 0, 0, 0, 1, 0);
+}
+.icon_mask.Pearl{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.100, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 0.900, 0, 0, 0, 1, 0);
+}
+.icon_mask.Mission{
+	filter: coh-color-matrix(0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 0, 0.659, 0, 0, 0, 1, 0);
+}
+.icon_mask.MissionItem {
+	filter: coh-color-matrix(0, 0, 0, 0, 0.04, 0, 0, 0, 0, 0.72, 0, 0, 0, 0, 0.93, 0, 0, 0, 1, 0);
+}
+
+.icon_mask.Soul,
+.icon_mask.Cookie,
+.icon_mask.Eridium,
+.icon_mask.Cash{
+	display: none;
+	mix-blend-mode:normal;
+}
+
+.loc-zh-hans .item_card_stats_attributes .attribute_name,
+.loc-zh-hans .item_card_stats_attributes .attribute_current_value { 
+	margin-bottom: -0.45rem;
+	letter-spacing: 0.12em;
+}
+.loc-zh-hans .item_card_category_name,
+.loc-zh-hans .item_card_weapon_rarity_name {
+	margin-bottom: -0.15rem;
+    margin-top: 0.15rem;
+	letter-spacing: 0.12em;
+}
+.loc-zh-hans .item_card_description_text { 
+	letter-spacing: 0.12em;
+}
+.loc-zh-hans .item_card_stats_elemental_dextery {
+	margin-bottom: -0.6vh;
+}
+.loc-zh-hans .item_card_weapon_name,
+.loc-zh-hans .item_card_score_value,
+.loc-zh-hans .item_card_currency_value {
+	line-height: 140%;
+    margin-bottom: -0.4em;
+}
+
+.loc-th .item_card_weapon_name {
+	line-height: 160%;
+	margin-bottom: -0.2em;
+	margin-top: -0.2em;
+}
+.item_card_description_text p {
+	line-height: 160% !important;
+}

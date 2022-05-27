@@ -1,0 +1,9 @@
+priority: 1.0
+revision: 1
+author: bill.caldwell
+
+uipage_defs:
+
+  - uipage: fonttest
+    path: font_test.html
+    buildcontentpath: true

@@ -1,0 +1,306 @@
+priority: 1.0
+revision: 1
+author: jason.brown
+
+uiscreen_defs:
+  - uiscreen: screen_base
+    immediate_widgets: !tags
+      - def_generic_popup
+
+  - uiscreen: screen_base_menu
+    parent: !ref_uiscreen screen_base
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_hintbar
+
+  - uiscreen: menu_status
+    menu_view: STATUS_MENU
+    page: ingame
+    immediate_widgets: !tags
+      - def_status_menu_nav_bar
+      - def_hintbar
+
+  - uiscreen: status_menu_base
+    parent: !ref_uiscreen screen_base
+    menu_view: MENU
+    page: ingame
+    companion_screens: !tags
+      - menu_status
+
+  # - uiscreen: menu_aura
+  #   menu_view: AURA_MENU
+  #   page: ingame
+  #   immediate_widgets: !tags
+  #     - def_aura_menu_nav_bar
+  #     - def_hintbar
+
+  # - uiscreen: aura_menu_base
+  #   parent: !ref_uiscreen screen_base
+  #   menu_view: MENU
+  #   page: ingame
+  #   companion_screens: !tags
+  #     - menu_aura
+
+  - uiscreen: menu_inventory
+    parent: !ref_uiscreen status_menu_base
+    page: inventory_page
+    state: MENU_INVENTORY
+    immediate_widgets: !tags
+      - def_inventory
+      - def_tutorial_sequence_inventory
+      - def_menu-damage
+      - def_item_inspect
+
+  - uiscreen: menu_map
+    parent: !ref_uiscreen status_menu_base
+    page: map_page
+    state: MENU_MAP
+    immediate_widgets: !tags
+      - def_bigmap
+      - def_tutorial_sequence_bigmap
+      - def_menu-damage
+
+  - uiscreen: menu_missions
+    parent: !ref_uiscreen status_menu_base
+    page: missions_page
+    state: MENU_MISSIONS
+    immediate_widgets: !tags
+      - def_missionlog
+      - def_tutorial_sequence_missionlog
+      - def_menu-damage
+      - def_echocommunicator
+
+  - uiscreen: menu_skills
+    parent: !ref_uiscreen status_menu_base
+    page: skills_page
+    state: MENU_SKILLS
+    immediate_widgets: !tags
+      - def_skillscreen
+      - def_tutorial_sequence_skillscreen
+      - def_menu-damage
+
+  - uiscreen: menu_guardian
+    parent: !ref_uiscreen status_menu_base
+    page: guardian_page
+    state: MENU_GUARDIAN
+    immediate_widgets: !tags
+      - def_guardianrank
+      - def_tutorial_sequence_guardianrank
+      - def_menu-damage
+
+  - uiscreen: menu_endlessdungeon
+    parent: !ref_uiscreen status_menu_base
+    page: endlessdungeon_page
+    state: MENU_ENDLESSDUNGEON
+    immediate_widgets: !tags
+      - def_endlessdungeon
+
+  - uiscreen: menu_mayhemmode
+    parent: !ref_uiscreen status_menu_base
+    page: mayhem_page
+    state: MENU_MAYHEMMODE
+    immediate_widgets: !tags
+      - def_mayhemmode
+      - def_tutorial_sequence_mayhemmode
+
+  - uiscreen: menu_quickchange
+    parent: !ref_uiscreen screen_base
+    page: quickchange_page
+    state: QUICK_CHANGE
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_quick_change
+      - def_tutorial_sequence_quick_change
+      - def_hintbar
+
+  - uiscreen: screen_calibration
+    parent: !ref_uiscreen screen_base
+    page: screen_calibration_page
+    state: SCREEN_CALIBRATION
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_screen_calibration
+      - def_hintbar
+
+  - uiscreen: first_time_calibration
+    parent: !ref_uiscreen screen_base
+    page: first_time_calibration_page
+    state: FIRST_TIME_CALIBRATION
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_first_time_calibration
+      - def_hintbar
+
+  - uiscreen: press_start_menu
+    parent: !ref_uiscreen screen_base
+    page: press_start_page
+    state: PRESS_START
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_press_start_menu
+
+  - uiscreen: legal
+    parent: !ref_uiscreen screen_base
+    page: legal_page
+    state: LEGAL
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_legal
+
+  - uiscreen: crossplay_first_boot
+    parent: !ref_uiscreen screen_base
+    page: crossplay_first_boot_page
+    state: CROSSPLAY_FIRST_BOOT
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_crossplay_first_boot
+
+  - uiscreen: menu_newcharacter
+    parent: !ref_uiscreen screen_base
+    page: newcharacter_page
+    state: NEWCHARACTER
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_newcharacter
+      - def_enternamepopup
+      - def_hintbar
+
+  - uiscreen: menu_options
+    parent: !ref_uiscreen screen_base
+    page: options_page
+    state: MENU_OPTIONS
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_options
+      - def_hintbar
+      - def_menu-damage
+
+  - uiscreen: menu_main_DISABLED
+    parent: !ref_uiscreen screen_base
+    page: main_page
+    state: MENU_MAIN
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_menu_main
+      - def_new_game
+      - def_lobbywidget
+      - def_mission_state
+      - def_load_character
+      - def_gamenewswidget
+
+  - uiscreen: menu_pause
+    parent: !ref_uiscreen screen_base
+    page: pause_page
+    state: MENU_PAUSE
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_menu_pause
+      - def_lobbywidget
+      - def_gamenewswidget
+      - def_menu-damage
+
+  - uiscreen: menu_player_storage
+    parent: !ref_uiscreen screen_base_menu
+    page: player_storage_page
+    state: PLAYER_STORAGE
+    immediate_widgets: !tags
+      - def_player_storage
+
+  - uiscreen: menu_enchantmentreroller
+    parent: !ref_uiscreen screen_base_menu
+    page: enchantmentreroller_page
+    state: RE_ROLLER
+    immediate_widgets: !tags
+      - def_enchantmentreroller
+      - def_tutorial_sequence_enchantmentreroller
+  
+  - uiscreen: menu_photomode
+    parent: !ref_uiscreen screen_base
+    page: photomode_page
+    state: MENU_PHOTOMODE
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_photomode
+      - def_hintbar
+
+  #- uiscreen: menu_lan
+  #  parent: !ref_uiscreen aura_menu_base
+  #  page: lan_page
+  #  state: MENU_LAN
+  #  immediate_widgets: !tags
+  #    - def_lan
+
+  #- uiscreen: menu_roster
+  #  parent: !ref_uiscreen aura_menu_base
+  #  page: roster_page
+  #  state: MENU_ROSTER
+  #  immediate_widgets: !tags
+  #    - def_roster
+
+  #- uiscreen: menu_matchmaking
+  #  parent: !ref_uiscreen aura_menu_base
+  #  page: matchmaking_page
+  #  state: MENU_MATCHMAKING
+  #  immediate_widgets: !tags
+  #    - def_matchmaking
+
+  #- uiscreen: menu_shift
+  #  parent: !ref_uiscreen aura_menu_base
+  #  page: shift_page
+  #  state: MENU_SHIFT
+  #  immediate_widgets: !tags
+  #    - def_shift
+  #    - def_lobbywidget
+
+  #- uiscreen: menu_mail
+  #  parent: !ref_uiscreen aura_menu_base
+  #  page: mail_page
+  #  state: MENU_MAIL
+  #  immediate_widgets: !tags
+  #    - def_mail
+
+  - uiscreen: Menu_SDUVendor
+    parent: !ref_uiscreen screen_base_menu
+    page: sdu_vendor_page
+    state: MENU_SDU_VENDOR
+    immediate_widgets: !tags
+      - def_sduvendor
+
+  - uiscreen: Menu_VendingMachine
+    parent: !ref_uiscreen screen_base_menu
+    page: vending_machine_page
+    state: MENU_VENDING_MACHINE
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_vending_machine
+      - def_item_inspect
+
+  - uiscreen: Menu_ItemInspect
+    parent: !ref_uiscreen screen_base_menu
+    page: item_inspect_page
+    state: MENU_ITEM_INSPECT
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_item_inspect
+
+  - uiscreen: Menu_ItemTrading
+    parent: !ref_uiscreen screen_base_menu
+    page: item_trading_page
+    state: MENU_ITEM_TRADING
+    menu_view: MENU
+    immediate_widgets: !tags
+      - def_item_trading
+      
+  - uiscreen: Menu_EndlessDungeonVictory
+    parent: !ref_uiscreen screen_base_menu
+    page: endlessdungeon_victory_page
+    state: MENU_ENDLESSDUNGEON_VICTORY
+    immediate_widgets: !tags
+      - def_endlessdungeonvictory
+      - def_hintbar
+
+  - uiscreen: menu_credits
+    page: credits_page
+    state: MENU_CREDITS
+    immediate_widgets: !tags
+      - def_credits

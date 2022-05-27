@@ -1,0 +1,88 @@
+.split-vertical .backpack {
+	right: 2vh;
+	width: 31vh;
+}
+.split-vertical .backpack .panel_header{
+	transform: translateX(-3.4vh) scale(.9);
+	isolation: isolate;
+}
+.split-vertical .backpack .scrollbar {
+	right: 2vh;
+}
+.split-vertical .backpack .bigpanel_content_container {
+	margin-left: -1.5vh;
+	margin-right: -1.5vh;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+.split-vertical .backpack .big_panel {
+	margin-top: -2.4vh;
+}
+.split-vertical .backpack .item_gliphy_cntr {
+    width: 28vh;
+}
+.split-vertical .backpack_weapons_item[data-input-focused=true] .item_gliphy_left {
+	left: 3.2vh;
+}
+.split-vertical .backpack_weapons_item[data-input-focused=true] .item_gliphy_right {
+	right: 3.2vh;
+}
+.split-vertical .backpack_frame_header {
+	width: 124%;
+    top: 0.3vh;
+	padding-left: 0vh;
+	padding-right: 0vh;
+	transform: translateX(-50%) scale(0.7, 0.7);
+}
+.split-vertical .backpack_title {
+	padding-left: 0vh;
+	top: 3.5vh;
+	font-size: 5.76rem;
+}
+.split-vertical .backpack .tab_panel .tab_panel_nav_item_text,
+.split-vertical .backpack_sort_name,
+.split-vertical .backpack_sort_type {
+	font-size: 3.52rem;
+}
+.split-vertical .backpack_sort_type {
+	margin-top: .7vh;
+}
+.split-vertical .backpack_sort {
+	margin-left: 0vh;
+	margin-right: 0.3vh;
+	width: 20.4vh;
+}
+.split-vertical .backpack .divider {
+	padding-left: 0.5vh;
+	padding-right: 3vh;
+	transform: scale(0.8, 0.8);
+}
+.split-vertical .backpack_sort_by {
+ flex-direction: column !important; 
+ margin-top: .3vh;
+}
+
+
+/* vertical */
+.split-vertical .backpack .tab_panel .backing_top_bg_left,
+.split-vertical .backpack .tab_panel .backing_top_bg_center,
+.split-vertical .backpack .tab_panel .backing_top_bg_right {
+	opacity: 0;
+}
+.split-vertical .backpack .tab_panel .tab_panel_nav_item_text {
+	font-family: var(--body-font);
+	text-stroke: 0.2rem black;
+	margin-left: 0.6vh;
+	margin-right: 0.6vh;
+	width: 13vh;
+	text-align: center;
+}
+
+.split-vertical .backpack .tab_panel .action_btn {
+	margin-left: initial;
+	margin-right: initial;
+}
+
+.split-vertical .backpack .tab_panel {
+    bottom: 3.8vh;
+}
