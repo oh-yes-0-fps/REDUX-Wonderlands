@@ -1,0 +1,15 @@
+Patch Notes for Launch build
+
+
+
+Overall:{
+Added 1 new rarity
+
+
+
+Chaos:(
+Chaos is now capped at 10
+Two new chaos run options are available
+	Boss rush
+	Redux Featured - bi-weekly, Redux items have increased drop rate
+	
