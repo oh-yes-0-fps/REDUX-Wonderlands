@@ -3,13 +3,51 @@ Patch Notes for Launch build
 
 
 Overall:{
-Added 1 new rarity
+Added 1 new rarity with special features to increase uniqueness
+Added a mod menu
+Added a dialog skip
+Added a "Quit to title screen" button from pause menu
+Made a variety of non respawnable enemies respawn with health more inline of other dedicated sources
+
+}
 
 
-
-Chaos:(
+Chaos:{
 Chaos is now capped at 10
+Chaos item tiers have been deactivated and hidden
 Two new chaos run options are available
 	Boss rush
-	Redux Featured - bi-weekly, Redux items have increased drop rate
-	
+	Redux Featured - bi-weekly rotation, Redux items have increased drop rate
+Added overworld and minidungeon encounters to normal chaos chamber runs
+Enemies in chaos chambers have 25% more base hp
+Reworked altar effects
+	Positive effects are changed and negative effects are added(still not curses btw)
+	Cost is removed
+Added a money bunny to the loot room
+}
+
+
+Balance:{
+Slight stat value changes to SpellShot
+GhostBlade is now buffed by Ability dmg
+Pixies are only buffed by 50% of companion dmg
+
+
+}
+
+
+Items:{
+<X> new items of new rarity
+<X> new legendaries
+<X> new other unique items
+
+}
+
+
+
+
+
+
+
+
+
